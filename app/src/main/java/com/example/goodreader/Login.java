@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import org.json.JSONArray;
 import org.json.JSONException;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 
 public class Login extends AppCompatActivity {
@@ -25,7 +30,7 @@ public class Login extends AppCompatActivity {
         loginbt.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    checkLogin();
+                    CheckUser();
                 }
             });
         regisbt.setOnClickListener(new View.OnClickListener() {
@@ -36,18 +41,44 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
-    private void checkLogin(){
-        boolean isSuccess = false;
-        String username = editname.getText().toString().trim().toLowerCase();
-
-
-        if (isSuccess) {
-            Intent intent = new Intent(Login.this, StartGame.class);
-            startActivity(intent);
-        } else {
-            Intent intent = new Intent(Login.this, regisAc.class);
-            startActivity(intent);
+    private void CheckUser(){
+        String User = editname.getText().toString().trim().toLowerCase();
+        boolean issuccess = false;
+        try {
+            JSONArray jArray = new JSONArray(readJSONFromAsset());
+            String name;
+            for (int i = 0 ;i<=jArray.length();i++){
+                name = jArray.getJSONObject(i).getString("Username");
+                if (name.equals(User)){
+                    issuccess = true;
+                }
+            }
+//                        txtarea.setText(name);
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        if (issuccess){
+            Intent goStart = new Intent(Login.this,StartGame.class);
+            startActivity(goStart);
+        }
+        else {
+            Intent goregis = new Intent(Login.this,regisAc.class);
+            startActivity(goregis);
+        }
+    }
+    public String readJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("user.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
     }
 }

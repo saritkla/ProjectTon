@@ -8,18 +8,19 @@
 
     <EditText
         android:id="@+id/editname"
-        android:layout_width="372dp"
-        android:layout_height="49dp"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
         android:layout_marginStart="294dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginTop="245dp"
         android:layout_marginEnd="296dp"
+        android:layout_marginBottom="276dp"
         android:hint="Name"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/loginBt"
@@ -40,14 +41,16 @@
         android:id="@+id/regisBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="388dp"
         android:layout_marginEnd="303dp"
+        android:layout_marginBottom="154dp"
         android:text="Register"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/loginBt"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
