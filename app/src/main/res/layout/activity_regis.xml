@@ -5,13 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".regisAc">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="321dp"
-        android:layout_height="150dp"
-        android:text="regis"
-        android:textSize="36sp"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="240dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Register"
+            android:textStyle="bold"
+            android:fontFamily="@font/iannnnngmo"
+            android:textSize="100dp"/>
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:fontFamily="@font/iannnnngmo"
+            android:textStyle="bold"
+            android:hint="Username"/>
+        <EditText
+            android:id="@+id/nameAnser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/iannnnngmo"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:hint="ชื่อขสกุล"/>
+        <EditText
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/iannnnngmo"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:hint="โรงเรียน"/>
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/iannnnngmo"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:hint="อายุ"/>
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/iannnnngmo"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:hint="วันเดือนปีเกิด"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
