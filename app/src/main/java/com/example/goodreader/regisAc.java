@@ -68,7 +68,6 @@ public class regisAc extends AppCompatActivity {
                     errorToast.setGravity(Gravity.CENTER_VERTICAL,0,0);
                     errorToast.show();
                 }
-                DbHelper dbHelper = new DbHelper(getApplicationContext());
 
             }
         });

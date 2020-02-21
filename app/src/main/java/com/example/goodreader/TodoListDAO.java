@@ -25,7 +25,7 @@ public class TodoListDAO {
 
     public ArrayList<String> getAllTodoList(){
         ArrayList<String> todoList = new ArrayList<String>();
-        Cursor cursor = database.rawQuery("SELECT * FROM todo_list;",null);
+        Cursor cursor = database.rawQuery("SELECT * FROM Childent;",null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             todoList.add(cursor.getString(1));
@@ -35,14 +35,15 @@ public class TodoListDAO {
         return todoList;
     }
 
-    public void insertData(String nameStudent2, String classStudent2) {
+    public void insertData(String Username, String  NameStudent,String School,String Age,String Birthday) {
         // TODO Auto-generated method stub
-        DbHelper helper = new DbHelper(this);
-        SQLiteDatabase database = helper.getWritableDatabase();
         ContentValues content = new ContentValues();
-        content.put(DbHelper.COLUMN_NAME, NameStudent);
-        content.put(DbHelper.COLUMN_CLASS, ClassStudent);
+        content.put(DbHelper.COLUMN_USERNAME, Username);
+        content.put(DbHelper.COLUMN_NAMESUR, NameStudent);
+        content.put(DbHelper.COLUMN_SCHOOL, School);
+        content.put(DbHelper.COLUMN_AGE, Age);
+        content.put(DbHelper.COLUMN_BIRTHDAY, Birthday);
 
-        database.insert(AndroidDbHelper.TABLE_NAME, null, content);
+        database.insert(DbHelper.TABLE_NAME, null, content);
     }
 }
