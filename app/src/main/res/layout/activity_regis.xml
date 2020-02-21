@@ -36,7 +36,7 @@
             android:textStyle="bold"
             android:hint="ชื่อขสกุล"/>
         <EditText
-            android:id="@+id/school"
+            android:id="@+id/schoolname"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -45,7 +45,7 @@
             android:textStyle="bold"
             android:hint="โรงเรียน"/>
         <EditText
-            android:id="@+id/age"
+            android:id="@+id/intage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -62,5 +62,23 @@
             android:textSize="30dp"
             android:textStyle="bold"
             android:hint="วันเดือนปีเกิด"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:fontFamily="@font/iannnnngmo"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cencel"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:fontFamily="@font/iannnnngmo"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
