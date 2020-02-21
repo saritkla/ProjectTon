@@ -99,23 +99,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/loginbutton"
-
-                            />
+                            android:background="@drawable/loginbutton"/>
                         <Space
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1.7"/>
-                        <ImageButton
-                            android:layout_weight="1"
-                            android:fontFamily="@font/iannnnngmo"
-                            android:text="LOGIN"
-                            android:textStyle="bold"
-                            android:textSize="50dp"/>
                         <Button
                             android:id="@+id/regisBt"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:fontFamily="@font/iannnnngmo"
@@ -147,7 +138,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:layout_weight="1"
             android:orientation="vertical">
         </LinearLayout>
     </LinearLayout>
