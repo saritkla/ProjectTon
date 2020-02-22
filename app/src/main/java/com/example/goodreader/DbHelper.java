@@ -1,5 +1,6 @@
 package com.example.goodreader;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -7,23 +8,27 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
-    private static final String databaseName = "todolist.sqlite";
-    private  static final int databaseVersion = 1;
-    public static final String TABLE_NAME= "Childent";
-    public static final String COLUMN_USERNAME= "name";
-    public static final String COLUMN_SCHOOL= "school";
-    public static final String COLUMN_NAMESUR= "nameNsur";
-    public static final String COLUMN_AGE= "10";
-    public static final String COLUMN_BIRTHDAY= "birthday";
+    private static final String databaseName = "Userdata.db";
+    private    static final int databaseVersion = 1;
+    public static final String TABLE_NAME = "Childent";
+    public static final String COLUMN_ID = "ID";
+    public static final String COLUMN_USERNAME = "Username";
+    public static final String COLUMN_SCHOOL = "School";
+    public static final String COLUMN_NAMESUR = "Name";
+    public static final String COLUMN_AGE = "Age";
+    public static final String COLUMN_BIRTHDAY = "Birthday";
+    public static final String COLUMN_SCORE1 = "Score1";
+    public static final String COLUMN_SCORE2 = "Score2";
     Context myContext;
-    private static final String tableCreateSQL = "CREATE TABLE TABLE_NAME("+
-            "id INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            "COLUMN_USERNAME TEXT,"+
-            "COLUMN_SCHOOL TEXT,"+
-            "COLUMN_NAMESUR TEXT,"+
-            "COLUMN_AGE TEXT,"+
-            "COLUMN_BIRTHDAY TEXT"+
-            ");";
+    private static final String tableCreateSQL = "CREATE TABLE " + TABLE_NAME +" ("+
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_USERNAME + " TEXT, " +
+            COLUMN_NAMESUR + " TEXT, " +
+            COLUMN_SCHOOL + " TEXT, " +
+            COLUMN_AGE + " TEXT, " +
+            COLUMN_BIRTHDAY + " TEXT, "+
+            COLUMN_SCORE1 + " INT, " +
+            COLUMN_SCORE2 + " INT " + ");";
 
     public DbHelper(@Nullable Context context) {
         super(context, databaseName, null, databaseVersion);
@@ -34,18 +39,24 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(tableCreateSQL);
-        String insertData1 = "INSERT INTO "+ TABLE_NAME +
-                "(COLUMN_USERNAME) VALUES ($COLUMN_USERNAME);" +
-                "(COLUMN_NAMESUR) VALUES ($COLUMN_NAMESUR);" +
-                "(COLUMN_SCHOOL) VALUES ($COLUMN_SCHOOL);" +
-                "(COLUMN_AGE) VALUES ($COLUMN_AGE);" +
-                "(COLUMN_BIRTHDAY) VALUES ($COLUMN_BIRTHDAY);" ;
-
-        sqLiteDatabase.execSQL(insertData1);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(sqLiteDatabase);
     }
+//    public boolean insertDataUser(String username ,String name ,String school ,String age ,String birthday){
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        ContentValues contentValues= new ContentValues();
+//
+//        contentValues.put(COLUMN_USERNAME,username);
+//        contentValues.put(COLUMN_NAMESUR,name);
+//        contentValues.put(COLUMN_SCHOOL,school);
+//        contentValues.put(COLUMN_AGE,age);
+//        contentValues.put(COLUMN_BIRTHDAY,birthday);
+//        long result = db.insert(TABLE_NAME, null,contentValues);
+//        return  result != -1;
+//    }
+
 }

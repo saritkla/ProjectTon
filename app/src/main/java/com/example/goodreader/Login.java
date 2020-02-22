@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -35,6 +36,7 @@ public class Login extends AppCompatActivity {
                         startActivity(goStart);
                     }
                     else {
+                        Toast.makeText(Login.this, "Pleas Register", Toast.LENGTH_SHORT).show();
                         Intent goregis = new Intent(Login.this,regisAc.class);
                         startActivity(goregis);
                     }
@@ -58,8 +60,8 @@ public class Login extends AppCompatActivity {
         ArrayList<String> mylist = todoListDAO.getAllTodoList();
         Object[] mStringArray = mylist.toArray();
         for(int i = 0; i < mStringArray.length ; i++){
+            Log.d("string is",(String)mStringArray[i]);
             if (mStringArray[i].equals(user)) {
-//                Log.d("string is",(String)mStringArray[i]);
                 resule = true;
             }
         }
