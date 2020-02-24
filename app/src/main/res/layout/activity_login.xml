@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
     tools:context=".Login">
 
     <LinearLayout
@@ -79,6 +80,8 @@
                             android:layout_gravity="center"
                             android:background="@color/colorWhite"
                             android:fontFamily="@font/iannnnngmo"
+                            android:maxLines="1"
+                            android:inputType="text"
                             android:hint="  ชื่อผู้ใช้"
                             android:textSize="50dp" />
                         android:hint="Name"

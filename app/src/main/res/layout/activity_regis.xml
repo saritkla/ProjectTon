@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
     tools:context=".regisAc">
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,6 +25,8 @@
             android:layout_weight="1"
             android:textSize="30dp"
             android:fontFamily="@font/iannnnngmo"
+            android:maxLines="1"
+            android:inputType="text"
             android:textStyle="bold"
             android:hint="Username"/>
         <EditText
@@ -32,6 +35,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/iannnnngmo"
+            android:maxLines="1"
+            android:inputType="text"
             android:textSize="30dp"
             android:textStyle="bold"
             android:hint="ชื่อขสกุล"/>
@@ -41,6 +46,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/iannnnngmo"
+            android:maxLines="1"
+            android:inputType="text"
             android:textSize="30dp"
             android:textStyle="bold"
             android:hint="โรงเรียน"/>
@@ -50,6 +57,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/iannnnngmo"
+            android:maxLines="1"
+            android:inputType="text"
             android:textSize="30dp"
             android:textStyle="bold"
             android:hint="อายุ"/>
@@ -59,6 +68,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:fontFamily="@font/iannnnngmo"
+            android:maxLines="1"
+            android:inputType="text"
             android:textSize="30dp"
             android:textStyle="bold"
             android:hint="วันเดือนปีเกิด"/>

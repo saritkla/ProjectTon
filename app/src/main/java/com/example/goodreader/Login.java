@@ -36,9 +36,7 @@ public class Login extends AppCompatActivity {
                         startActivity(goStart);
                     }
                     else {
-                        Toast.makeText(Login.this, "Pleas Register", Toast.LENGTH_SHORT).show();
-                        Intent goregis = new Intent(Login.this,regisAc.class);
-                        startActivity(goregis);
+                        Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -50,6 +48,10 @@ public class Login extends AppCompatActivity {
                 startActivity(goregis);
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+
     }
 
     public boolean getuser(String user) {

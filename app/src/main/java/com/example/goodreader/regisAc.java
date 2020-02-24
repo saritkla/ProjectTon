@@ -49,40 +49,21 @@ public class regisAc extends AppCompatActivity {
                 todoListDAO.open();
                 boolean inseart = todoListDAO.insertDataUser(User,Name,School,Age,Birth,0,0);
                 if (!User.equals("") && !Name.equals("") && !School.equals("") && !Age.equals("") && !Birth.equals("") && inseart) {
-                    Toast.makeText(regisAc.this,"Data added",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(regisAc.this,"ลงทะเบียนเสร็จสิ้น",Toast.LENGTH_SHORT).show();
                     Intent toLogin = new Intent(regisAc.this,Login.class);
                     startActivity(toLogin);
                 }
                 else {
-                    Toast.makeText(regisAc.this, "Pleas Enter your Data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(regisAc.this, "กรุณาใส่ข้อมูล", Toast.LENGTH_SHORT).show();
                 }
                 todoListDAO.close();
-//                if(!Name.equals("") && db.insertData(Name)){
-//                    Toast.makeText(regisAc.this,"Username added",Toast.LENGTH_SHORT).show();
-//                }
-//                else {
-//                    Toast errorToast = Toast.makeText(regisAc.this, "Pleas Enter your Name and surname", Toast.LENGTH_LONG);
-//                    errorToast.setGravity(Gravity.CENTER_VERTICAL,0,0);
-//                    errorToast.show();
-//                }
-//                if (School.trim().equalsIgnoreCase("")){
-//                    Toast errorToast = Toast.makeText(regisAc.this, "Pleas Enter your School", Toast.LENGTH_LONG);
-//                    errorToast.setGravity(Gravity.CENTER_VERTICAL,0,0);
-//                    errorToast.show();
-//                }
-//                if (Age.trim().equalsIgnoreCase("")){
-//                    Toast errorToast = Toast.makeText(regisAc.this, "Pleas Enter your Age", Toast.LENGTH_LONG);
-//                    errorToast.setGravity(Gravity.CENTER_VERTICAL,0,0);
-//                    errorToast.show();
-//                }
-//                if (Birth.trim().equalsIgnoreCase("")){
-//                    Toast errorToast = Toast.makeText(regisAc.this, "Pleas Enter your Birthday", Toast.LENGTH_LONG);
-//                    errorToast.setGravity(Gravity.CENTER_VERTICAL,0,0);
-//                    errorToast.show();
-//                }
 
 
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+
     }
 }
