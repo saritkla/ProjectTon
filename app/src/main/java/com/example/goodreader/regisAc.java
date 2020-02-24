@@ -10,10 +10,11 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class regisAc extends AppCompatActivity {
-    Button submit,cancel;
+    ImageButton submit,cancel;
     EditText username,name,school,age,birth;
     String User,Name,School,Age,Birth;
     DbHelper db;
@@ -27,8 +28,8 @@ public class regisAc extends AppCompatActivity {
         school =(EditText) findViewById(R.id.schoolname);
         age = (EditText) findViewById(R.id.intage);
         birth = (EditText) findViewById(R.id.birthday);
-        submit = (Button) findViewById(R.id.submit);
-        cancel = (Button) findViewById(R.id.cancel);
+        submit = (ImageButton) findViewById(R.id.submit);
+        cancel = (ImageButton) findViewById(R.id.cancel);
         db = new DbHelper(this);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override

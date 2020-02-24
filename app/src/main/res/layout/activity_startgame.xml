@@ -35,44 +35,74 @@
           <Space
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:layout_weight="0.2"
+              android:layout_weight="1.13"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:orientation="horizontal"
+              android:layout_gravity="center">
+              <Space
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+              <ImageView
+                  android:layout_width="500px"
+                  android:layout_height="60px"
+                  android:background="@drawable/menuname" />
+              <Space
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+
+          </LinearLayout>
+          <Space
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="0.389"
               />
           <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_weight="1"
-              android:orientation="horizontal">
+              android:orientation="horizontal"
+              android:layout_gravity="center">
               <Space
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="0.9"/>
+                  android:layout_weight="0.75"/>
               <LinearLayout
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:layout_weight="1"
                   android:orientation="horizontal"
                   >
-                  <ImageButton
+                  <LinearLayout
                       android:layout_width="match_parent"
                       android:layout_height="match_parent"
-                      android:layout_weight="1"
-                      android:id="@+id/setting"
-                      />
-                  <Space
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:layout_weight="1.5"/>
-                  <ImageButton
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:layout_weight="1"
-                      />
+                      android:orientation="horizontal"
+                      android:layout_weight="1">
+                      <ImageButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0"
+                          android:id="@+id/setting"
+                          android:background="@drawable/setting"
+                          android:layout_gravity="center"/>
 
+                      <ImageButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_weight="0"
+                          android:background="@drawable/info" />
+                  </LinearLayout>
               </LinearLayout>
               <Space
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:layout_weight="0.9"/>
+                  android:layout_weight="0.75"/>
           </LinearLayout>
           <Space
               android:layout_width="match_parent"

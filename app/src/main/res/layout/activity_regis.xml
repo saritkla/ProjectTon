@@ -9,87 +9,249 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
+        android:background="@color/colorYellow"
+        android:orientation="horizontal">
+        <Space
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Register"
-            android:textStyle="bold"
-            android:fontFamily="@font/iannnnngmo"
-            android:textSize="100dp"/>
-        <EditText
-            android:id="@+id/Username"
+            android:layout_weight="1"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="30dp"
-            android:fontFamily="@font/iannnnngmo"
-            android:maxLines="1"
-            android:inputType="text"
-            android:textStyle="bold"
-            android:hint="Username"/>
-        <EditText
-            android:id="@+id/nameAnser"
+            android:orientation="vertical"
+            android:layout_weight="0.2">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.2"
+                android:background="@drawable/whitebg"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:orientation="horizontal">
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="416dp"
+                            android:layout_height="47dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/regisname" />
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.42"
+                        >
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:text="1.ชื่อผู้ใช้ (ภาษาอังกฤษ)"
+                                android:textSize="12pt"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/Username"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:background="@drawable/textinput"
+                                android:fontFamily="@font/iannnnngmo"
+                                android:hint="    Username"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textSize="12pt"
+                                android:textStyle="bold|italic"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:text="2.ชื่อ - นามสกุล (มีคำนำหน้า)"
+                                android:textSize="12pt"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/nameAnser"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:background="@drawable/textinput"
+                                android:fontFamily="@font/iannnnngmo"
+                                android:hint="    ด.ช. ชื่อ นามสกุล"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textSize="12pt"
+                                android:textStyle="bold|italic"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:text="3.โรงเรียน"
+                                android:textSize="12pt"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/schoolname"
+                                    android:layout_width="315dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="?attr/actionBarSize"
+                                    android:background="@drawable/textinput"
+                                    android:fontFamily="@font/iannnnngmo"
+                                    android:hint="    โรงเรียนรักการอ่าน"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:textSize="12pt"
+                                    android:textStyle="bold|italic"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.6"
+                                    android:text="ชั้น"
+                                    android:textAlignment="center"
+                                    android:textSize="12pt" />
+
+                                <EditText
+                                    android:id="@+id/intage"
+                                    android:layout_width="83dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="?attr/actionBarSize"
+                                    android:background="@drawable/textinput2"
+                                    android:fontFamily="@font/iannnnngmo"
+                                    android:hint="    ป.4"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:textSize="12pt"
+                                    android:textStyle="bold|italic"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:text="4.วัน/เดือน/ปีเกิด (พ.ศ.)"
+                                android:textSize="12pt"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/birthday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:background="@drawable/textinput"
+                                android:fontFamily="@font/iannnnngmo"
+                                android:hint="    24/02/2541"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textSize="12pt"
+                                android:textStyle="bold|italic"/>
+                            </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="255dp"
+                                android:layout_weight="?attr/actionBarSize"
+                                android:background="@drawable/logogame" />
+
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="47dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="?attr/actionBarSize" />
+
+                        <ImageButton
+                            android:id="@+id/cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="?attr/actionBarSize"
+                            android:background="@drawable/backbutton" />
+
+                        <Space
+                            android:layout_width="255dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="?attr/actionBarSize" />
+                        <ImageButton
+                            android:id="@+id/submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="?attr/actionBarSize"
+                            android:background="@drawable/commitbutton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <Space
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/iannnnngmo"
-            android:maxLines="1"
-            android:inputType="text"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:hint="ชื่อขสกุล"/>
-        <EditText
-            android:id="@+id/schoolname"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/iannnnngmo"
-            android:maxLines="1"
-            android:inputType="text"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:hint="โรงเรียน"/>
-        <EditText
-            android:id="@+id/intage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/iannnnngmo"
-            android:maxLines="1"
-            android:inputType="text"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:hint="อายุ"/>
-        <EditText
-            android:id="@+id/birthday"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/iannnnngmo"
-            android:maxLines="1"
-            android:inputType="text"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:hint="วันเดือนปีเกิด"/>
-        <Button
-            android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Submit"
-            android:textStyle="bold"
-            android:textSize="50dp"
-            android:fontFamily="@font/iannnnngmo"/>
-        <Button
-            android:id="@+id/cancel"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Cencel"
-            android:textStyle="bold"
-            android:textSize="50dp"
-            android:fontFamily="@font/iannnnngmo"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
