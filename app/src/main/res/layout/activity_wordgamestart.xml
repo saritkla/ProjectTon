@@ -7,23 +7,28 @@
     android:screenOrientation="landscape"
     tools:context=".wordgamestart">
 
-    <TextView
-        android:id="@+id/textare"
-        android:layout_width="604dp"
-        android:layout_height="383dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/game1bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="247dp"
-        tools:layout_editor_absoluteY="456dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/mainfont"
+            android:paddingTop="20dp"
+            android:text="คำที่ 1"
+            android:textAlignment="center"
+            android:textSize="30pt"
+            android:textStyle="bold"
+            android:textColor="@color/colorback"
+            android:typeface="normal" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
