@@ -7,10 +7,10 @@
     android:screenOrientation="landscape"
     tools:context=".Wordgamestart">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/game1bg"/>
+        android:background="@drawable/game1bg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -62,7 +62,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"/>
         </LinearLayout>
-
     </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
