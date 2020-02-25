@@ -20,7 +20,7 @@ public class StartGame extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_startgame);
         readfast = (ImageButton)findViewById(R.id.fastread);
         rooread = (ImageButton)findViewById(R.id.rooread);
@@ -28,15 +28,15 @@ public class StartGame extends AppCompatActivity {
         readfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent fastread =new Intent(StartGame.this, Wordgamestart.class);
-                startActivity(fastread);
+                Intent gofastread =new Intent(StartGame.this,Wordgamestart.class);
+                startActivity(gofastread);
             }
         });
         rooread.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent rooread = new Intent(StartGame.this, RegisAc.class);
-                startActivity(rooread);
+                Intent gorooread = new Intent(StartGame.this, RegisAc.class);
+                startActivity(gorooread);
             }
         });
 

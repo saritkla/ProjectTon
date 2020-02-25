@@ -11,59 +11,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/game1bg">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/mainfont"
-            android:paddingTop="20dp"
-            android:text="คำที่ 1"
-            android:textAlignment="center"
-            android:textSize="30pt"
-            android:textStyle="bold"
-            android:textColor="@color/colorback"
-            android:typeface="normal" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            >
-            <Space
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mainfont"
+                android:paddingTop="20dp"
+                android:text="คำที่ 1"
+                android:textAlignment="center"
+                android:textSize="30pt"
+                android:textStyle="bold"
+                android:textColor="@color/colorback"
+                android:typeface="normal" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"/>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:orientation="vertical"
-               android:layout_weight="1">
-               <Space
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"/>
-               <ImageButton
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               android:layout_gravity="center"
-               android:background="@drawable/ready"/>
-               <Space
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:layout_weight="0.8"/>
-           </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"/>
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                   <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                   <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ready"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"/>
+               </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"/>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

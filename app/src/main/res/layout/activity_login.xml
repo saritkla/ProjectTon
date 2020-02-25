@@ -85,6 +85,7 @@
                             android:inputType="text"
                             android:paddingBottom="8pt"
                             android:hint="ชื่่อผู้ใช้"
+                            android:padding="1dp"
                             android:textSize="36pt" />
                         android:hint="Name"
                         android:textSize="50dp"
