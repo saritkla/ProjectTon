@@ -115,7 +115,6 @@
                             android:fontFamily="@font/iannnnngmo"
                             android:textStyle="bold"
                             android:background="@drawable/regisbutton"
-
                             />
                         android:text="Register"
                         android:textSize="40dp"/>
