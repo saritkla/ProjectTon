@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
-    tools:context=".regisAc">
+    tools:context=".RegisAc">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -84,7 +84,8 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/mainfont"
                                 android:text="1.ชื่อผู้ใช้ (ภาษาอังกฤษ)"
                                 android:textSize="12pt"
                                 android:textStyle="bold" />
@@ -93,19 +94,22 @@
                                 android:id="@+id/Username"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
                                 android:background="@drawable/textinput"
                                 android:fontFamily="@font/iannnnngmo"
-                                android:hint="    Username"
+                                android:hint="Username"
+                                android:layout_marginLeft="8pt"
+                                android:paddingLeft="12pt"
                                 android:inputType="text"
                                 android:maxLines="1"
                                 android:textSize="12pt"
-                                android:textStyle="bold|italic"/>
+                                android:textStyle="bold|italic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/mainfont"
                                 android:text="2.ชื่อ - นามสกุล (มีคำนำหน้า)"
                                 android:textSize="12pt"
                                 android:textStyle="bold" />
@@ -114,19 +118,22 @@
                                 android:id="@+id/nameAnser"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
                                 android:background="@drawable/textinput"
                                 android:fontFamily="@font/iannnnngmo"
-                                android:hint="    ด.ช. ชื่อ นามสกุล"
+                                android:hint="ด.ช. ชื่อ นามสกุล"
+                                android:paddingLeft="12pt"
+                                android:layout_marginLeft="8pt"
                                 android:inputType="text"
                                 android:maxLines="1"
                                 android:textSize="12pt"
-                                android:textStyle="bold|italic"/>
+                                android:textStyle="bold|italic" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/mainfont"
                                 android:text="3.โรงเรียน"
                                 android:textSize="12pt"
                                 android:textStyle="bold" />
@@ -134,27 +141,30 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
                                 android:orientation="horizontal">
 
                                 <EditText
                                     android:id="@+id/schoolname"
                                     android:layout_width="315dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="?attr/actionBarSize"
+                                    android:layout_weight="1"
                                     android:background="@drawable/textinput"
                                     android:fontFamily="@font/iannnnngmo"
-                                    android:hint="    โรงเรียนรักการอ่าน"
+                                    android:hint="โรงเรียนรักการอ่าน"
+                                    android:paddingLeft="12pt"
+                                    android:layout_marginLeft="8pt"
                                     android:inputType="text"
                                     android:maxLines="1"
+                                    android:textAlignment="textStart"
                                     android:textSize="12pt"
-                                    android:textStyle="bold|italic"/>
+                                    android:textStyle="bold|italic" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
-                                    android:layout_weight="1.6"
+                                    android:layout_weight="40"
                                     android:text="ชั้น"
                                     android:textAlignment="center"
                                     android:textSize="12pt" />
@@ -163,21 +173,23 @@
                                     android:id="@+id/intage"
                                     android:layout_width="83dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="?attr/actionBarSize"
+                                    android:layout_weight="0.8"
                                     android:background="@drawable/textinput2"
                                     android:fontFamily="@font/iannnnngmo"
-                                    android:hint="    ป.4"
+                                    android:hint="ป.4"
                                     android:inputType="text"
                                     android:maxLines="1"
+                                    android:textAlignment="center"
                                     android:textSize="12pt"
-                                    android:textStyle="bold|italic"/>
+                                    android:textStyle="bold|italic" />
                             </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/mainfont"
                                 android:text="4.วัน/เดือน/ปีเกิด (พ.ศ.)"
                                 android:textSize="12pt"
                                 android:textStyle="bold" />
@@ -186,24 +198,31 @@
                                 android:id="@+id/birthday"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="?attr/actionBarSize"
+                                android:layout_weight="1"
                                 android:background="@drawable/textinput"
                                 android:fontFamily="@font/iannnnngmo"
-                                android:hint="    24/02/2541"
+                                android:hint="24/02/2541"
+                                android:paddingLeft="12pt"
+                                android:layout_marginLeft="8pt"
+                                android:layout_marginRight="59pt"
                                 android:inputType="text"
                                 android:maxLines="1"
                                 android:textSize="12pt"
-                                android:textStyle="bold|italic"/>
+                                android:textStyle="bold|italic" />
                             </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="0.7">
+
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="255dp"
-                                android:layout_weight="?attr/actionBarSize"
-                                android:background="@drawable/logogame" />
+                                android:layout_width="256dp"
+                                android:layout_height="256dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:background="@drawable/logogame"
+                                android:scaleType="fitCenter" />
 
                         </LinearLayout>
                         <Space
@@ -221,25 +240,30 @@
                         <Space
                             android:layout_width="47dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="?attr/actionBarSize" />
+                            android:layout_weight="1" />
 
                         <ImageButton
                             android:id="@+id/cancel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="?attr/actionBarSize"
+                            android:layout_weight="1"
                             android:background="@drawable/backbutton" />
 
                         <Space
                             android:layout_width="255dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="?attr/actionBarSize" />
+                            android:layout_weight="5" />
+
                         <ImageButton
                             android:id="@+id/submit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="?attr/actionBarSize"
+                            android:layout_weight="2"
                             android:background="@drawable/commitbutton" />
+                        <Space
+                            android:layout_width="47dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

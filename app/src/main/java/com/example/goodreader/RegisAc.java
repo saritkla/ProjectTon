@@ -3,17 +3,14 @@ package com.example.goodreader;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class regisAc extends AppCompatActivity {
+public class RegisAc extends AppCompatActivity {
     ImageButton submit,cancel;
     EditText username,name,school,age,birth;
     String User,Name,School,Age,Birth;
@@ -22,7 +19,8 @@ public class regisAc extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regis);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        setContentView(R.layout.activity_regispage);
         username = (EditText) findViewById(R.id.Username);
         name = (EditText) findViewById(R.id.nameAnser);
         school =(EditText) findViewById(R.id.schoolname);
@@ -34,7 +32,7 @@ public class regisAc extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent toLogin = new Intent(regisAc.this,Login.class);
+                Intent toLogin = new Intent(RegisAc.this,Login.class);
                 startActivity(toLogin);
             }
         });
@@ -50,12 +48,12 @@ public class regisAc extends AppCompatActivity {
                 todoListDAO.open();
                 boolean inseart = todoListDAO.insertDataUser(User,Name,School,Age,Birth,0,0);
                 if (!User.equals("") && !Name.equals("") && !School.equals("") && !Age.equals("") && !Birth.equals("") && inseart) {
-                    Toast.makeText(regisAc.this,"ลงทะเบียนเสร็จสิ้น",Toast.LENGTH_SHORT).show();
-                    Intent toLogin = new Intent(regisAc.this,Login.class);
+                    Toast.makeText(RegisAc.this,"ลงทะเบียนเสร็จสิ้น",Toast.LENGTH_SHORT).show();
+                    Intent toLogin = new Intent(RegisAc.this,Login.class);
                     startActivity(toLogin);
                 }
                 else {
-                    Toast.makeText(regisAc.this, "กรุณาใส่ข้อมูล", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisAc.this, "กรุณาใส่ข้อมูล", Toast.LENGTH_SHORT).show();
                 }
                 todoListDAO.close();
 

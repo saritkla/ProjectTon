@@ -27,7 +27,7 @@ public class StartGame extends AppCompatActivity {
         rooread.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gokkk = new Intent(StartGame.this,regisAc.class);
+                Intent gokkk = new Intent(StartGame.this, RegisAc.class);
                 startActivity(gokkk);
             }
         });
