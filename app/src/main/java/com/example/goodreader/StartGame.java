@@ -24,18 +24,19 @@ public class StartGame extends AppCompatActivity {
         setContentView(R.layout.activity_startgame);
         readfast = (ImageButton)findViewById(R.id.fastread);
         rooread = (ImageButton)findViewById(R.id.rooread);
+
         readfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goqq =new Intent(StartGame.this,Login.class);
-                startActivity(goqq);
+                Intent fastread =new Intent(StartGame.this, Wordgamestart.class);
+                startActivity(fastread);
             }
         });
         rooread.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gokkk = new Intent(StartGame.this, RegisAc.class);
-                startActivity(gokkk);
+                Intent rooread = new Intent(StartGame.this, RegisAc.class);
+                startActivity(rooread);
             }
         });
 
