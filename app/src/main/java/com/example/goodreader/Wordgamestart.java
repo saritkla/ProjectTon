@@ -25,7 +25,6 @@ public class Wordgamestart extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_wordgamestart);
         ready = (ImageButton)findViewById(R.id.readyicon);
-        ready.setImageResource(R.drawable.ready);
         ready.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
