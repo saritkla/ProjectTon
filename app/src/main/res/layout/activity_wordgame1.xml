@@ -28,20 +28,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6">
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:id="@+id/textshow"-->
-<!--                    android:textSize="100dp"-->
-<!--                    android:fontFamily="@font/mainfont"-->
-<!--                    android:layout_centerInParent="true"-->
-<!--                    android:textAlignment="center"/>-->
-                <WebView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textshow"
+                    android:textSize="100dp"
+                    android:fontFamily="@font/mainfont"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center"/>
+                <pl.droidsonroids.gif.GifImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/imagecount"
-                    android:layout_centerInParent="true" />
-
+                    android:layout_weight="0.6"
+                    android:id="@+id/imagecount" />
             </RelativeLayout>
             <Space
                 android:layout_width="match_parent"
