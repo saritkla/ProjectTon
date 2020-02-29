@@ -29,12 +29,13 @@ public class Wordgame1 extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_wordgame1);
         imagecount = (WebView) findViewById(R.id.imagecount);
+//        showtext = (TextView)findViewById(R.id.textshow);
         WebSettings webSettings = imagecount.getSettings();
         webSettings.setJavaScriptEnabled(true);
         final String gitfile = "file:android_asset/treetwo.html";
 //        imagecount.setImageResource(R.drawable.treetwoone);
 
-        new CountDownTimer(3000,1000){
+        new CountDownTimer(4000,4000){
             @Override
             public void onTick(long l) {
                 imagecount.loadUrl(gitfile);
@@ -43,7 +44,10 @@ public class Wordgame1 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 imagecount.loadUrl(String.valueOf(0));
+//                showtext.setText("kla");
             }
         }.start();
+//
+
     }
 }
