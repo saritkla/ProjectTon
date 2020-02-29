@@ -7,11 +7,19 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.sql.Time;
 
 public class Wordgame1 extends AppCompatActivity {
 
+//    pl.droidsonroids.gif.GifImageView imagecount;
     WebView imagecount;
+    TextView showtext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,13 +29,20 @@ public class Wordgame1 extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_wordgame1);
         imagecount = (WebView) findViewById(R.id.imagecount);
+        WebSettings webSettings = imagecount.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        final String gitfile = "file:android_asset/treetwo.html";
+//        imagecount.setImageResource(R.drawable.treetwoone);
+
         new CountDownTimer(3000,1000){
-            public void onTick(long millisUntilFinished) {
-                imagecount.loadUrl("file:///android_asset/treetwo.html");
+            @Override
+            public void onTick(long l) {
+                imagecount.loadUrl(gitfile);
             }
 
+            @Override
             public void onFinish() {
-
+                imagecount.loadUrl(String.valueOf(0));
             }
         }.start();
     }
