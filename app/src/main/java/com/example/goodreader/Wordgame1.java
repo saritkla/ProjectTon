@@ -25,8 +25,9 @@ import java.sql.Time;
 public class Wordgame1 extends AppCompatActivity {
 
     pl.droidsonroids.gif.GifImageView imagecount;
-    TextView showtext;
+    TextView showtext,textcount;
     ImageButton nextpage;
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,34 +38,24 @@ public class Wordgame1 extends AppCompatActivity {
         setContentView(R.layout.activity_wordgame1);
         imagecount = (pl.droidsonroids.gif.GifImageView ) findViewById(R.id.imagecount);
         showtext = (TextView)findViewById(R.id.textshow);
+        textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
-//        WebSettings webSettings = imagecount.getSettings();
-//        webSettings.setJavaScriptEnabled(true);
-//        final String gitfile = "file:android_asset/treetwoone2.gif";
         nextword();
-        int i =1;
-        while (true)
-        {
-            if(i<=10)
-            {
-                nextpage.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        showtext.setText(null);
-                        nextword();
-                    }
-                });
+        nextpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                count++;
+                showtext.setText("");
+                String co = Integer.toString(count);
+                textcount.setText(co);
+                nextword();
+                if(count == 11){
+                    Intent tosum = new Intent(Wordgame1.this,Wordgamestart.class);
+                    startActivity(tosum);
+                }
             }
-            else
-            {
-                Intent gosum = new Intent(Wordgame1.this,Wordgamestart.class);
-                startActivity(gosum);
-            }
-            i++;
-        }
-
-
-
+        });
     }
 
 

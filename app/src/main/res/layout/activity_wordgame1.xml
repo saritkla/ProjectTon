@@ -47,10 +47,15 @@
                     android:layout_weight="0.6"
                     android:id="@+id/imagecount" />
             </RelativeLayout>
-            <Space
+            <TextView
+                android:id="@+id/textcount"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:fontFamily="@font/mainfont"
+                android:textSize="80dp"
+                android:padding="20dp"
+                android:textAlignment="textEnd"/>
         </LinearLayout>
         <Space
             android:layout_width="match_parent"

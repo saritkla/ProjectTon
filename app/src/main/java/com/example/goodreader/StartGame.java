@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 
 public class StartGame extends AppCompatActivity {
 
-    ImageButton readfast,rooread;
+    ImageButton readfast,rooread,setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class StartGame extends AppCompatActivity {
         setContentView(R.layout.activity_startgame);
         readfast = (ImageButton)findViewById(R.id.fastread);
         rooread = (ImageButton)findViewById(R.id.rooread);
+        setting = (ImageButton)findViewById(R.id.setting);
 
         readfast.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +38,13 @@ public class StartGame extends AppCompatActivity {
             public void onClick(View view) {
                 Intent gorooread = new Intent(StartGame.this, RegisAc.class);
                 startActivity(gorooread);
+            }
+        });
+        setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gosetting = new Intent(StartGame.this,settingAc.class);
+                startActivity(gosetting);
             }
         });
 
