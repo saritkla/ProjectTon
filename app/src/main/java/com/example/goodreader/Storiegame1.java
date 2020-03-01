@@ -9,21 +9,16 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.sql.Time;
 
-public class Wordgame1 extends AppCompatActivity {
-
+public class Storiegame1 extends AppCompatActivity {
     pl.droidsonroids.gif.GifImageView imagecount;
     TextView showtext,textcount;
     ImageButton nextpage;
@@ -31,10 +26,11 @@ public class Wordgame1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        requestWindowFeature(
+                Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
-        setContentView(R.layout.activity_wordgame1);
+        setContentView(R.layout.activity_storiegame1);
         imagecount = (pl.droidsonroids.gif.GifImageView ) findViewById(R.id.imagecount);
         showtext = (TextView)findViewById(R.id.textshow);
         textcount = (TextView)findViewById(R.id.textcount);
@@ -50,7 +46,7 @@ public class Wordgame1 extends AppCompatActivity {
                 textcount.setText(co);
                 nextword();
                 if(count == 11){
-                    Intent tosum = new Intent(Wordgame1.this,Wordgamestart.class);
+                    Intent tosum = new Intent(Storiegame1.this,StoriegameStart.class);
                     startActivity(tosum);
                 }
             }
@@ -61,7 +57,7 @@ public class Wordgame1 extends AppCompatActivity {
     public String readJSONFromAsset() {
         String json = null;
         try {
-            InputStream is = getAssets().open("word.json");
+            InputStream is = getAssets().open("storie.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
@@ -88,9 +84,9 @@ public class Wordgame1 extends AppCompatActivity {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;
                     int min = 0;
-                    int max = 1229;
+                    int max = 30;
                     int random_int = (int) (Math.random() * (max - min + 1) + min);
-                    word = jArray.getJSONObject(random_int).getString("words");
+                    word = jArray.getJSONObject(random_int).getString("storie");
                     showtext.setText(word);
                 } catch (JSONException e) {
                     e.printStackTrace();

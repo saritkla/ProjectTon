@@ -2,12 +2,16 @@ package com.example.goodreader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
-public class wordgamecd extends AppCompatActivity {
+public class StoriegameStart extends AppCompatActivity {
+    ImageButton ready;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +20,15 @@ public class wordgamecd extends AppCompatActivity {
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
-        setContentView(R.layout.activity_wordgamecd);
+        setContentView(R.layout.activity_storiegame_start);
+        ready = (ImageButton)findViewById(R.id.readyicon);
+        ready.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tostart = new Intent(StoriegameStart.this, Storiegame1.class);
+                startActivity(tostart);
+
+            }
+        });
     }
 }
