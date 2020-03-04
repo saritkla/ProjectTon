@@ -69,12 +69,13 @@
                             android:layout_height="0dp"
                             android:layout_weight="3"
                             android:background="@drawable/textinput"
-                            android:fontFamily="@font/iannnnngmo"
+                            android:fontFamily="@font/mainfont"
                             android:maxLines="1"
                             android:textAlignment="center"
                             android:inputType="text"
                             android:hint="ชื่่อผู้ใช้"
-                            android:autoSizeTextType="uniform"/>
+                            android:textSize="38dp"/>
+
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
@@ -84,19 +85,6 @@
                         android:layout_height="0dp"
                         android:orientation="horizontal"
                         android:layout_weight="3">
-
-                        <Button
-                            android:id="@+id/loginBt"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:background="@drawable/loginbutton" />
-
-                        <Space
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
-
                         <Button
                             android:id="@+id/regisBt"
                             android:layout_width="0dp"
@@ -105,6 +93,16 @@
                             android:background="@drawable/regisbutton"
                             android:fontFamily="@font/iannnnngmo"
                             android:textStyle="bold" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                        <Button
+                            android:id="@+id/loginBt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:background="@drawable/loginbutton" />
                     </LinearLayout>
                     <Space
                         android:layout_width="match_parent"

@@ -3,7 +3,7 @@
     <item android:state_checked="true">
         <bitmap android:src="@drawable/switchbt">
 
-            <size android:width="140dp" android:height="70dp" />
+            <size android:width="200dp" android:height="70dp" />
             <padding
                 android:left="5dp"
                 android:right="5dp"
@@ -19,7 +19,7 @@
 
     <item android:state_checked="false">
         <shape android:shape="rectangle" >
-            <size android:width="140dp" android:height="70dp" />
+            <size android:width="200dp" android:height="70dp" />
             <padding
                 android:left="5dp"
                 android:right="5dp"
