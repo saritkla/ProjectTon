@@ -9,69 +9,57 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/settingbg"
         android:orientation="vertical"
-        android:background="@drawable/settingbg">
+        tools:layout_editor_absoluteX="-99dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="235dp">
+
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="167dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
                     android:background="@drawable/sound" />
+
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/effect"
-                    android:layout_marginTop="30dp"/>
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/effect" />
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="182dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
                     android:background="@drawable/help"
-                    android:layout_marginTop="30dp"/>
+                    android:scaleType="fitXY" />
             </LinearLayout>
+
             <Space
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"/>
+                android:layout_width="120dp"
+                android:layout_height="match_parent" />
+
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:orientation="vertical">
-
-                <Switch
-                    android:id="@+id/swCustom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:thumb="@drawable/switch1"
-                    android:checked="true"
-                    app:track="@drawable/track"/>
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp" />
-
-                <Switch
-                    android:id="@+id/switch1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-
-                    android:background="@drawable/switoff" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -79,20 +67,93 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/ontext" />
+                        android:background="@drawable/offtext" />
 
-                    <Switch
-                        android:id="@+id/switch1"
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/swsound"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/switoff" />
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:checked="true"
+                        android:thumb="@drawable/switchbt"
+                        app:track="@drawable/track" />
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ontext" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/offtext" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/sweffectsound"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:checked="true"
+                        android:thumb="@drawable/switchbt"
+                        app:track="@drawable/track" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ontext" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/offtext" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/swtrain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:checked="false"
+                        android:thumb="@drawable/switchbt"
+                        app:track="@drawable/track" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/ontext" />
@@ -100,47 +161,41 @@
             </LinearLayout>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/textadvice"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"/>
-        <ImageSwitcher
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/switoff"/>
-
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Space
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                />
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="165dp"
+                android:layout_height="45dp"
                 android:background="@drawable/logout" />
+
             <Space
                 android:layout_width="230dp"
                 android:layout_height="match_parent" />
+
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/savebt" />
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:background="@drawable/cancelbt" />
+
             <Space
                 android:layout_width="50dp"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
+
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/cancelbt"/>
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:background="@drawable/savebt" />
         </LinearLayout>
 
     </LinearLayout>
