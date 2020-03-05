@@ -36,13 +36,13 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="คำที่"
+                    android:layout_weight="3"
+                    android:text="เรื่องที่ี่"
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:textColor="@color/colorback"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorblack"
                     android:fontFamily="@font/mainfont"/>
                 <TextView
                     android:id="@+id/textcount"
@@ -54,7 +54,7 @@
                     android:textAlignment="center"
                     android:gravity="center"
                     android:layout_margin="10dp"
-                    android:textColor="@color/colorback"
+                    android:textColor="@color/colorblack"
                     android:fontFamily="@font/mainfont"
                     />
             </LinearLayout>
@@ -64,34 +64,43 @@
                 android:layout_weight="1"/>
 
         </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
             android:orientation="horizontal">
             <Space
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.6">
+                android:layout_weight="8">
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/textshow"
-                    android:textSize="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/mainfont"
-                    android:layout_centerInParent="true"
-                    android:textAlignment="center"/>
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorblack"
+                    android:textSize="30dp" />
+
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/imagecount"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.6"
                     />
             </RelativeLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
