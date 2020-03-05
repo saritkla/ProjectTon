@@ -73,8 +73,8 @@
                             android:maxLines="1"
                             android:textAlignment="center"
                             android:inputType="text"
-                            android:hint="ชื่่อผู้ใช้"
-                            android:textSize="38dp"/>
+                            android:hint="Username"
+                            app:autoSizeTextType="uniform" />
 
                     <Space
                         android:layout_width="match_parent"

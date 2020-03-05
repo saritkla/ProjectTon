@@ -87,8 +87,6 @@
                                 android:fontFamily="@font/mainfont"
                                 android:text="1. ชื่อผู้ใช้ (ภาษาอังกฤษ)"
                                 app:autoSizeTextType="uniform"
-                                app:autoSizeMinTextSize="25sp"
-                                app:autoSizeMaxTextSize="50sp"
                                 android:textStyle="bold" />
                             <EditText
                                 android:id="@+id/Username"
@@ -101,10 +99,7 @@
                                 android:paddingLeft="12pt"
                                 android:inputType="text"
                                 android:maxLines="1"
-                                app:autoSizeTextType="uniform"
-                                app:autoSizeMinTextSize="25sp"
-                                app:autoSizeMaxTextSize="50sp"
-                                android:textStyle="bold|italic" />
+                                app:autoSizeTextType="uniform" />
 
                             <Space
                                 android:layout_width="match_parent"
@@ -116,10 +111,8 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/mainfont"
-                                android:text="2. ชื่อ - นามสกุล (มีคํานําหน้า)"
+                                android:text="2. ชื่อ - นามสกุล (มีคำนำหน้า)"
                                 android:textStyle="bold"
-                                app:autoSizeMaxTextSize="50sp"
-                                app:autoSizeMinTextSize="25sp"
                                 app:autoSizeTextType="uniform" />
 
                             <EditText
@@ -133,9 +126,6 @@
                                 android:inputType="text"
                                 android:maxLines="1"
                                 android:paddingLeft="12pt"
-                                android:textStyle="bold|italic"
-                                app:autoSizeMaxTextSize="50sp"
-                                app:autoSizeMinTextSize="25sp"
                                 app:autoSizeTextType="uniform" />
 
                             <Space
@@ -151,8 +141,6 @@
                                 android:fontFamily="@font/mainfont"
                                 android:text="3. วัน/เดือน/ปีเกิด (พ.ศ.)"
                                 app:autoSizeTextType="uniform"
-                                app:autoSizeMinTextSize="25sp"
-                                app:autoSizeMaxTextSize="50sp"
                                 android:textStyle="bold" />
 
                             <LinearLayout
@@ -169,13 +157,11 @@
                                     android:background="@drawable/textinput"
                                     android:fontFamily="@font/mainfont"
                                     android:hint="24/02/2541"
-                                    android:inputType="text"
+                                    android:inputType="date"
                                     android:maxLines="1"
                                     app:autoSizeTextType="uniform"
-                                    app:autoSizeMinTextSize="25sp"
-                                    app:autoSizeMaxTextSize="50sp"
                                     android:paddingLeft="12pt"
-                                    android:textStyle="bold|italic" />
+                                     />
 
                                 <Space
                                     android:layout_width="0dp"
@@ -194,8 +180,6 @@
                                 android:fontFamily="@font/mainfont"
                                 android:text="4. โรงเรียน"
                                 app:autoSizeTextType="uniform"
-                                app:autoSizeMinTextSize="25sp"
-                                app:autoSizeMaxTextSize="50sp"
                                 android:textStyle="bold" />
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -216,10 +200,8 @@
                                     android:maxLines="1"
                                     android:paddingLeft="12pt"
                                     app:autoSizeTextType="uniform"
-                                    app:autoSizeMinTextSize="25sp"
-                                    app:autoSizeMaxTextSize="50sp"
                                     android:textAlignment="textStart"
-                                    android:textStyle="bold|italic" />
+                                    />
 
                                 <TextView
                                     android:layout_width="0dp"
@@ -230,8 +212,6 @@
                                     android:fontFamily="@font/mainfont"
                                     android:text="ชั้น"
                                     app:autoSizeTextType="uniform"
-                                    app:autoSizeMinTextSize="25sp"
-                                    app:autoSizeMaxTextSize="50sp"
                                     android:textStyle="bold" />
 
                                 <EditText
@@ -245,10 +225,7 @@
                                     android:inputType="text"
                                     android:maxLines="1"
                                     android:textAlignment="center"
-                                    app:autoSizeTextType="uniform"
-                                    app:autoSizeMinTextSize="25sp"
-                                    app:autoSizeMaxTextSize="50sp"
-                                    android:textStyle="bold|italic" />
+                                    app:autoSizeTextType="uniform" />
                             </LinearLayout>
                             </LinearLayout>
 
@@ -258,9 +235,8 @@
                             android:layout_weight="4">
 
                             <ImageView
-                                android:layout_width="256dp"
-                                android:layout_height="256dp"
-                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:background="@drawable/logogame"
                                 android:scaleType="fitCenter" />
