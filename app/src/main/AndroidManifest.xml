@@ -10,7 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sumtraingame"></activity>
+        <activity android:name=".Wrong"
+            android:theme="@style/AppTheme.popMe">
+        </activity>
+        <activity android:name=".Correct"
+            android:theme="@style/AppTheme.popMe"/>
+        <activity android:name=".sumtraingame" />
         <activity android:name=".traingame1" />
         <activity android:name=".traingamestart" />
         <activity

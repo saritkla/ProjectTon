@@ -2,8 +2,11 @@ package com.example.goodreader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -19,7 +22,7 @@ public class abcd extends AppCompatActivity {
 
     TextView textcount,Textquestion;
     Button choseA,choseB,choseC,choseD;
-    public  String aws;
+    public  String aws,cha,chb,chc,chd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,22 +46,84 @@ public class abcd extends AppCompatActivity {
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             String word;
-            int min = 0;
-            int max = 30;
-            String question = jArray.getJSONObject(random_int).getString("storie");
+            String question = jArray.getJSONObject(random_int).getString("question");
             Textquestion.setText(question);
-            String cha = jArray.getJSONObject(random_int).getString("a");
+            cha = jArray.getJSONObject(random_int).getString("a");
             choseA.setText(cha);
-            String chb = jArray.getJSONObject(random_int).getString("b");
+            chb = jArray.getJSONObject(random_int).getString("b");
             choseB.setText(chb);
-            String chc = jArray.getJSONObject(random_int).getString("c");
+            chc = jArray.getJSONObject(random_int).getString("c");
             choseC.setText(chc);
-            String chd = jArray.getJSONObject(random_int).getString("d");
+            chd = jArray.getJSONObject(random_int).getString("d");
             choseD.setText(chd);
             aws = jArray.getJSONObject(random_int).getString("aswer");
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+        choseA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("aws:  ",aws);
+                if(aws == "a"){
+                    Intent gocorrect = new Intent(abcd.this,Correct.class);
+                    gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("aws",cha);
+                    startActivity(gocorrect);
+                }
+                else {
+                    Intent gowrong = new Intent(abcd.this,Wrong.class);
+                    startActivity(gowrong);
+                }
+            }
+        });
+        choseB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(aws == "b"){
+                    Intent gocorrect = new Intent(abcd.this,Correct.class);
+                    gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("aws",chb);
+                    startActivity(gocorrect);
+                }
+                else {
+                    Intent gowrong = new Intent(abcd.this,Wrong.class);
+                    startActivity(gowrong);
+                }
+
+            }
+        });
+        choseC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(aws == "c"){
+                    Intent gocorrect = new Intent(abcd.this,Correct.class);
+                    gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("aws",chc);
+                    startActivity(gocorrect);
+                }
+                else {
+                    Intent gowrong = new Intent(abcd.this,Wrong.class);
+                    startActivity(gowrong);
+                }
+            }
+        });
+        choseD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(aws == "d"){
+                    Intent gocorrect = new Intent(abcd.this,Correct.class);
+                    gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("aws",chd);
+                    startActivity(gocorrect);
+                }
+                else {
+                    Intent gowrong = new Intent(abcd.this,Wrong.class);
+                    startActivity(gowrong);
+                }
+            }
+        });
+
     }
 
 
