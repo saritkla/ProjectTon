@@ -3,8 +3,4 @@
     <font
         android:fontStyle="normal"
         android:font="@font/iannnnngmo" />
-    <font
-        android:fontStyle="italic"
-        android:font="@font/iannnnngmo"/>
-
 </font-family>

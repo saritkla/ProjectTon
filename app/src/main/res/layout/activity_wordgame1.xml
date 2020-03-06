@@ -47,28 +47,15 @@
                     android:layout_weight="0.6"
                     android:id="@+id/imagecount" />
             </RelativeLayout>
-            <LinearLayout
+            <TextView
+                android:id="@+id/textcount"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/textcount"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/mainfont"
-                    android:textSize="80dp"
-                    android:padding="20dp"
-                    android:textAlignment="textEnd"/>
-                <Chronometer
-                    android:id="@+id/chrometer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="30dp"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-
+                android:fontFamily="@font/mainfont"
+                android:textSize="80dp"
+                android:padding="20dp"
+                android:textAlignment="textEnd"/>
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
