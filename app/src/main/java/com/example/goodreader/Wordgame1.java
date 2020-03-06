@@ -41,7 +41,7 @@ public class Wordgame1 extends AppCompatActivity {
         final String username =bundle.getString("username");
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_wordgame1);
         imagecount = (pl.droidsonroids.gif.GifImageView ) findViewById(R.id.imagecount);
         showtext = (TextView)findViewById(R.id.textshow);

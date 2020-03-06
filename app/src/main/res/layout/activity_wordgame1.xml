@@ -62,7 +62,8 @@
                     android:fontFamily="sans-serif"
                     />
             </LinearLayout>
-            <Space
+            <Chronometer
+                android:id="@+id/chrometer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
