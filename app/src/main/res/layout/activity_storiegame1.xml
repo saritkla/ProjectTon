@@ -7,11 +7,7 @@
     android:screenOrientation="landscape"
     android:background="@color/colorWhite"
     tools:context=".Storiegame1">
-    <ImageButton
-        android:id="@+id/nextpagebt"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorWhite"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -62,16 +58,18 @@
                     android:fontFamily="sans-serif"
                     />
             </LinearLayout>
-            <Space
+            <Chronometer
+                android:id="@+id/chrometer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
+
 
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.2"/>
+            android:layout_weight="0.5"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -94,17 +92,39 @@
                     android:textAlignment="textStart"
                     android:textColor="@color/colorblack"
                     app:autoSizeTextType="uniform"
-                    app:autoSizeStepGranularity="10dp"/>
+                    app:autoSizeMinTextSize="30dp"
+                    app:autoSizeStepGranularity="10dp"
+                    android:lineSpacingExtra="10dp"/>
 
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/imagecount"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     />
+
             </RelativeLayout>
 
-            <Chronometer
-                android:id="@+id/chrometer"
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"/>
+            <ImageButton
+                android:id="@+id/nextpagebt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/finish"/>
+            <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -112,6 +132,6 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="0.2"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
