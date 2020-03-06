@@ -84,7 +84,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/mainfont"
+                                android:fontFamily="sans-serif"
                                 android:text="1. ชื่อผู้ใช้ (ภาษาอังกฤษ)"
                                 app:autoSizeTextType="uniform"
                                 android:textStyle="bold" />
@@ -94,7 +94,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1.5"
                                 android:background="@drawable/textinput"
-                                android:fontFamily="@font/iannnnngmo"
+                                android:fontFamily="sans-serif"
                                 android:hint="Username"
                                 android:paddingLeft="12pt"
                                 android:inputType="text"
@@ -110,7 +110,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/mainfont"
+                                android:fontFamily="sans-serif"
                                 android:text="2. ชื่อ - นามสกุล (มีคำนำหน้า)"
                                 android:textStyle="bold"
                                 app:autoSizeTextType="uniform" />
@@ -121,7 +121,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1.5"
                                 android:background="@drawable/textinput"
-                                android:fontFamily="@font/iannnnngmo"
+                                android:fontFamily="sans-serif"
                                 android:hint="ด.ช. ชื่อ นามสกุล"
                                 android:inputType="text"
                                 android:maxLines="1"
@@ -138,7 +138,7 @@
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/mainfont"
+                                android:fontFamily="sans-serif"
                                 android:text="3. วัน/เดือน/ปีเกิด (พ.ศ.)"
                                 app:autoSizeTextType="uniform"
                                 android:textStyle="bold" />
@@ -149,14 +149,15 @@
                                 android:layout_weight="1.5"
                                 android:orientation="horizontal">
 
-                                <EditText
+                                <com.santalu.maskedittext.MaskEditText
                                     android:id="@+id/birthday"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="4"
                                     android:background="@drawable/textinput"
-                                    android:fontFamily="@font/mainfont"
-                                    android:hint="24/02/2541"
+                                    android:fontFamily="sans-serif"
+                                    android:hint="DD/MM/YYYY"
+                                    app:met_mask="##/##/####"
                                     android:inputType="date"
                                     android:maxLines="1"
                                     app:autoSizeTextType="uniform"
@@ -177,7 +178,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/mainfont"
+                                android:fontFamily="sans-serif"
                                 android:text="4. โรงเรียน"
                                 app:autoSizeTextType="uniform"
                                 android:textStyle="bold" />
@@ -194,13 +195,14 @@
                                     android:layout_weight="4"
                                     android:autoSizeTextType="uniform"
                                     android:background="@drawable/textinput"
-                                    android:fontFamily="@font/iannnnngmo"
+                                    android:fontFamily="sans-serif"
                                     android:hint="โรงเรียนรักการอ่าน"
                                     android:inputType="text"
                                     android:maxLines="1"
                                     android:paddingLeft="12pt"
                                     app:autoSizeTextType="uniform"
                                     android:textAlignment="textStart"
+                                    android:imeOptions="actionNext"
                                     />
 
                                 <TextView
@@ -209,23 +211,28 @@
                                     android:layout_gravity="center_vertical"
                                     android:gravity="center"
                                     android:layout_weight="1"
-                                    android:fontFamily="@font/mainfont"
+                                    android:fontFamily="sans-serif"
                                     android:text="ชั้น"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
                                     app:autoSizeTextType="uniform"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    />
 
-                                <EditText
+                                <com.santalu.maskedittext.MaskEditText
                                     android:id="@+id/intage"
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:background="@drawable/textinput2"
-                                    android:fontFamily="@font/iannnnngmo"
+                                    android:fontFamily="sans-serif"
                                     android:hint="ป.4"
-                                    android:inputType="text"
+                                    app:met_mask="ป.#"
+                                    android:inputType="number"
                                     android:maxLines="1"
                                     android:textAlignment="center"
-                                    app:autoSizeTextType="uniform" />
+                                    app:autoSizeTextType="uniform"
+                                    />
                             </LinearLayout>
                             </LinearLayout>
 
