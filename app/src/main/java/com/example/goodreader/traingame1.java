@@ -118,16 +118,29 @@ public class traingame1 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 imagecount.setImageResource(android.R.color.transparent);
-                startChrometer();
                 try {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
-                    String word;
+                    final String word;
+                    String brind;
                     int min = 0;
                     int max = 1229;
                     int random_int = (int) (Math.random() * (max - min + 1) + min);
-                    word = jArray.getJSONObject(random_int).getString("brind");
-                    showtext.setText(word);
-                } catch (JSONException e) {
+                    brind = jArray.getJSONObject(random_int).getString("brinds");
+                    word = jArray.getJSONObject(random_int).getString("words");
+                    showtext.setText(brind);
+                    new CountDownTimer(3000,3000) {
+                        @Override
+                        public void onTick(long l) {
+
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            startChrometer();
+                            showtext.setText(word);
+                        }
+                    }.start();
+                    } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
