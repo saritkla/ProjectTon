@@ -39,7 +39,6 @@ public class Wordgame1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         final String username =bundle.getString("username");
-        final String user = username;
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
@@ -58,7 +57,7 @@ public class Wordgame1 extends AppCompatActivity {
                 if(count == 11){
                     resetChrometer();
                     Intent tosum = new Intent(Wordgame1.this,sumwordgame.class);
-                    tosum.putExtra("username",user);
+                    tosum.putExtra("username",username);
                     startActivity(tosum);
                 }
                 else{
@@ -127,7 +126,7 @@ public class Wordgame1 extends AppCompatActivity {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;
                     int min = 0;
-                    int max = 1229;
+                    int max = 1193;
                     int random_int = (int) (Math.random() * (max - min + 1) + min);
                     word = jArray.getJSONObject(random_int).getString("words");
                     showtext.setText(word);

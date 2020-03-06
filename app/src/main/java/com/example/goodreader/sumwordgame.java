@@ -19,12 +19,10 @@ public class sumwordgame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         final String username =bundle.getString("username");
-        setContentView(R.layout.activity_sumwordgame);
-        requestWindowFeature(
-                Window.FEATURE_NO_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
-        setContentView(R.layout.activity_storiegame1);
+        setContentView(R.layout.activity_sumwordgame);
         backtomenu = (ImageButton)findViewById(R.id.backtomenu);
         play = (ImageButton)findViewById(R.id.nextplay);
         lasttime = (TextView)findViewById(R.id.lasttime);
