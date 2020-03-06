@@ -87,6 +87,7 @@
                       android:background="@drawable/settingbutton"
                       android:layout_gravity="center"/>
                   <ImageButton
+                      android:id="@+id/info"
                       android:layout_width="0dp"
                       android:layout_height="match_parent"
                       android:layout_gravity="center"
