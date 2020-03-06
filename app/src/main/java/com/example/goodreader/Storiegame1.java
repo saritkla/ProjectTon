@@ -28,6 +28,8 @@ public class Storiegame1 extends AppCompatActivity {
     Chronometer chronometer;
     boolean running;
     int count = 1;
+    public int random_int;
+    public  long elapsedMillis;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,27 +45,21 @@ public class Storiegame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
-        nextword();
+        int min = 0;
+        int max = 30;
+        random_int = (int) (Math.random() * (max - min + 1) + min);
+        nextword(random_int);
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(count == 1){
-                    Intent tosum = new Intent(Storiegame1.this,Sumstoriegame.class);
-                    tosum.putExtra("username",username);
-                    startActivity(tosum);
-                }
-                else{
-                    pauseChrometer();
-                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                    resetChrometer();
-                    showtext.setText("");
-                    String co = Integer.toString(count);
-                    textcount.setText(co);
-                    nextword();
-                }
-                count++;
-
-
+                pauseChrometer();
+                elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                resetChrometer();
+                Intent tosum = new Intent(Storiegame1.this,abcd.class);
+                tosum.putExtra("username",username);
+                tosum.putExtra("storieId",random_int);
+                tosum.putExtra("time",elapsedMillis);
+                startActivity(tosum);
             }
         });
     }
@@ -101,7 +97,7 @@ public class Storiegame1 extends AppCompatActivity {
         }
         return json;
     }
-    public void nextword(){
+    public void nextword(int random_int){
         imagecount.setImageResource(R.drawable.treetwoone2);
         new CountDownTimer(3000,3000){
             @Override
@@ -116,10 +112,7 @@ public class Storiegame1 extends AppCompatActivity {
                 try {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;
-                    int min = 0;
-                    int max = 30;
-                    int random_int = (int) (Math.random() * (max - min + 1) + min);
-                    word = jArray.getJSONObject(random_int).getString("storie");
+                    word = jArray.getJSONObject(Storiegame1.this.random_int).getString("storie");
                     showtext.setText(word);
                 } catch (JSONException e) {
                     e.printStackTrace();
