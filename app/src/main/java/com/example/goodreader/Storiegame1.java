@@ -56,7 +56,7 @@ public class Storiegame1 extends AppCompatActivity {
                 textcount.setText(co);
                 nextword();
                 if(count == 11){
-                    Intent tosum = new Intent(Storiegame1.this,sumstoriegame.class);
+                    Intent tosum = new Intent(Storiegame1.this,Sumstoriegame.class);
                     startActivity(tosum);
                 }
             }
