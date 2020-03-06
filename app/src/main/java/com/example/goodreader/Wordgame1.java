@@ -39,6 +39,7 @@ public class Wordgame1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         final String username =bundle.getString("username");
+        final String user = username;
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
@@ -54,21 +55,24 @@ public class Wordgame1 extends AppCompatActivity {
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                count++;
-                pauseChrometer();
-                long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                Log.d("Time is", String.valueOf((long)elapsedMillis));
-                resetChrometer();
-                showtext.setText("");
-                String co = Integer.toString(count);
-                textcount.setText(co);
-                nextword();
-                pauseChrometer();
                 if(count == 11){
                     resetChrometer();
                     Intent tosum = new Intent(Wordgame1.this,Wordgamestart.class);
+                    tosum.putExtra("username",user);
                     startActivity(tosum);
                 }
+                else{
+                    pauseChrometer();
+                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                    Log.d("Time is", String.valueOf((long)elapsedMillis));
+                    resetChrometer();
+                    showtext.setText("");
+                    String co = Integer.toString(count);
+                    textcount.setText(co);
+                    nextword();
+                    pauseChrometer();
+                }
+                count++;
             }
         });
     }

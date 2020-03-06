@@ -19,6 +19,7 @@ public class StartGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         final String username =bundle.getString("username");
+        final String user = username;
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -32,7 +33,7 @@ public class StartGame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gofastread =new Intent(StartGame.this,Wordgamestart.class);
-                gofastread.putExtra("username",username);
+                gofastread.putExtra("username",user);
                 startActivity(gofastread);
             }
         });
@@ -40,7 +41,7 @@ public class StartGame extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gorooread = new Intent(StartGame.this, StoriegameStart.class);
-                gorooread.putExtra("username",username);
+                gorooread.putExtra("username",user);
                 startActivity(gorooread);
             }
         });

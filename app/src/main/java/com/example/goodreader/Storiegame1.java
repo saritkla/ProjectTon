@@ -33,6 +33,7 @@ public class Storiegame1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
         final String username =bundle.getString("username");
+        final String user = username;
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -42,6 +43,7 @@ public class Storiegame1 extends AppCompatActivity {
         showtext = (TextView)findViewById(R.id.textshow);
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
+
         nextword();
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +59,7 @@ public class Storiegame1 extends AppCompatActivity {
                 nextword();
                 if(count == 11){
                     Intent tosum = new Intent(Storiegame1.this,StoriegameStart.class);
+                    tosum.putExtra("username",user);
                     startActivity(tosum);
                 }
             }
