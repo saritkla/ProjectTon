@@ -39,7 +39,7 @@ public class wordgamepop extends Activity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent tonom = new Intent(wordgamepop.this,Wordgame1.class);
+                Intent tonom = new Intent(wordgamepop.this,Wordgamestart.class);
                 tonom.putExtra("username",username);
                 startActivity(tonom);
             }
@@ -47,7 +47,7 @@ public class wordgamepop extends Activity {
         train.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent totrian = new Intent(wordgamepop.this,Wordgame1.class);
+                Intent totrian = new Intent(wordgamepop.this,traingamestart.class);
                 totrian.putExtra("username",username);
                 startActivity(totrian);
             }
