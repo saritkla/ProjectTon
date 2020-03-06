@@ -1,6 +1,5 @@
 package com.example.goodreader;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -25,7 +24,7 @@ public class wordgamepop extends Activity {
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
         params.x = 0;
-        params.y = 0;
+        params.y = -20;
 
         getWindow().setAttributes(params);
     }
