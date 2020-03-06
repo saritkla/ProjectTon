@@ -45,4 +45,7 @@ public class sumtraingame extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

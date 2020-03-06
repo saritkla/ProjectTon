@@ -32,4 +32,7 @@ public class settingAc extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

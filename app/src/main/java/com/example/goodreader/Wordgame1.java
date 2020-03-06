@@ -36,7 +36,8 @@ public class Wordgame1 extends AppCompatActivity {
     int count = 1;
     public  int random_int;
     public int min = 0;
-    public int max = 1193;
+    public int max = 724;
+    public String wordid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,8 @@ public class Wordgame1 extends AppCompatActivity {
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
         random_int = (int) (Math.random() * (max - min + 1) + min);
+        wordid = Integer.toString(random_int);
+        textcount.setText(wordid);
         nextword(random_int);
 
 
@@ -71,8 +74,9 @@ public class Wordgame1 extends AppCompatActivity {
                     resetChrometer();
                     showtext.setText("");
                     String co = Integer.toString(count);
-                    textcount.setText(co);
                     random_int = (int) (Math.random() * (max - min + 1) + min);
+                    wordid = Integer.toString(random_int);
+                    textcount.setText(wordid);
                     nextword(random_int);
                     pauseChrometer();
                 }
@@ -138,6 +142,9 @@ public class Wordgame1 extends AppCompatActivity {
             }
 
         }.start();
+
+    }
+    public void onBackPressed() {
 
     }
 }

@@ -48,6 +48,8 @@ public class Storiegame1 extends AppCompatActivity {
         int min = 0;
         int max = 30;
         random_int = (int) (Math.random() * (max - min + 1) + min);
+        String wordid = Integer.toString(random_int);
+        textcount.setText(wordid);
         nextword(random_int);
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +122,9 @@ public class Storiegame1 extends AppCompatActivity {
             }
 
         }.start();
+
+    }
+    public void onBackPressed() {
 
     }
 }

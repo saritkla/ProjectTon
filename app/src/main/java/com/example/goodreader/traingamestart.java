@@ -34,4 +34,7 @@ public class traingamestart extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

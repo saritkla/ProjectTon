@@ -28,4 +28,7 @@ public class Wrong extends AppCompatActivity {
 
         getWindow().setAttributes(params);
     }
+    public void onBackPressed() {
+
+    }
 }

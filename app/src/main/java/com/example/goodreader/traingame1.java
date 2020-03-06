@@ -29,7 +29,10 @@ public class traingame1 extends AppCompatActivity {
     Chronometer chronometer;
     boolean running;
     int count = 1;
-
+    public  int random_int;
+    public int min = 0;
+    public int max = 724;
+    public String wordid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +48,10 @@ public class traingame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
-        nextword();
+        random_int = (int) (Math.random() * (max - min + 1) + min);
+        wordid = Integer.toString(random_int);
+        textcount.setText(wordid);
+        nextword(random_int);
 
 
         nextpage.setOnClickListener(new View.OnClickListener() {
@@ -64,8 +70,10 @@ public class traingame1 extends AppCompatActivity {
                     resetChrometer();
                     showtext.setText("");
                     String co = Integer.toString(count);
-                    textcount.setText(co);
-                    nextword();
+                    random_int = (int) (Math.random() * (max - min + 1) + min);
+                    wordid = Integer.toString(random_int);
+                    textcount.setText(wordid);
+                    nextword(random_int);
                     pauseChrometer();
                 }
                 count++;
@@ -107,7 +115,7 @@ public class traingame1 extends AppCompatActivity {
         }
         return json;
     }
-    public void nextword(){
+    public void nextword(final int random_int){
         imagecount.setImageResource(R.drawable.treetwoone2);
         new CountDownTimer(3000,3000){
             @Override
@@ -122,9 +130,6 @@ public class traingame1 extends AppCompatActivity {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     final String word;
                     String brind;
-                    int min = 0;
-                    int max = 1229;
-                    int random_int = (int) (Math.random() * (max - min + 1) + min);
                     brind = jArray.getJSONObject(random_int).getString("brinds");
                     word = jArray.getJSONObject(random_int).getString("words");
                     showtext.setText(brind);
@@ -146,6 +151,9 @@ public class traingame1 extends AppCompatActivity {
             }
 
         }.start();
+
+    }
+    public void onBackPressed() {
 
     }
 }

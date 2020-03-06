@@ -23,6 +23,7 @@ public class abcd extends AppCompatActivity {
     TextView textcount,Textquestion;
     Button choseA,choseB,choseC,choseD;
     public  String aws,cha,chb,chc,chd;
+    public  int wrongcount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,13 +66,14 @@ public class abcd extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("aws:  ",aws);
-                if(aws == "a"){
+                if(aws.equals("a")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
                     gocorrect.putExtra("aws",cha);
                     startActivity(gocorrect);
                 }
                 else {
+                    wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
                 }
@@ -80,13 +82,14 @@ public class abcd extends AppCompatActivity {
         choseB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(aws == "b"){
+                if(aws.equals("b")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
                     gocorrect.putExtra("aws",chb);
                     startActivity(gocorrect);
                 }
                 else {
+                    wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
                 }
@@ -96,13 +99,14 @@ public class abcd extends AppCompatActivity {
         choseC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(aws == "c"){
+                if(aws.equals("c")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
                     gocorrect.putExtra("aws",chc);
                     startActivity(gocorrect);
                 }
                 else {
+                    wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
                 }
@@ -111,13 +115,14 @@ public class abcd extends AppCompatActivity {
         choseD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(aws == "d"){
+                if(aws.equals("d")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
                     gocorrect.putExtra("aws",chd);
                     startActivity(gocorrect);
                 }
                 else {
+                    wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
                 }
@@ -141,5 +146,8 @@ public class abcd extends AppCompatActivity {
             return null;
         }
         return json;
+    }
+    public void onBackPressed() {
+
     }
 }

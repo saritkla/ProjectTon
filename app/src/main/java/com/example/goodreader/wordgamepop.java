@@ -53,4 +53,7 @@ public class wordgamepop extends Activity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

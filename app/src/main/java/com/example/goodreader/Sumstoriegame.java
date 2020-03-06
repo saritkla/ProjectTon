@@ -50,4 +50,7 @@ public class Sumstoriegame extends AppCompatActivity {
         });
 
     }
+    public void onBackPressed() {
+
+    }
 }

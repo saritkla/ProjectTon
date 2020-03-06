@@ -35,4 +35,7 @@ public class StoriegameStart extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

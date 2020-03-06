@@ -45,4 +45,7 @@ public class sumwordgame extends AppCompatActivity {
             }
         });
     }
+    public void onBackPressed() {
+
+    }
 }

@@ -38,4 +38,7 @@ public class Wordgamestart extends AppCompatActivity {
         });
 
     }
+    public void onBackPressed() {
+
+    }
 }
