@@ -43,7 +43,7 @@ public class Sumstoriegame extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent togame = new Intent(Sumstoriegame.this,Storiegame1.class);
+                Intent togame = new Intent(Sumstoriegame.this,StoriegameStart.class);
                 togame.putExtra("username",username);
                 startActivity(togame);
             }

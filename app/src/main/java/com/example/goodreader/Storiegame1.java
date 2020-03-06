@@ -47,7 +47,7 @@ public class Storiegame1 extends AppCompatActivity {
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(count == 11){
+                if(count == 1){
                     Intent tosum = new Intent(Storiegame1.this,Sumstoriegame.class);
                     tosum.putExtra("username",username);
                     startActivity(tosum);
