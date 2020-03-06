@@ -47,20 +47,23 @@ public class Storiegame1 extends AppCompatActivity {
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                count++;
-                pauseChrometer();
-                long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                resetChrometer();
-                showtext.setText("");
-                String co = Integer.toString(count);
-                textcount.setText(co);
-                nextword();
                 if(count == 11){
                     Intent tosum = new Intent(Storiegame1.this,Sumstoriegame.class);
                     tosum.putExtra("username",username);
                     startActivity(tosum);
                 }
+                else{
+                    pauseChrometer();
+                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                    resetChrometer();
+                    showtext.setText("");
+                    String co = Integer.toString(count);
+                    textcount.setText(co);
+                    nextword();
+                }
+                count++;
+
+
             }
         });
     }
