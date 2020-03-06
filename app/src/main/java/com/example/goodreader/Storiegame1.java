@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -22,10 +24,15 @@ public class Storiegame1 extends AppCompatActivity {
     pl.droidsonroids.gif.GifImageView imagecount;
     TextView showtext,textcount;
     ImageButton nextpage;
-    int count = 0;
+    long pauseoffset;
+    Chronometer chronometer;
+    boolean running;
+    int count = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle bundle = getIntent().getExtras();
+        final String username =bundle.getString("username");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -41,6 +48,9 @@ public class Storiegame1 extends AppCompatActivity {
             public void onClick(View view) {
 
                 count++;
+                pauseChrometer();
+                long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                resetChrometer();
                 showtext.setText("");
                 String co = Integer.toString(count);
                 textcount.setText(co);
@@ -52,7 +62,24 @@ public class Storiegame1 extends AppCompatActivity {
             }
         });
     }
-
+    public  void startChrometer(){
+        if(!running){
+            chronometer.setBase(SystemClock.elapsedRealtime() - pauseoffset);
+            chronometer.start();
+            running = true;
+        }
+    }
+    public  void pauseChrometer(){
+        if(running){
+            chronometer.stop();
+            pauseoffset = SystemClock.elapsedRealtime() - chronometer.getBase();
+            running = false;
+        }
+    }
+    public void resetChrometer(){
+        chronometer.setBase(SystemClock.elapsedRealtime());
+        pauseoffset = 0;
+    }
 
     public String readJSONFromAsset() {
         String json = null;
@@ -80,6 +107,7 @@ public class Storiegame1 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 imagecount.setImageResource(0);
+                startChrometer();
                 try {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;

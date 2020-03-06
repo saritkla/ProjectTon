@@ -16,6 +16,8 @@ public class StoriegameStart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle bundle = getIntent().getExtras();
+        final String username =bundle.getString("username");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -26,6 +28,7 @@ public class StoriegameStart extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent tostart = new Intent(StoriegameStart.this, Storiegame1.class);
+                tostart.putExtra("username",username);
                 startActivity(tostart);
 
             }

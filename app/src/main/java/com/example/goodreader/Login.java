@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -38,6 +39,7 @@ public class Login extends AppCompatActivity {
                     issuccess = getuser(editname.getText().toString());
                     if (issuccess){
                         Intent goStart = new Intent(Login.this,StartGame.class);
+                        goStart.putExtra("username",editname.toString());
                         startActivity(goStart);
                     }
                     else {
