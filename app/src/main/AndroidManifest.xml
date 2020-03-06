@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sumwordgame"></activity>
+        <activity android:name=".wordgamepop"
+            android:theme="@style/AppTheme.popMe"
+            ></activity>
+        <activity android:name=".sumwordgame" />
         <activity android:name=".abcd" />
         <activity android:name=".Storiegame1" />
         <activity android:name=".StoriegameStart" />

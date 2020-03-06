@@ -32,9 +32,11 @@ public class StartGame extends AppCompatActivity {
         readfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gofastread =new Intent(StartGame.this,Wordgamestart.class);
-                gofastread.putExtra("username",user);
-                startActivity(gofastread);
+                Intent popup = new Intent(getApplicationContext(),wordgamepop.class);
+                startActivity(popup);
+//                Intent gofastread =new Intent(StartGame.this,Wordgamestart.class);
+//                gofastread.putExtra("username",user);
+//                startActivity(gofastread);
             }
         });
         rooread.setOnClickListener(new View.OnClickListener() {

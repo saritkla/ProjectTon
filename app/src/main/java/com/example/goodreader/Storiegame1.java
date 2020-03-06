@@ -42,6 +42,7 @@ public class Storiegame1 extends AppCompatActivity {
         showtext = (TextView)findViewById(R.id.textshow);
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
+        chronometer = (Chronometer)findViewById(R.id.chrometer);
         nextword();
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +57,7 @@ public class Storiegame1 extends AppCompatActivity {
                 textcount.setText(co);
                 nextword();
                 if(count == 11){
-                    Intent tosum = new Intent(Storiegame1.this,sumstoriegame.class);
+                    Intent tosum = new Intent(Storiegame1.this,StoriegameStart.class);
                     startActivity(tosum);
                 }
             }
