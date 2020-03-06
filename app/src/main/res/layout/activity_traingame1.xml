@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:screenOrientation="landscape"
-    android:background="@color/colorWhite"
-    tools:context=".Storiegame1">
+    tools:context=".traingame1">
     <ImageButton
         android:id="@+id/nextpagebt"
         android:layout_width="match_parent"
@@ -15,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgblue"
+        android:background="@drawable/bgpink"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:background="@drawable/bluebox">
+                android:background="@drawable/pinkbox">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

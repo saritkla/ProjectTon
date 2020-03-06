@@ -4,35 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:screenOrientation="landscape"
-    android:background="@color/colorWhite"
-    tools:context=".Storiegame1">
-    <ImageButton
-        android:id="@+id/nextpagebt"
+    tools:context=".traingamestart">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorWhite"/>
+        android:background="@drawable/bgpink">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgblue"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                />
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:background="@drawable/bluebox">
+                android:background="@drawable/pinkbox">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -54,20 +50,17 @@
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:text="1"
                     android:layout_marginRight="50dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"
-                    />
-            </LinearLayout>
-            <Chronometer
-                android:id="@+id/chrometer"
+                    android:fontFamily="@font/mainfont"
+                    /></LinearLayout>
+            <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
-
+                android:layout_weight="1"
+                />
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
@@ -81,37 +74,38 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
-            <RelativeLayout
+                android:layout_weight="2"/>
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="8">
-                <TextView
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <Space
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/textshow"
-                    app:autoSizeTextType="uniform"
-                    app:autoSizeMinTextSize="50dp"
-                    app:autoSizeMaxTextSize="200dp"
-                    app:autoSizeStepGranularity="10dp"
-                    android:fontFamily="@font/mainfont"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorblack"/>
-                <pl.droidsonroids.gif.GifImageView
-                    android:id="@+id/imagecount"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"/>
+                <ImageButton
+                    android:id="@+id/readyicon"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    />
-            </RelativeLayout>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/start"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"/>
+            </LinearLayout>
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="2"/>
         </LinearLayout>
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            />
     </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
