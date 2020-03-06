@@ -11,6 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".sumwordgame"></activity>
+        <activity android:name=".sumstoriegame"/>
+        <activity android:name=".sumwordgame"/>
         <activity android:name=".abcd" />
         <activity android:name=".Storiegame1" />
         <activity android:name=".StoriegameStart" />

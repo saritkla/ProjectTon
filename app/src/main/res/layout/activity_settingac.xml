@@ -50,12 +50,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/help"
-                    android:scaleType="fitXY" />
             </LinearLayout>
 
             <LinearLayout
@@ -94,15 +88,6 @@
                     android:layout_weight="1"/>
 
 
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:id="@+id/swtrain"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:checked="false"
-                        android:thumb="@drawable/switchbt"
-                        app:track="@drawable/track" />
             </LinearLayout>
 
             <Space
