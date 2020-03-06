@@ -106,7 +106,7 @@ public class Storiegame1 extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                imagecount.setImageResource(0);
+                imagecount.setImageResource(android.R.color.transparent);
                 startChrometer();
                 try {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
