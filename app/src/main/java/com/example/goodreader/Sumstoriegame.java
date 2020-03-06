@@ -7,16 +7,16 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class sumwordgame extends AppCompatActivity {
+public class Sumstoriegame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sumwordgame);
+        setContentView(R.layout.activity_sumstoriegame);
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_storiegame1);
     }
 }
