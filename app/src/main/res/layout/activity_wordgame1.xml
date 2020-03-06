@@ -37,13 +37,15 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="คำที่ี่"
+                    android:text="คำที่"
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="@font/mainfont"/>
+                    android:fontFamily="sans-serif"/>
                 <TextView
                     android:id="@+id/textcount"
                     android:layout_width="0dp"
@@ -53,9 +55,11 @@
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="@font/mainfont"
+                    android:fontFamily="sans-serif"
                     />
             </LinearLayout>
             <Space
@@ -86,8 +90,10 @@
                     android:layout_height="match_parent"
                     android:id="@+id/textshow"
                     app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="50dp"
+                    app:autoSizeMaxTextSize="200dp"
+                    app:autoSizeStepGranularity="10dp"
                     android:fontFamily="@font/mainfont"
-                    android:layout_centerInParent="true"
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorblack"/>
