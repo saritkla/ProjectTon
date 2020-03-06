@@ -57,7 +57,7 @@ public class Wordgame1 extends AppCompatActivity {
             public void onClick(View view) {
                 if(count == 11){
                     resetChrometer();
-                    Intent tosum = new Intent(Wordgame1.this,Wordgamestart.class);
+                    Intent tosum = new Intent(Wordgame1.this,sumwordgame.class);
                     tosum.putExtra("username",user);
                     startActivity(tosum);
                 }

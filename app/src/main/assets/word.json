@@ -1,3692 +1,5967 @@
 [
     {
-        "words": "ก ข ไม่กระดิกหู"
+        "words": "กฎกติกา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กฎกติกา"
+        "words": "กฎหมาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กฎหมาย"
+        "words": "กติกา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กติกา"
+        "words": "กรรไกร",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กรรไกร"
+        "words": "กระจ้อยร่อย",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กระจ้อยร่อย"
+        "words": "กระชาก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระจิริดสิทธิศักดิ์"
+        "words": "กระดาษ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระชาก"
+        "words": "กระต่าย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระดาษ"
+        "words": "กระต่าย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระต่าย"
+        "words": "หมายจันทร์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กระต่ายขาเดียว"
+        "words": "กระติก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กระต่ายตื่นตูม"
+        "words": "กระตือรือร้น",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กระต่ายสามขา"
+        "words": "กระถาง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระต่าย"
+        "words": "กระทง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หมายจันทร์"
+        "words": "กระทะ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กระต่ายแหย่เสือ"
+        "words": "กระทั่ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระติก"
+        "words": "กระทั้น",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระตือรือร้น"
+        "words": "กระแทก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระถาง"
+        "words": "กระบุง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กระทง"
+        "words": "กระเป๋า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระทะ"
+        "words": "กระพัง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กระทั่ง"
+        "words": "กระมัง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กระทั้น"
+        "words": "กระวีกระวาด",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "กระแทก"
+        "words": "กระหม่อม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กระบุง"
+        "words": "กราบทูล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กระเป๋า"
+        "words": "กราบพระ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กระพัง"
+        "words": "กริ้ว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กระมัง"
+        "words": "กรี (กรี)",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กระวีกระวาด"
+        "words": "กรี (กะ-รี)",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กระแสพระราชดำรัส)"
+        "words": "กรุงเทพฯ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กระหม่อม"
+        "words": "กรุณา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กราบทูล"
+        "words": "กรู",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "กราบพระ"
+        "words": "กลไก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กริ้ว"
+        "words": "กลไก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กรี (กรี)"
+        "words": "กลมเกลียว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กรี (กะ-รี)"
+        "words": "กล้วยอ้อย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กรุงเทพฯ"
+        "words": "กลองหนัง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กรุณา"
+        "words": "กลอน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กรู"
+        "words": "กล่อม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กลไก"
+        "words": "กล่อมเกลา",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กลไก"
+        "words": "กลับ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กลมเกลียว"
+        "words": "กลับกลาย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กล้วยอ้อย"
+        "words": "กลัว",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กลองหนัง"
+        "words": "กล้า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กลอน"
+        "words": "กลาง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กล่อม"
+        "words": "กล่าว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กล่อมเกลา"
+        "words": "กล้าหาญ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กลับ"
+        "words": "กลิ่น",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กลับกลาย"
+        "words": "กวัดแกว่ง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กลัว"
+        "words": "กว้างขวาง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กล้า"
+        "words": "กองกลาง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กลาง"
+        "words": "ก้อนเสลา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กล่าว"
+        "words": "ก่ออิฐ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กล้าหาญ"
+        "words": "กะทัดรัด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กลิ่น"
+        "words": "กะปิ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กวัดแกว่ง"
+        "words": "กะพริบ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กว้างขวาง"
+        "words": "กะหล่ำปลี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กองกลาง"
+        "words": "กั้ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ก้อนเสลา"
+        "words": "กันแสง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ก่ออิฐ"
+        "words": "กันแสง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กะทัดรัด"
+        "words": "กัมปนาท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กะปิ"
+        "words": "กานท์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "กะพริบ"
+        "words": "การขนส่ง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "กะหล่ำปลี"
+        "words": "การคมนาคม",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กั้ง"
+        "words": "การงาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "กันแสง"
+        "words": "การ์ตูน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กันแสง"
+        "words": "การประมง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กัมปนาท"
+        "words": "กาล",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กานท์"
+        "words": "กาฬสินธุ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "การขนส่ง"
+        "words": "กิจกรรม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "การคมนาคม"
+        "words": "กิริยา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "การงาน"
+        "words": "กี่",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "การ์ตูน"
+        "words": "กุ้ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "การประมง"
+        "words": "เก็บ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "กาล"
+        "words": "เกลี้ยกล่อม",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กาฬสินธุ์"
+        "words": "เกลียวคลื่น",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "กิจกรรม"
+        "words": "เกลือก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "กิริยา"
+        "words": "เกลื่อนกลาด",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "กี่"
+        "words": "เกษมศานต์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "กุ้ง"
+        "words": "เกสร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เก็บ"
+        "words": "เกียรติ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เกลี้ยกล่อม"
+        "words": "เกี่ยว",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เกลียวคลื่น"
+        "words": "แกล้ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เกลือก"
+        "words": "โกงกาง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เกลื่อนกลาด"
+        "words": "โกรธ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เกษมศานต์"
+        "words": "โกรธ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เกสร"
+        "words": "โกลี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เกียรติ"
+        "words": "โกหก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เกี่ยว"
+        "words": "ขณะ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "แกล้ง"
+        "words": "ขนง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โกงกาง"
+        "words": "ขนัด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โกรธ"
+        "words": "ขนาด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โกรธ"
+        "words": "ขนาดย่อม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "โกลี"
+        "words": "ขนุน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โกหก"
+        "words": "ข่มเหง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขณะ"
+        "words": "ขม้ำ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขนง"
+        "words": "ขมีขมัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขนัด"
+        "words": "ขโมย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ขนาด"
+        "words": "ขยะ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขนาดย่อม"
+        "words": "ขยัน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขนุน"
+        "words": "ขยับ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ข่มเหง"
+        "words": "ขรุขระ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขม้ำ"
+        "words": "ขลาดเขลา",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ขมีขมัน"
+        "words": "ขลุก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขโมย"
+        "words": "ขวนขวาย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ขยะ"
+        "words": "ขวักไขว่",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ขยัน"
+        "words": "ขอโทษ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขยับ"
+        "words": "ขอบคุณ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขรุขระ"
+        "words": "ข้า",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ขลาดเขลา"
+        "words": "ข่าย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขลุก"
+        "words": "ข้าวเหนียว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ขวนขวาย"
+        "words": "ขึ้นแท่น",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ขวักไขว่"
+        "words": "ขุ่นเคือง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ขอโทษ"
+        "words": "เข็นรถ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขอบคุณ"
+        "words": "เข็มแข็ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ข้า"
+        "words": "เขี้ยวแก้ว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ข่าย"
+        "words": "แข",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ข้าวเหนียว"
+        "words": "แข็ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ข้าวเหนียวเปียก"
+        "words": "แข็งขัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขี่ช้างจับตั๊กแตน"
+        "words": "แข่งขัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ขึ้นแท่น"
+        "words": "แข็งแรง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ขุ่นเคือง"
+        "words": "โขมง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เข็นรถ"
+        "words": "ไขว่ห้าง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เข็มแข็ง"
+        "words": "คงคา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เขี้ยวแก้ว"
+        "words": "คน",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "แข"
+        "words": "ค้นคว้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แข็ง"
+        "words": "คนโซ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แข็งขัน"
+        "words": "คนพาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แข่งขัน"
+        "words": "ครรภ์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แข็งแรง"
+        "words": "ครอบครัว",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "โขมง"
+        "words": "ครั้ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ไขว่ห้าง"
+        "words": "คร่า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คงคา"
+        "words": "คราว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คน"
+        "words": "คร่ำคร่า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ค้นคว้า"
+        "words": "คริสต์ศักราช",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "คนโซ"
+        "words": "คลอแคล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คนพาล"
+        "words": "คล่องแคล่ว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ครรภ์"
+        "words": "คล้องจอง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ครอบครัว"
+        "words": "คลอด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ครั้ง"
+        "words": "คลาไคล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คร่า"
+        "words": "คลาดแคล้ว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "คราว"
+        "words": "คล้าย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คร่ำคร่า"
+        "words": "คลุม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คริสต์ศักราช"
+        "words": "ควร",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คลอแคล"
+        "words": "ความ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คล่องแคล่ว"
+        "words": "ความสุข",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คล้องจอง"
+        "words": "ควายขวิด",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "คลอด"
+        "words": "ค็อกเทล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คลาไคล"
+        "words": "ค้อน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คลาดแคล้ว"
+        "words": "คอมพิวเตอร์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "คล้าย"
+        "words": "คอย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คลุม"
+        "words": "คะมำ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ควร"
+        "words": "คะยั้นคะยอ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ความ"
+        "words": "คัด",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ความสุข"
+        "words": "คาคบ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ควายขวิด"
+        "words": "ค่าง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ค็อกเทล"
+        "words": "คางคก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ค้อน"
+        "words": "คาดคะเน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "คอมพิวเตอร์"
+        "words": "คำประพันธ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "คอย"
+        "words": "คำราม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "คะมำ"
+        "words": "คำสาป",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "คะยั้นคะยอ"
+        "words": "คีย์ข้อมูล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คัด"
+        "words": "คีรี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "คาคบ"
+        "words": "คืนเดือนเพ็ญ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ค่าง"
+        "words": "คุกกี้",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คางคก"
+        "words": "คุณค่า",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คางคกขึ้นวอ แมลงปอใส่ตุ้งติ้ง"
+        "words": "คุณธรรม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คาดคะเน"
+        "words": "คุณย่า",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คำประพันธ์"
+        "words": "คุณลุง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คำราม"
+        "words": "คุ้นเคย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "คำสาป"
+        "words": "คูปอง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คีย์ข้อมูล"
+        "words": "เค้ก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คีรี"
+        "words": "เครื่องยนต์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "คืนเดือนเพ็ญ"
+        "words": "เครื่องร่อน",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "คุกกี้"
+        "words": "เครือญาติ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "คุณค่า"
+        "words": "เคลิ้ม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "คุณธรรม"
+        "words": "เคว้งคว้าง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "คุณย่า"
+        "words": "เคอะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "คุณลุง"
+        "words": "แคร่",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "คุ้นเคย"
+        "words": "แครอท",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "คูปอง"
+        "words": "แคลงใจ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เค้ก"
+        "words": "แคลเซียม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เครื่องยนต์"
+        "words": "โคลงเคลง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เครื่องร่อน"
+        "words": "ฆ้อง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เครื่องเล่นวิดีทัศน์"
+        "words": "ฆ่า",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "เครือญาติ"
+        "words": "โฆษณา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เคลิ้ม"
+        "words": "งูทะเล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เคว้งคว้าง"
+        "words": "เงอะงะ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เคอะ"
+        "words": "เงี่ย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แคร่"
+        "words": "เงียบกริบ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "แครอท"
+        "words": "จมูก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "แคลงใจ"
+        "words": "จรจรัล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แคลเซียม"
+        "words": "จรจัด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โคลงเคลง"
+        "words": "จรด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฆ้อง"
+        "words": "จรรยา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ฆ่า"
+        "words": "จรลี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โฆษณา"
+        "words": "จรวด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "งูทะเล"
+        "words": "จระเข้",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เงอะงะ"
+        "words": "จริง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เงี่ย"
+        "words": "จริงไซร้",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เงียบกริบ"
+        "words": "จ้อกแจก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "จมูก"
+        "words": "จอกแหน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "จรจรัล"
+        "words": "จ้องหน่อง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "จรจัด"
+        "words": "จักตอก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จรด"
+        "words": "จังหวะ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จรรยา"
+        "words": "จังหวัด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จรลี"
+        "words": "จัดสรร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จรวด"
+        "words": "จัตุบาท",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จระเข้"
+        "words": "จันทรา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จริง"
+        "words": "จับ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "จริงไซร้"
+        "words": "จำนง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จ้อกแจก"
+        "words": "จำวัด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จอกแหน"
+        "words": "จินดา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จ้องหน่อง"
+        "words": "จินตนาการ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "จักตอก"
+        "words": "เจ็บปวด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "จังหวะ"
+        "words": "เจรจา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จังหวัด"
+        "words": "เจริญ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จัดสรร"
+        "words": "เจื้อยแจ้ว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "จัตุบาท"
+        "words": "โจ่งแจ้ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "จันทรา"
+        "words": "ฉกรรจ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "จับ"
+        "words": "ฉกาจ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จำนง"
+        "words": "ฉงน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "จำวัด"
+        "words": "ฉลาด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จินดา"
+        "words": "ฉลาม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "จินตนาการ"
+        "words": "ฉะเชิงเทรา",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "เจ็บปวด"
+        "words": "ฉันเพล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เจรจา"
+        "words": "ฉิ่ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เจริญ"
+        "words": "ฉุกเฉิน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เจื้อยแจ้ว"
+        "words": "เฉโกโว้เว้",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "โจ่งแจ้ง"
+        "words": "เฉพาะ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ฉกรรจ์"
+        "words": "เฉลย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ฉกาจ"
+        "words": "เฉลา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ฉงน"
+        "words": "เฉลียวฉลาด",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ฉลาด"
+        "words": "เฉาก๊วย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฉลาม"
+        "words": "โฉบ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฉะเชิงเทรา"
+        "words": "โฉมฉาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฉันเพล"
+        "words": "ไฉน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฉิ่ง"
+        "words": "ชนนี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฉุกเฉิน"
+        "words": "ชนาง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เฉโกโว้เว้"
+        "words": "ชนิด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เฉพาะ"
+        "words": "ชมพู",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เฉลย"
+        "words": "ชมรม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เฉลา"
+        "words": "ชรา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เฉลียวฉลาด"
+        "words": "ชลนัยน์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เฉาก๊วย"
+        "words": "ชลนา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โฉบ"
+        "words": "ชลเนตร",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "โฉมฉาย"
+        "words": "ชลี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ไฉน"
+        "words": "ช่วย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ชนนี"
+        "words": "ชวา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ชนาง"
+        "words": "ช็อกโกแลต",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ชนิด"
+        "words": "ชักลาก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ชมพู"
+        "words": "ชันษา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชมรม"
+        "words": "ชาดก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชรา"
+        "words": "ชานบันได",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ชลนัยน์"
+        "words": "ชายฉกรรจ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ชลนา"
+        "words": "ชีพ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ชลเนตร"
+        "words": "ชีวัน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ชลี"
+        "words": "ชีวาลัย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ช่วย"
+        "words": "ชีวิต",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ชวา"
+        "words": "ชื่นชม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ช็อกโกแลต"
+        "words": "ชุลมุน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชักลาก"
+        "words": "เชิญชวน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ชันษา"
+        "words": "เชิดชู",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชาดก"
+        "words": "แช่ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ชานบันได"
+        "words": "โชคดี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชายฉกรรจ์"
+        "words": "ไชโย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชีพ"
+        "words": "ซ่อมเสริม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ชีวัน"
+        "words": "ซาฟียะห์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ชีวาลัย"
+        "words": "ซีอิ้ว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ชีวิต"
+        "words": "ซื่อสัตย์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ชื่นชม"
+        "words": "เซ็งแซ่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ชุลมุน"
+        "words": "เซฟข้อมูล",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เชิญชวน"
+        "words": "แซนด์วิช",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เชิดชู"
+        "words": "ฎีกา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "แช่ง"
+        "words": "เฒ่าชรา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "โชคดี"
+        "words": "เณรน้อย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ไชโย"
+        "words": "ดวงดาว",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ซ่อมเสริม"
+        "words": "ดวงเดือน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ซาฟียะห์"
+        "words": "ดวงตะวัน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ซีอิ้ว"
+        "words": "ดอกบุก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ซื่อสัตย์"
+        "words": "ดอกพุด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เซ็งแซ่"
+        "words": "ดังเถือใส่",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เซฟข้อมูล"
+        "words": "ดารา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แซนด์วิช"
+        "words": "ดารากร",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฎีกา"
+        "words": "ดาริกา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เฒ่าชรา"
+        "words": "ดาวฤกษ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เณรน้อย"
+        "words": "ดาษดา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดวงดาว"
+        "words": "ดำแดง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดวงเดือน"
+        "words": "ดิน",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ดวงตะวัน"
+        "words": "ดูหมิ่น",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดอกบุก"
+        "words": "เดินเล่น",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ดอกพุด"
+        "words": "ตกใจ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ดังเถือใส่"
+        "words": "ต้นจันทน์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ดารา"
+        "words": "ต้นตาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดารากร"
+        "words": "ต้นไทร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดาริกา"
+        "words": "ต้นเสลา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ดาวประกายพรึก"
+        "words": "ต้นหว้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดาวฤกษ์"
+        "words": "ตนุ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ดาษดา"
+        "words": "ต้มเค็ม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ดำแดง"
+        "words": "ตระหนก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ดิน"
+        "words": "ตรัส",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ดูหมิ่น"
+        "words": "ตรากตรำ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เดินเล่น"
+        "words": "ตริตรอง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ตกใจ"
+        "words": "ตลอด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ต้นจันทน์"
+        "words": "ตละ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ต้นตาล"
+        "words": "ตลาด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ต้นไทร"
+        "words": "ตวัด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ต้นเสลา"
+        "words": "ตะกร้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ต้นหว้า"
+        "words": "ตะโกน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตนุ"
+        "words": "ตะขบ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ต้มเค็ม"
+        "words": "ตะราง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตระหนก"
+        "words": "ตะวันชาย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ตรัส"
+        "words": "ตั่ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตรากตรำ"
+        "words": "ตัวยง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ตริตรอง"
+        "words": "ตาชั่ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตลอด"
+        "words": "ตาเต็ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตละ"
+        "words": "ตามรอย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ตลาด"
+        "words": "ตาล",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตวัด"
+        "words": "ตื่นเต้น",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ตะกร้า"
+        "words": "ตุ้งติ้ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ตะเกียกตะกาย"
+        "words": "เตรียม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตะโกน"
+        "words": "เต่าดำ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตะขบ"
+        "words": "เต่านา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตะราง"
+        "words": "เต้าฮวย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ตะวันชาย"
+        "words": "โต๊ะจีน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ตั่ง"
+        "words": "ถนน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตัวยง"
+        "words": "ถนอม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ตาชั่ง"
+        "words": "ถล่ม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตาเต็ง"
+        "words": "ถลา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตามรอย"
+        "words": "ถลากถลำ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ตาล"
+        "words": "ถวาย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ตื่นเต้น"
+        "words": "ถวิล",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ตุ้งติ้ง"
+        "words": "ถิ่นฐาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เตรียม"
+        "words": "เถอะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เต่าดำ"
+        "words": "ไถ้",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "เต่านา"
+        "words": "ทนาย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เต้าฮวย"
+        "words": "ทบทวน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "โต๊ะจีน"
+        "words": "ทยอย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ถนน"
+        "words": "ทรงเกาะ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ถนอม"
+        "words": "ทรงคว้า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ถล่ม"
+        "words": "ทรงธรรม์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ถลา"
+        "words": "ทรงนึก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ถลากถลำ"
+        "words": "ทรงยศ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ถวาย"
+        "words": "ทรงฤทธิ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ถวิล"
+        "words": "ทรวงอก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ถิ่นฐาน"
+        "words": "ทรวดทรง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เถอะ"
+        "words": "ทรัพย์สิน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ไถ้"
+        "words": "ทราบ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทนาย"
+        "words": "ทรามวัย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ทบทวน"
+        "words": "ทราย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทยอย"
+        "words": "ทรุดโทรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทรงเกาะ"
+        "words": "ทฤษฎี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทรงเข้าพระทัยผิด"
+        "words": "ท่วม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ทรงคว้า"
+        "words": "ทวยหาญ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ทรงธรรม์"
+        "words": "ทหาร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทรงนึก"
+        "words": "ท่อก๊าซ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทรงยศ"
+        "words": "ท้องฟ้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทรงฤทธิ์"
+        "words": "ทอดพระเนตร",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "ทรวงอก"
+        "words": "ทะนุถนอม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทรวดทรง"
+        "words": "ทะเลสาบ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทรัพย์สิน"
+        "words": "ทัศนศึกษา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทราบ"
+        "words": "ทาก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ทรามวัย"
+        "words": "ท่าน้ำ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทราย"
+        "words": "ท้ายซอย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ทรุดโทรม"
+        "words": "ท้าวไท",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทฤษฎี"
+        "words": "ทาวน์เฮาส์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ท่วม"
+        "words": "ทำนองเสนาะ",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "ทวยหาญ"
+        "words": "ทิม",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ทหาร"
+        "words": "ทิวแถว",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ท่อก๊าซ"
+        "words": "ทิวทัศน์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ท้องฟ้า"
+        "words": "ทุกขเวทนา",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ทอดพระเนตร"
+        "words": "ทุกัง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ทะนุถนอม"
+        "words": "ทุ่งหญ้า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ทะเลสาบ"
+        "words": "ทุ่ม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ทัศนศึกษา"
+        "words": "ทูล",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ทาก"
+        "words": "เทเบิลเทนนิส",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "ท่าน้ำ"
+        "words": "เทวา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ท้ายซอย"
+        "words": "เทวี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ท้าวไท"
+        "words": "แท็กซี่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทาวน์เฮาส์"
+        "words": "แทรก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทำนองเสนาะ"
+        "words": "โทรทัศน์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ทิม"
+        "words": "โทรศัพท์มือถือ",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "ทิวแถว"
+        "words": "ธงชาติ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทิวทัศน์"
+        "words": "ธนบัตร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ทุกขเวทนา"
+        "words": "ธนู",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ทุกัง"
+        "words": "ธรรม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ทุ่งหญ้า"
+        "words": "ธรรมชาติ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทุ่ม"
+        "words": "ธาตุเหล็ก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ทูล"
+        "words": "ธารา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เทเบิลเทนนิส"
+        "words": "ธุระ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เทวา"
+        "words": "เธอ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เทวี"
+        "words": "นกกระสา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "แท็กซี่"
+        "words": "นกกาเหว่า",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "แทรก"
+        "words": "นกเงือก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "โทรทัศน์"
+        "words": "นกยักษ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "โทรศัพท์มือถือ"
+        "words": "นกยาง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ธงชาติ"
+        "words": "นกแสก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ธนบัตร"
+        "words": "นขลิขิต",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ธนู"
+        "words": "นที",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ธรรม"
+        "words": "นมัสการ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ธรรมชาติ"
+        "words": "นโยบาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ธาตุเหล็ก"
+        "words": "นักมายากล",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ธารา"
+        "words": "นักร้อง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ธุระ"
+        "words": "นักเลง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เธอ"
+        "words": "นั่งฌาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นกกระสา"
+        "words": "นัดดา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นกกาเหว่า"
+        "words": "นาคปรก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นกเงือก"
+        "words": "นางสนม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นกยักษ์"
+        "words": "นายพราน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "นกยาง"
+        "words": "น้ำขึ้นให้",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "นกแสก"
+        "words": "รีบตัก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นขลิขิต"
+        "words": "น้ำบูดู",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นที"
+        "words": "น้ำมันดิบ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นมัสการ"
+        "words": "นิด",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "นโยบาย"
+        "words": "นิทรรศการ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "นักมายากล"
+        "words": "นิทาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นักร้อง"
+        "words": "นี่หรือ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "นักเลง"
+        "words": "นี่แหละ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นั่งฌาน"
+        "words": "เนตร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นัดดา"
+        "words": "เนย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "นาคปรก"
+        "words": "เนื้อทราย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "นางสนม"
+        "words": "แน่นขนัด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นายพราน"
+        "words": "แน่วแน่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "น้ำขึ้นให้"
+        "words": "บทบาท",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รีบตัก"
+        "words": "บทร้อยกรอง",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "น้ำบูดู"
+        "words": "บทอาขยาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "น้ำมันดิบ"
+        "words": "บรรจง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "นิด"
+        "words": "บรรจุ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "นิทรรศการ"
+        "words": "บรรเจิด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "นิทาน"
+        "words": "บรรณารักษ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "นี่หรือ"
+        "words": "บรรทม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "นี่แหละ"
+        "words": "บรรทัด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เนตร"
+        "words": "บรรพต",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เนย"
+        "words": "บรรยากาศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เนื้อทราย"
+        "words": "บรรยาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แน่นขนัด"
+        "words": "บรรลุ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แน่วแน่"
+        "words": "บรรลุ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บทบาท"
+        "words": "บรรหาร",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บทร้อยกรอง"
+        "words": "บริกร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บทอาขยาน"
+        "words": "บริวาร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บรรจง"
+        "words": "บริเวณ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บรรจุ"
+        "words": "บริสุทธิ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บรรเจิด"
+        "words": "บ่วง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บรรณารักษ์"
+        "words": "บวม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บรรทม"
+        "words": "บอก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บรรทัด"
+        "words": "บอกใบ้",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บรรพต"
+        "words": "บังคม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บรรยากาศ"
+        "words": "บัญชา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บรรยาย"
+        "words": "บันดาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บรรลุ"
+        "words": "บันได",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บรรลุ"
+        "words": "บันทึก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บรรหาร"
+        "words": "บันเทิง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บริกร"
+        "words": "บันลือ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บริวาร"
+        "words": "บันลือลั่น",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "บริเวณ"
+        "words": "บาง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บริสุทธิ์"
+        "words": "บาตร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บ่วง"
+        "words": "บ้านป้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บวม"
+        "words": "บ่ายคล้อย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "บอก"
+        "words": "บาสเกตบอล",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "บอกใบ้"
+        "words": "บิณฑบาต",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บังคม"
+        "words": "บิดา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บัญชา"
+        "words": "บิตุรงค์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บันดาล"
+        "words": "บิตุรงค์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บันได"
+        "words": "บิตุเรศ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บันทึก"
+        "words": "บึง",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "บันเทิง"
+        "words": "บุคคล",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บันลือ"
+        "words": "บุญคุณ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บันลือลั่น"
+        "words": "บุญบันดาล",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "บาง"
+        "words": "บุตร",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บาตร"
+        "words": "เบื้อ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บ้านป้า"
+        "words": "ปกติ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "บ่ายคล้อย"
+        "words": "ปกป้อง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บาสเกตบอล"
+        "words": "ปฏิบัติ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "บิณฑบาต"
+        "words": "ปฏิบัติการ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "บิดา"
+        "words": "ปฏิบัติธรรม",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "บิตุรงค์"
+        "words": "ปฏิเสธ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บิตุรงค์"
+        "words": "ปรบมือ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "บิตุเรศ"
+        "words": "ประกาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บึง"
+        "words": "ประกาศ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บุคคล"
+        "words": "ประคอง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บุญคุณ"
+        "words": "ประชาธิปไตย",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "บุญบันดาล"
+        "words": "ประดิษฐ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "บุตร"
+        "words": "ประดิษฐาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เบื้อ"
+        "words": "ประเดี๋ยว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปกติ"
+        "words": "ประถมศึกษา",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ปกป้อง"
+        "words": "ประทับ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปฏิบัติ"
+        "words": "ประพาส",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปฏิบัติการ"
+        "words": "ประเภท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปฏิบัติธรรม"
+        "words": "ประเภท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปฏิเสธ"
+        "words": "ประมง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปรบมือ"
+        "words": "ประมวล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประกาย"
+        "words": "ประโยค",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประกาศ"
+        "words": "ประโยชน์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ประคอง"
+        "words": "ประลอง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประชาธิปไตย"
+        "words": "ประสงค์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประดิษฐ์"
+        "words": "ประสูติ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ประดิษฐาน"
+        "words": "ประเสริฐ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ประเดี๋ยว"
+        "words": "ประหลาด",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ประถมศึกษา"
+        "words": "ปรักหักพัง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ประทับ"
+        "words": "ปรับปรุง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประพาส"
+        "words": "ปรากฏ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ประเภท"
+        "words": "ปราณี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ประเภท"
+        "words": "ปรานี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ประมง"
+        "words": "ปรารถนา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ประมวล"
+        "words": "ปรารภ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ประโยค"
+        "words": "ปราศรัย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประโยชน์"
+        "words": "ปราสาท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ประลอง"
+        "words": "ปราะหลาด",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ประสงค์"
+        "words": "ปลอดโปร่ง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ประสูติ"
+        "words": "ปลอบ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ประเสริฐ"
+        "words": "ปล่อย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ประหลาด"
+        "words": "ปลา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ปรักหักพัง"
+        "words": "ปลากระสง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปรับปรุง"
+        "words": "ปลาขี้เหร่",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปรากฏ"
+        "words": "ปลาดุก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปราณี"
+        "words": "ปลาตะพง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ปรานี"
+        "words": "ปลาตีน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปรารถนา"
+        "words": "ปลาทูนึ่ง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ปรารภ"
+        "words": "ปลาปักเป้า",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปราศรัย"
+        "words": "ปลาวาฬ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปราสาท"
+        "words": "ปลาอินทรี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ปราะหลาด"
+        "words": "ปลาอุก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลอดโปร่ง"
+        "words": "ปลิว",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ปลอบ"
+        "words": "ปลุก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ปล่อย"
+        "words": "ปอง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ปลา"
+        "words": "ป้องกัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลากระสง"
+        "words": "ป๊ะ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ปลาขี้เหร่"
+        "words": "ปักเป้า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลาดุก"
+        "words": "ปักษา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ปลาตะพง"
+        "words": "ปัจจุบัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลาตีน"
+        "words": "ปัญญา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ปลาทูนึ่ง"
+        "words": "ปั้นปึ่ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปลาปักเป้า"
+        "words": "ป้าย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ปลาวาฬ"
+        "words": "ป่าละเมาะ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปลาอินทรี"
+        "words": "ปีศาจ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ปลาอุก"
+        "words": "ปุยฝ้าย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลิว"
+        "words": "ปุยเมฆ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ปลุก"
+        "words": "ปูแสม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ปอง"
+        "words": "เปรมปรีดิ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ป้องกัน"
+        "words": "เปรียบเทียบ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ป๊ะ"
+        "words": "เปรียบเปรย",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ปักเป้า"
+        "words": "เปลี่ยน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปักษา"
+        "words": "เปลี่ยว",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ปัจจุบัน"
+        "words": "เป่าขลุ่ย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ปัญญา"
+        "words": "เปียกโชก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ปั้นปึ่ง"
+        "words": "เปียโน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ป้าย"
+        "words": "แปรผัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ป่าละเมาะ"
+        "words": "แปลก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ปีศาจ"
+        "words": "โปรยปราย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปุยฝ้าย"
+        "words": "โปรดเกล้าฯ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ปุยเมฆ"
+        "words": "ไปยาลน้อย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ปูแสม"
+        "words": "ไปยาลใหญ่",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เปรมปรีดิ์"
+        "words": "ผงก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เปรียบเทียบ"
+        "words": "ผลกระทบ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เปรียบเปรย"
+        "words": "ผลงาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เปรียวเป็นกระต่ายป่า"
+        "words": "ผลักไส",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เปลี่ยน"
+        "words": "ผลัด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เปลี่ยว"
+        "words": "ผลาญ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เป่าขลุ่ย"
+        "words": "ผลิต",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เปียกโชก"
+        "words": "ผลิตภัณฑ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เปียโน"
+        "words": "ผลีผลาม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แปรผัน"
+        "words": "ผ้าตาเล็ดงา",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "แปลก"
+        "words": "ผาสุก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โปรยปราย"
+        "words": "ผิดถูก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โปรดเกล้าฯ"
+        "words": "ผึ้ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ไปยาลน้อย"
+        "words": "ผู้ใหญ่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ไปยาลใหญ่"
+        "words": "เผลอ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ผงก"
+        "words": "เผอิญ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ผลกระทบ"
+        "words": "แผ่นดิสก์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ผลงาน"
+        "words": "แผลง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ผลักไส"
+        "words": "ฝรั่ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ผลัด"
+        "words": "ฝึกฝน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ผลาญ"
+        "words": "แฝก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ผลิต"
+        "words": "พงไพร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ผลิตภัณฑ์"
+        "words": "พงศ์ประยูร",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ผลีผลาม"
+        "words": "พงศ์พันธุ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ผ้าตาเล็ดงา"
+        "words": "พงา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ผาสุก"
+        "words": "พญา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ผิดถูก"
+        "words": "พญาครุฑ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ผึ้ง"
+        "words": "พนม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ผู้ใหญ่"
+        "words": "พนักงาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เผลอ"
+        "words": "พนาลี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เผอิญ"
+        "words": "พยักหน้า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แผ่นดิสก์"
+        "words": "พยายาม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แผลง"
+        "words": "พรรคพวก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ฝรั่ง"
+        "words": "พรรณนา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฝึกฝน"
+        "words": "พร้อม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แฝก"
+        "words": "พร้อมเพรียง",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "พงไพร"
+        "words": "พระกรรณ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พงศ์ประยูร"
+        "words": "พระเกศา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พงศ์พันธุ์"
+        "words": "พระคงคา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พงา"
+        "words": "พระจันทร์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พญา"
+        "words": "พระชนนี",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พญาครุฑ"
+        "words": "พระดาบส",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พนม"
+        "words": "พระทัย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พนักงาน"
+        "words": "พระธรรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พนาลี"
+        "words": "พระนคร",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พยักหน้า"
+        "words": "พระนาสิก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พยายาม"
+        "words": "พระเนตร",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พรรคพวก"
+        "words": "พระบาท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พรรณนา"
+        "words": "พระบิตุเรศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พร้อม"
+        "words": "พระพุทธ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พร้อมเพรียง"
+        "words": "พระมเหสี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระกรรณ"
+        "words": "พระลักษณ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระเกศา"
+        "words": "พระลักษมณ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พระคงคา"
+        "words": "พระสงฆ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระจันทร์"
+        "words": "พระหัตถ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระชนนี"
+        "words": "พระองค์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระดาบส"
+        "words": "พระอาทิตย์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พระทัย"
+        "words": "พระอินทร์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระธรรม"
+        "words": "พรั่งพรู",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระธรรมเทศนา"
+        "words": "พร่า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พระนคร"
+        "words": "พราก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พระนาสิก"
+        "words": "พริ้ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พระเนตร"
+        "words": "พริ้นท์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พระบรมมหาราชวัง"
+        "words": "พรู",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "พระบาท"
+        "words": "พฤติกรรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระบาทสมเด็จพระนั่งเกล้าเจ้าอยู่หัว"
+        "words": "พฤษภาคม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระบิตุเรศ"
+        "words": "พฤหัสบดี",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระพุทธ"
+        "words": "พลอย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พระพุทธมหามณีรัตนปฏิมากร"
+        "words": "พลัง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พระมเหสี"
+        "words": "พลังงาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระราชประสงค์"
+        "words": "พลัดพราก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พระลักษณ์"
+        "words": "พลัดหลง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระลักษมณ์"
+        "words": "พลัน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พระศรีรัตนศาสดาราม"
+        "words": "พลับพลา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระสงฆ์"
+        "words": "พลับพลาชัย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พระหัตถ์"
+        "words": "พลาง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พระองค์"
+        "words": "พลาดพลั้ง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พระอาทิตย์"
+        "words": "พลาสติก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พระอินทร์"
+        "words": "พลิก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พรั่งพรู"
+        "words": "พลิ้ว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พร่า"
+        "words": "พลีกรรม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พราก"
+        "words": "พลีชีพ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พริ้ง"
+        "words": "พวงมาลัย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พริ้นท์"
+        "words": "พักตร์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พรู"
+        "words": "พัฒนา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พฤติกรรม"
+        "words": "พันธุ์เผ่า",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พฤษภาคม"
+        "words": "พากเพียร",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พฤหัสบดี"
+        "words": "พายุ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พลอย"
+        "words": "พารา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลัง"
+        "words": "พาราลิมปิก",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พลังงาน"
+        "words": "พาล",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พลัดพราก"
+        "words": "พิเคราะห์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พลัดหลง"
+        "words": "พิซซ่า",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลัน"
+        "words": "พิธีรีตอง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พลับพลา"
+        "words": "พิภพ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "พลับพลาชัย"
+        "words": "พึมพำ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลาง"
+        "words": "พืชพันธุ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พลาดพลั้ง"
+        "words": "พุทรา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลาสติก"
+        "words": "พูดคุย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลิก"
+        "words": "พูดปด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พลิ้ว"
+        "words": "เพ่งพิศ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พลีกรรม"
+        "words": "เพนียด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พลีชีพ"
+        "words": "เพราะ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พวงมาลัย"
+        "words": "เพลง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พักตร์"
+        "words": "เพลาเย็น",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พัฒนา"
+        "words": "เพลารถ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พันธุ์เผ่า"
+        "words": "เพลิดเพลิน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พากเพียร"
+        "words": "เพิ่มเติม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พายุ"
+        "words": "เพื่อน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พารา"
+        "words": "แพร่พันธุ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "พาราลิมปิก"
+        "words": "แพรเพลาะ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "พาล"
+        "words": "แพศยา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พิเคราะห์"
+        "words": "โพ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "พิซซ่า"
+        "words": "โพยภัย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พิธีรีตอง"
+        "words": "โพรง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พิภพ"
+        "words": "ไพรสัณฑ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พึมพำ"
+        "words": "ไพเราะ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พืชพันธุ์"
+        "words": "ไพศาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "พุทรา"
+        "words": "ฟ้าใส",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "พูดคุย"
+        "words": "ฟุ้งเฟ้อ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "พูดปด"
+        "words": "ฟูมฟาย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เพ่งพิศ"
+        "words": "เฟรนซ์ฟราย",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "เพนียด"
+        "words": "ภาค",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เพราะ"
+        "words": "ภาคภูมิ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เพลง"
+        "words": "ภาคอีสาน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เพลาเย็น"
+        "words": "ภาพ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เพลารถ"
+        "words": "ภาพเขียน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เพลิดเพลิน"
+        "words": "ภาษาไทย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เพิ่มเติม"
+        "words": "ภิรมย์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เพื่อน"
+        "words": "ภูเขา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แพร่พันธุ์"
+        "words": "ภูวไนย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แพรเพลาะ"
+        "words": "มงคล",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แพศยา"
+        "words": "มณฑา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โพ"
+        "words": "มดงาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "โพยภัย"
+        "words": "มนุษย์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โพรง"
+        "words": "มโนมัย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ไพรสัณฑ์"
+        "words": "มรคา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ไพเราะ"
+        "words": "มรณภาพ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ไพศาล"
+        "words": "มรดก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ฟ้าใส"
+        "words": "มรรยาท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฟุ้งเฟ้อ"
+        "words": "มฤคมาศ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฟูมฟาย"
+        "words": "มฤคี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เฟรนซ์ฟราย"
+        "words": "ม้วย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ภาค"
+        "words": "มหัพภาค",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ภาคภูมิ"
+        "words": "มหัศจรรย์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ภาคอีสาน"
+        "words": "มหิงสา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ภาพ"
+        "words": "มอเตอร์ไซค์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ภาพเขียน"
+        "words": "มอมแมม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ภาษาไทย"
+        "words": "มะกอก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ภิรมย์"
+        "words": "มะกะโรนี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ภูเขา"
+        "words": "มะขามป้อม",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ภูมิปัญญาท้องถิ่น"
+        "words": "มะดูก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ภูวไนย"
+        "words": "มะพร้าว",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มงคล"
+        "words": "มะโรง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มณฑา"
+        "words": "มะแว้ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มดงาน"
+        "words": "มะเส็ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มนุษย์"
+        "words": "มัทรี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มโนมัย"
+        "words": "มาก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มรคา"
+        "words": "มารดา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มรณภาพ"
+        "words": "มารยาท",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มรดก"
+        "words": "มิตร",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มรรยาท"
+        "words": "มิเตอร์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มฤคมาศ"
+        "words": "มีลาภ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "มฤคี"
+        "words": "มุ้ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ม้วย"
+        "words": "มุ่ย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มหัพภาค"
+        "words": "มูน",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "มหัศจรรย์"
+        "words": "เมฆ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มหิงสา"
+        "words": "เมตตา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มอเตอร์ไซค์"
+        "words": "เมนู",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มอมแมม"
+        "words": "เมล็ด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "มะกอก"
+        "words": "เมาคน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มะกะโรนี"
+        "words": "เมารถ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มะขามป้อม"
+        "words": "เมื่อวาน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "มะดูก"
+        "words": "แม่",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "มะพร้าว"
+        "words": "แมงดา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มะม่วงน้ำดอกไม้"
+        "words": "แมงป่อง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มะม่วงหิมพานต์"
+        "words": "แมลง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "มะโรง"
+        "words": "แมลงปอ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มะแว้ง"
+        "words": "แมลงวัน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มะเส็ง"
+        "words": "ไม้กระบอก",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "มัทรี"
+        "words": "ไม้กระบอง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "มาก"
+        "words": "ไม่เข้ายา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "มารดา"
+        "words": "ไม้ยมก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มารยาท"
+        "words": "ยกย่อง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มิตร"
+        "words": "ยวดยาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "มิเตอร์"
+        "words": "ย่อยสลาย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "มีลาภ"
+        "words": "ยักษ์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มุ้ง"
+        "words": "ยัติภังค์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "มุ่ย"
+        "words": "ยั่ว",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "มูน"
+        "words": "ยาพิษ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เมฆ"
+        "words": "ยำเกรง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เมตตา"
+        "words": "ยิ้มแย้ม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เมนู"
+        "words": "ยีราฟ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เมล็ด"
+        "words": "ยุบล",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เมาคน"
+        "words": "ยูซุป",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เมารถ"
+        "words": "เย็นตาโฟ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เมื่อวาน"
+        "words": "เยลลี่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แม่"
+        "words": "เย่อหยิ่ง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "แมงดา"
+        "words": "เยาะเย้ย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "แมงป่อง"
+        "words": "เยี่ยม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แมลง"
+        "words": "เยื่อใย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แมลงปอ"
+        "words": "แยม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "แมลงวัน"
+        "words": "โยทะกา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ไม้กระบอก"
+        "words": "รถ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ไม้กระบอง"
+        "words": "รถไถ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ไม่เข้ายา"
+        "words": "รถทัวร์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ไม้ยมก"
+        "words": "รถเมล์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ยกย่อง"
+        "words": "รถยนต์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ยวดยาน"
+        "words": "ร่มชูชีพ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ย่อยสลาย"
+        "words": "รวี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ยักษ์"
+        "words": "รสชาติ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ยัติภังค์"
+        "words": "รสแซบ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ยั่ว"
+        "words": "รสโอชา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ยาพิษ"
+        "words": "รองเท้า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ยำเกรง"
+        "words": "ร้องเพลง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ยิ้มแย้ม"
+        "words": "ร้องไห้",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ยีราฟ"
+        "words": "ระฆัง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ยุบล"
+        "words": "ระบบนิเวศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ยูซุป"
+        "words": "ระเบียบ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เย็นตาโฟ"
+        "words": "ระมัดระวัง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เยลลี่"
+        "words": "รังสรรค์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เย่อหยิ่ง"
+        "words": "รัชกาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เยาะเย้ย"
+        "words": "รัฐธรรมนูญ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เยี่ยม"
+        "words": "รัฐบาล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เยื่อใย"
+        "words": "รับประทาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "แยม"
+        "words": "รับสั่ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "โยทะกา"
+        "words": "รางวัล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รถ"
+        "words": "ราชกิจ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รถไถ"
+        "words": "ราชสีห์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รถทัวร์"
+        "words": "รามเกียรติ์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "รถเมล์"
+        "words": "ราวี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "รถยนต์"
+        "words": "ราศี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ร่มชูชีพ"
+        "words": "รำพึง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "รวี"
+        "words": "ริบหรี่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รสชาติ"
+        "words": "ริษยา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "รสแซบ"
+        "words": "รื่นรมย์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "รสโอชา"
+        "words": "รุ่งเรือง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "รองเท้า"
+        "words": "รูปทรง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ร้องเพลง"
+        "words": "รูปภาพ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ร้องไห้"
+        "words": "รู้ไว้ใช่ว่า ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ระฆัง"
+        "words": "ใส่บ่าแบกหาม",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "ระบบนิเวศ"
+        "words": "รู้อย่างเป็ด",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "ระเบียบ"
+        "words": "เป็นยอดดี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ระมัดระวัง"
+        "words": "เร่งรีบ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รังสรรค์"
+        "words": "เรียบร้อย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "รัชกาล"
+        "words": "เรือกอและ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "รัฐธรรมนูญ"
+        "words": "เรือนปั้นหยา",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "รัฐบาล"
+        "words": "เรื่อย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รับประทาน"
+        "words": "แร่",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "รับสั่ง"
+        "words": "แรด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "รางวัล"
+        "words": "โรค",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ราชกิจ"
+        "words": "โรงเรียน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ราชสีห์"
+        "words": "ฤกษ์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "รามเกียรติ์"
+        "words": "ฤดู",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ราวี"
+        "words": "ฤทธิ์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ราศี"
+        "words": "ฤทัย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "รำพึง"
+        "words": "ฤษี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ริบหรี่"
+        "words": "ฤาษี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ริษยา"
+        "words": "ฤาสาย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รีโมทคอนโทรล"
+        "words": "ลบหลู่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "รื่นรมย์"
+        "words": "ล้ม",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "รุ่งเรือง"
+        "words": "ล้มคะมำ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "รูปทรง"
+        "words": "ลวดลาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "รูปภาพ"
+        "words": "ละคร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "รู้ไว้ใช่ว่า "
+        "words": "ละม่อม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ใส่บ่าแบกหาม"
+        "words": "ละเมาะ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "รู้อย่างเป็ด"
+        "words": "ละเมาะ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "รู้อะไรไม่สู้รู้วิชา "
+        "words": "ละลานตา",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "รู้รักษาตัวรอด"
+        "words": "ละหาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เป็นยอดดี"
+        "words": "ละหาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เร่งรีบ"
+        "words": "ละหาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เรียบร้อย"
+        "words": "ละเอียด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เรือกอและ"
+        "words": "ลักษณะนิสัย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เรือนปั้นหยา"
+        "words": "ลางคน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เรื่อย"
+        "words": "ลานวัด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แร่"
+        "words": "ลาวัณย์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แรด"
+        "words": "ลำธาร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "โรค"
+        "words": "ลำพู",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โรงเรียน"
+        "words": "ลิฟต์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฤกษ์"
+        "words": "ลีลาศ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ฤดู"
+        "words": "ลูกตำลึง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฤทธิ์"
+        "words": "ลูกมะกอก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ฤทัย"
+        "words": "ลูกมะดูก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ฤษี"
+        "words": "เลข",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฤาษี"
+        "words": "เลน",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ฤาสาย"
+        "words": "เล่นพนาลี",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ลบหลู่"
+        "words": "เล่ห์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ล้ม"
+        "words": "เล้า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ล้มคะมำ"
+        "words": "เลิกคิ้ว",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ลวดลาย"
+        "words": "เลี้ยง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ละคร"
+        "words": "โลก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ละม่อม"
+        "words": "วงพักตร์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ละเมาะ"
+        "words": "วจี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ละเมาะ"
+        "words": "วจี",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "ละลานตา"
+        "words": "วรรค",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ละหาน"
+        "words": "วรรคดี",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ละหาน"
+        "words": "วรรคดี",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ละหาน"
+        "words": "วรรคดี",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ละเอียด"
+        "words": "วรรณกรรม",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ลักษณะนิสัย"
+        "words": "วรรณคดี",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ลางคน"
+        "words": "วัฒนธรรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ลางเนื้อชอบลางยา"
+        "words": "วัตถุดิบ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ลานวัด"
+        "words": "วันเกิด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ลาวัณย์"
+        "words": "วันจันทร์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ลำธาร"
+        "words": "วันพระ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ลำพู"
+        "words": "วันพุธ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ลิฟต์"
+        "words": "วันเพ็ญ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ลีลาศ"
+        "words": "วันศุกร์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ลูกตำลึง"
+        "words": "วันเสาร์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ลูกมะกอก"
+        "words": "วาดภาพ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "ลูกมะดูก"
+        "words": "วิเคราะห์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เลข"
+        "words": "วิตก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เลน"
+        "words": "วิทยาศาสตร์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "เล่นพนาลี"
+        "words": "วิธีการ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เล่ห์"
+        "words": "วินัย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เล้า"
+        "words": "วิบัติ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เลิกคิ้ว"
+        "words": "วิวัฒน์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เลี้ยง"
+        "words": "วิเศษ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โลก"
+        "words": "วิฬาร์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วงพักตร์"
+        "words": "วิฬาร์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วจี"
+        "words": "วุ่นวาย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วจี"
+        "words": "เว็บไซต์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วรรค"
+        "words": "เว็บไซต์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วรรคดี"
+        "words": "เว็บไซต์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วรรคดี"
+        "words": "เวลา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วรรคดี"
+        "words": "แวววาว",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วรรณกรรม"
+        "words": "โวหาร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "วรรณคดี"
+        "words": "ศรศิลป์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "วัฒนธรรม"
+        "words": "ศศิธร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วัดพระศรีรัตนศาสดาราม"
+        "words": "ศักดิ์ศรี",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วัตถุดิบ"
+        "words": "ศัตรู",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "วันเกิด"
+        "words": "ศัพท์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "วันจันทร์"
+        "words": "ศัลย์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "วันเฉลิมพระชนมพรรษา"
+        "words": "ศิลปะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วันพระ"
+        "words": "ศีรษะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วันพุธ"
+        "words": "ศึกษา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วันเพ็ญ"
+        "words": "เศรษฐกิจ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "วันศุกร์"
+        "words": "เศรษฐี",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "วันเสาร์"
+        "words": "เศร้า",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วาดภาพ"
+        "words": "โศกศัลย์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วิเคราะห์"
+        "words": "โศกเศร้า",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "วิตก"
+        "words": "สกปรก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "วิทยาศาสตร์"
+        "words": "สงสัย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วิธีการ"
+        "words": "สงสาร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "วินัย"
+        "words": "ส่งเสริม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วิบัติ"
+        "words": "สงัด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "วิวัฒน์"
+        "words": "สง่า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "วิเศษ"
+        "words": "สถาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "วิฬาร์"
+        "words": "สถานีรถไฟฟ้า",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "วิฬาร์"
+        "words": "สถาปนา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "วุ่นวาย"
+        "words": "สถาปัตยกรรม",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "เว็บไซต์"
+        "words": "สนอง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เว็บไซต์"
+        "words": "สนับสนุน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เว็บไซต์"
+        "words": "สนาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เวลา"
+        "words": "สนุก",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "แวววาว"
+        "words": "สนุกสนาน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "โวหาร"
+        "words": "สบาย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ศรศิลป์"
+        "words": "สมดุล",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ศศิธร"
+        "words": "สมน้ำหน้า",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "ศักดิ์ศรี"
+        "words": "สมบัติ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ศัตรู"
+        "words": "สมัคร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ศัพท์"
+        "words": "สมัครสมาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ศัลย์"
+        "words": "สมัย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ศิลปะ"
+        "words": "สมาชิก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ศีรษะ"
+        "words": "สมาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ศึกษา"
+        "words": "สมุด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เศรษฐกิจ"
+        "words": "สมุทร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เศรษฐี"
+        "words": "สรงน้ำ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เศร้า"
+        "words": "สรร",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โศกศัลย์"
+        "words": "สรรพสิ่ง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "โศกเศร้า"
+        "words": "สรรพสินค้า",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สกปรก"
+        "words": "สร้างสรรค์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สงสัย"
+        "words": "สรุป",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สงสาร"
+        "words": "สลบ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ส่งเสริม"
+        "words": "สลวย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สงัด"
+        "words": "สละ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สง่า"
+        "words": "สลัด",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สถาน"
+        "words": "สวรรคต",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สถานีรถไฟฟ้า"
+        "words": "สวัสดี",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สถาปนา"
+        "words": "สว่าง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สถาปัตยกรรม"
+        "words": "สวาท",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สนอง"
+        "words": "สวิตซ์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สนับสนุน"
+        "words": "สอดไส้",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สนาน"
+        "words": "สะพัด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สนุก"
+        "words": "สะพาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สนุกสนาน"
+        "words": "สักครู่",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สบาย"
+        "words": "สังเกต",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สมดุล"
+        "words": "สังวร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สมน้ำหน้า"
+        "words": "สั่งสอน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สมบัติ"
+        "words": "สังหาร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สมัคร"
+        "words": "สัจจะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สมัครสมาน"
+        "words": "สัจจา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สมัย"
+        "words": "สัญจร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สมาชิก"
+        "words": "สัญญา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สมาน"
+        "words": "สัญญาณ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สมุด"
+        "words": "สัญประกาศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สมุทร"
+        "words": "สัณฐาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สรงน้ำ"
+        "words": "สัตว์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สรร"
+        "words": "สัตว์ประหลาด",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "สรรพสิ่ง"
+        "words": "สั่นเครือ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สรรพสินค้า"
+        "words": "สันติ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สร้างสรรค์"
+        "words": "สันติธรรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สรุป"
+        "words": "สันนิษฐาน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สลบ"
+        "words": "สัมผัส",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สลวย"
+        "words": "สัมพันธ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สละ"
+        "words": "สัมฤทธิ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สลัด"
+        "words": "สาคร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สวรรคต"
+        "words": "สาปแช่ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สวัสดี"
+        "words": "สามัคคี",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สว่าง"
+        "words": "สายลับ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สวาท"
+        "words": "สายสร้อย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สวิตซ์"
+        "words": "สารพัด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สอดไส้"
+        "words": "สาหร่าย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สะพัด"
+        "words": "สาหัส",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สะพาน"
+        "words": "สำคัญ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สักครู่"
+        "words": "สำคัญว่า",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สังเกต"
+        "words": "สำเนียง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สังวร"
+        "words": "สำเพ็ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สั่งสอน"
+        "words": "สำราญ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สังหาร"
+        "words": "สำลัก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สัจจะ"
+        "words": "สิงขร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สัจจา"
+        "words": "สิงโต",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สัญจร"
+        "words": "สิทธิพิเศษ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สัญญา"
+        "words": "สิทธิศักดิ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สัญญาณ"
+        "words": "สีคราม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สัญประกาศ"
+        "words": "สุขทุกข์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สัณฐาน"
+        "words": "สุขสันต์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สัตว์"
+        "words": "สุนัข",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สัตว์ประหลาด"
+        "words": "สุราษฎร์ธานี",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "สั่นเครือ"
+        "words": "สุริย์วงศ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สันติ"
+        "words": "สุริยัน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สันติธรรม"
+        "words": "สุริยา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สันนิษฐาน"
+        "words": "สูญสิ้น",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สัมผัส"
+        "words": "สู้ยิบตา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สัมพันธ์"
+        "words": "เสงี่ยม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สัมฤทธิ์"
+        "words": "เสด็จ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สาคร"
+        "words": "เสด็จกลับ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สาปแช่ง"
+        "words": "เสด็จเลียบ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สามัคคี"
+        "words": "เสมอ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สายลับ"
+        "words": "เสร็จ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สายสร้อย"
+        "words": "เสริ์ฟ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สารพัด"
+        "words": "เสรี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สาหร่าย"
+        "words": "เสวนา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สาหัส"
+        "words": "เสวย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สำคัญ"
+        "words": "เสวยราชย์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สำคัญว่า"
+        "words": "เสแสร้ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สำเนียง"
+        "words": "เสาะหา",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สำเพ็ง"
+        "words": "เสื่อ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สำราญ"
+        "words": "เสื้อ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สำลัก"
+        "words": "เสื่อมโทรม",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "สิงขร"
+        "words": "แสดง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สิงโต"
+        "words": "แสม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สิทธิพิเศษ"
+        "words": "แสร้ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สิทธิศักดิ์"
+        "words": "แสลง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สีคราม"
+        "words": "โสภา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สีซอให้ควายฟัง"
+        "words": "โสภา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สุขทุกข์"
+        "words": "โสม",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สุขสันต์"
+        "words": "หกล้ม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สุนัข"
+        "words": "หงอยเหงา",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "สุราษฎร์ธานี"
+        "words": "หงาย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "สุริย์วงศ์"
+        "words": "หงุดหงิด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "สุริยัน"
+        "words": "หญ้า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "สุริยา"
+        "words": "หญ้าคา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "สูญสิ้น"
+        "words": "หญ้าแพรก",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "สู้ยิบตา"
+        "words": "หญิง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เสงี่ยม"
+        "words": "หนอนหนังสือ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "เสด็จ"
+        "words": "หน่อย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เสด็จกลับ"
+        "words": "หนังสือ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เสด็จเลียบ"
+        "words": "หนังสือพิมพ์",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เสมอ"
+        "words": "หนา",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เสร็จ"
+        "words": "หน้าฉาน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เสริ์ฟ"
+        "words": "หนาว",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เสรี"
+        "words": "หนาวแล้ว",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เสวนา"
+        "words": "หนึ่ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เสวย"
+        "words": "หมดกัน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เสวยราชย์"
+        "words": "หมวดหมู่",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เสแสร้ง"
+        "words": "หมอ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เสาะหา"
+        "words": "หมอน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เสื่อ"
+        "words": "หม่อนไหม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เสื้อ"
+        "words": "หม่อนไหม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เสื่อมโทรม"
+        "words": "หมั่น",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แสดง"
+        "words": "หมั่นไส้",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แสม"
+        "words": "หมาป่า",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "แสร้ง"
+        "words": "หยากไย่",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แสลง"
+        "words": "หยาม",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โสภา"
+        "words": "หยิ่ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "โสภา"
+        "words": "หยิบ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "โสม"
+        "words": "หรรษา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หกล้ม"
+        "words": "หรือ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หงอยเหงา"
+        "words": "หรูหรา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หงาย"
+        "words": "หลง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หงุดหงิด"
+        "words": "หลง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หญ้า"
+        "words": "หลงกล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หญ้าคา"
+        "words": "หลงเชื่อ",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หญ้าแพรก"
+        "words": "หลงใหล",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หญิง"
+        "words": "หล่น",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หนอนหนังสือ"
+        "words": "หลวง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หน่อย"
+        "words": "หลอกลวง",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หนังสือ"
+        "words": "หลั่งไหล",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หนังสือพิมพ์"
+        "words": "หลับ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หนา"
+        "words": "หลาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หน้าฉาน"
+        "words": "หวั่นหวาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หน้าซีดเป็นไก่ต้ม"
+        "words": "หวาดกลัว",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หนาว"
+        "words": "หวาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หนาวแล้ว"
+        "words": "หวานแหวว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หนึ่ง"
+        "words": "หวานแหวว",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หนึ่งตำบลหนึ่งผลิตภัณฑ์"
+        "words": "หวุดหวิด",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หมดกัน"
+        "words": "หอย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หมวดหมู่"
+        "words": "ห้อยท้าย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หมอ"
+        "words": "หอยแมลงภู่",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "หมอน"
+        "words": "หอยสังข์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หม่อนไหม"
+        "words": "ห่อหมก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หม่อนไหม"
+        "words": "หักโหมโรมรัน",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "หมั่น"
+        "words": "หัตถ์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หมั่นไส้"
+        "words": "หัตถกรรม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หมาป่า"
+        "words": "หับ",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "หยากไย่"
+        "words": "หัวแข็ง",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หยาม"
+        "words": "หัวเราะ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หยิ่ง"
+        "words": "หาข่าว",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หยิบ"
+        "words": "หาดทราย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หรรษา"
+        "words": "หิ่งห้อย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หรือ"
+        "words": "หิว",
+        "brind": "xX",
+        "StringCount": 2
     },
     {
-        "words": "หรูหรา"
+        "words": "หูผึ่ง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หลง"
+        "words": "หูฝาด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หลง"
+        "words": "เหงา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หลงกล"
+        "words": "เหตุการณ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หลงเชื่อ"
+        "words": "เหตุผล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หลงใหล"
+        "words": "เห็น",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หล่น"
+        "words": "เห็นช้างขี้ ",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "หลวง"
+        "words": "ขี้ตามช้าง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หลอกลวง"
+        "words": "เหน็ดเหนื่อย",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "หลั่งไหล"
+        "words": "เหนอะหนะ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หลับ"
+        "words": "เหนียวแน่น",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หลาน"
+        "words": "เหม็น",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หวั่นหวาน"
+        "words": "เหมันต์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หวาดกลัว"
+        "words": "เหมาะสม",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หวาน"
+        "words": "เหมือน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หวานแหวว"
+        "words": "เหย้าเรือน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หวานแหวว"
+        "words": "เหยียบ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หวุดหวิด"
+        "words": "เหยื่อ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หอย"
+        "words": "เหล็กเพชร",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "ห้อยท้าย"
+        "words": "เหลวไหล",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "หอยแมลงภู่"
+        "words": "เหลียวหลัง",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "หอยสังข์"
+        "words": "เหลือ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ห่อหมก"
+        "words": "เหว",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หักโหมโรมรัน"
+        "words": "แหงน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หัตถ์"
+        "words": "แหนง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หัตถกรรม"
+        "words": "แหย่",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หับ"
+        "words": "แหวะ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หัวแข็ง"
+        "words": "แห่แหน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หัวเราะ"
+        "words": "ใหญ่",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หาข่าว"
+        "words": "ใหลหลง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "หาดทราย"
+        "words": "องค์",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หาตริตรองมิได้"
+        "words": "องอาจ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หิ่งห้อย"
+        "words": "องุ่น",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "หิว"
+        "words": "อดสู",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "หิวข้าวจนตาลาย"
+        "words": "อดออม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หูผึ่ง"
+        "words": "อธิบาย",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "หูฝาด"
+        "words": "อนันต์",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหงา"
+        "words": "อนาคต",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เหตุการณ์"
+        "words": "อนุรักษ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เหตุผล"
+        "words": "อนุสรณ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เห็น"
+        "words": "อบอุ่น",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เห็นช้างขี้ "
+        "words": "อย่า",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "ขี้ตามช้าง"
+        "words": "อยาก",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหน็ดเหนื่อย"
+        "words": "อย่าง",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหนอะหนะ"
+        "words": "อยู่",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "เหนียวแน่น"
+        "words": "อร่อย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหม็น"
+        "words": "อวยพร",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "เหมันต์"
+        "words": "ออกอากาศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เหมาะสม"
+        "words": "ออกอุบาย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "เหมือน"
+        "words": "ออทิสติก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เหย้าเรือน"
+        "words": "อ่อนโยน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เหยียบ"
+        "words": "อ้อยอิ่ง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เหยื่อ"
+        "words": "อะไร",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหล็กเพชร"
+        "words": "อัชฌา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "เหลวไหล"
+        "words": "อัญประกาศ",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "เหลียวหลัง"
+        "words": "อัตโนมัติ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เหลือ"
+        "words": "อัธยาศัย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "เหว"
+        "words": "อันตราย",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แหงน"
+        "words": "อับดุลเลาะห์",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "แหนง"
+        "words": "อัปลักษณ์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แหย่"
+        "words": "อัยกา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "แหวะ"
+        "words": "อัศเจรีย์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "แห่แหน"
+        "words": "อาการ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ใหญ่"
+        "words": "อากาศ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ใหลหลง"
+        "words": "อากาศยาน",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "องค์"
+        "words": "อ่าง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "องอาจ"
+        "words": "อาจ",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "องุ่น"
+        "words": "อาจิณ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อดสู"
+        "words": "อาเจียน",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อดออม"
+        "words": "อาชา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อธิบาย"
+        "words": "อาชาไนย",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "อนันต์"
+        "words": "อาชีพ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อนาคต"
+        "words": "อ้าปาก",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อนุรักษ์"
+        "words": "อาพาธ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อนุสรณ์"
+        "words": "อาเพศ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อบอุ่น"
+        "words": "อาภรณ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อย่า"
+        "words": "อารมณ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อยาก"
+        "words": "อารัญ",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อย่าง"
+        "words": "อารี",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "อยู่"
+        "words": "อ่าว",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "อร่อย"
+        "words": "อาวรณ์",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อวยพร"
+        "words": "อาศรม",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "ออกอากาศ"
+        "words": "อาศัย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ออกอุบาย"
+        "words": "อาสา",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "ออทิสติก"
+        "words": "อาหารบุฟเฟต์",
+        "brind": "xxxxxXxxxx",
+        "StringCount": 10
     },
     {
-        "words": "อ่อนโยน"
+        "words": "อำนาจ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อ้อยอิ่ง"
+        "words": "อำมาตย์",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อะไร"
+        "words": "อิดออด",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อัชฌา"
+        "words": "อิดเอื้อน",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "อัญประกาศ"
+        "words": "อินเตอร์เน็ต",
+        "brind": "xxxxXxxxx",
+        "StringCount": 9
     },
     {
-        "words": "อัตโนมัติ"
+        "words": "อีเมล",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อัธยาศัย"
+        "words": "อีสาน",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อันตราย"
+        "words": "อึ่งอ่าง",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อับดุลเลาะห์"
+        "words": "อุกอาจ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อัปลักษณ์"
+        "words": "อุตลุด",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อัยกา"
+        "words": "อุทยาน",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อัศเจรีย์"
+        "words": "อุทร",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "อาการ"
+        "words": "อุบัติเหตุ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อากาศ"
+        "words": "อุบาย",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อากาศยาน"
+        "words": "อุโบสถ",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อ่าง"
+        "words": "เอกลักษณ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "อาจ"
+        "words": "เอ็นดู",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อาจิณ"
+        "words": "เอมโอช",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อาเจียน"
+        "words": "เอ่ย",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "อาชา"
+        "words": "เอร็ดอร่อย",
+        "brind": "xxxxXxxx",
+        "StringCount": 8
     },
     {
-        "words": "อาชาไนย"
+        "words": "แอปเปิ้ล",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "อาชีพ"
+        "words": "แอโรบิก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อ้าปาก"
+        "words": "โอกาส",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อาพาธ"
+        "words": "โอเค",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อาเพศ"
+        "words": "โอ่ง",
+        "brind": "xXx",
+        "StringCount": 3
     },
     {
-        "words": "อาภรณ์"
+        "words": "โอรส",
+        "brind": "xxXx",
+        "StringCount": 4
     },
     {
-        "words": "อารมณ์"
+        "words": "โอรสา",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อารัญ"
+        "words": "โอลิมปัส",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อารี"
+        "words": "โอลิมปิก",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อ่าว"
+        "words": "ไอศกรีม",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อาวรณ์"
+        "words": "ฮวบฮาบ",
+        "brind": "xxxXxx",
+        "StringCount": 6
     },
     {
-        "words": "อาศรม"
+        "words": "ฮัลโหล",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
     {
-        "words": "อาศัย"
+        "words": "ฮาซานะฮ์",
+        "brind": "xxxXxxx",
+        "StringCount": 7
     },
     {
-        "words": "อาสา"
+        "words": "แฮ่กึ้น",
+        "brind": "xxXxx",
+        "StringCount": 5
     },
-    {
-        "words": "อาหารบุฟเฟต์"
-    },
-    {
-        "words": "อำนาจ"
-    },
-    {
-        "words": "อำมาตย์"
-    },
-    {
-        "words": "อิดออด"
-    },
-    {
-        "words": "อิดเอื้อน"
-    },
-    {
-        "words": "อินเตอร์เน็ต"
-    },
-    {
-        "words": "อีเมล"
-    },
-    {
-        "words": "อีสาน"
-    },
-    {
-        "words": "อึ่งอ่าง"
-    },
-    {
-        "words": "อุกอาจ"
-    },
-    {
-        "words": "อุตลุด"
-    },
-    {
-        "words": "อุทยาน"
-    },
-    {
-        "words": "อุทร"
-    },
-    {
-        "words": "อุบัติเหตุ"
-    },
-    {
-        "words": "อุบาย"
-    },
-    {
-        "words": "อุโบสถ"
-    },
-    {
-        "words": "เอกลักษณ์"
-    },
-    {
-        "words": "เอ็นดู"
-    },
-    {
-        "words": "เอมโอช"
-    },
-    {
-        "words": "เอ่ย"
-    },
-    {
-        "words": "เอร็ดอร่อย"
-    },
-    {
-        "words": "แอปเปิ้ล"
-    },
-    {
-        "words": "แอโรบิก"
-    },
-    {
-        "words": "โอกาส"
-    },
-    {
-        "words": "โอเค"
-    },
-    {
-        "words": "โอ่ง"
-    },
-    {
-        "words": "โอรส"
-    },
-    {
-        "words": "โอรสา"
-    },
-    {
-        "words": "โอลิมปัส"
-    },
-    {
-        "words": "โอลิมปิก"
-    },
-    {
-        "words": "โอ้เอ้วิหารราย"
-    },
-    {
-        "words": "ไอศกรีม"
-    },
-    {
-        "words": "ฮวบฮาบ"
-    },
-    {
-        "words": "ฮัลโหล"
-    },
-    {
-        "words": "ฮาซานะฮ์"
-    },
-    {
-        "words": "แฮ่กึ้น"
-    },
-    {
-        "words": "โอ้เอ้วิหารราย"
-    }
 ]
