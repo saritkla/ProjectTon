@@ -59,7 +59,7 @@ public class traingame1 extends AppCompatActivity {
             public void onClick(View view) {
                 if(count == 11){
                     resetChrometer();
-                    Intent tosum = new Intent(traingame1.this,sumwordgame.class);
+                    Intent tosum = new Intent(traingame1.this,sumtraingame.class);
                     tosum.putExtra("username",username);
                     startActivity(tosum);
                 }

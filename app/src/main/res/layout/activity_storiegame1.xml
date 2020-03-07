@@ -90,6 +90,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="sans-serif"
                     android:textAlignment="textStart"
+                    android:scrollbars="vertical"
                     android:textColor="@color/colorblack"
                     app:autoSizeTextType="uniform"
                     app:autoSizeMinTextSize="30dp"
