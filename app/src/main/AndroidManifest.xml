@@ -10,15 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
         <activity android:name=".Wrong"
             android:theme="@style/AppTheme.popMe">
         </activity>
         <activity android:name=".Correct"
             android:theme="@style/AppTheme.popMe"/>
         <activity android:name=".sumtraingame"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="fullSensor"/>
         <activity android:name=".traingame1"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="fullSensor"/>
         <activity android:name=".traingamestart" />
         <activity
             android:name=".wordgamepop"
