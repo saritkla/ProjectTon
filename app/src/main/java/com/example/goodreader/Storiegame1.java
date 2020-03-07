@@ -47,7 +47,7 @@ public class Storiegame1 extends AppCompatActivity {
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
         int min = 0;
-        int max = 30;
+        int max = 29;
         random_int = (int) (Math.random() * (max - min + 1) + min);
         String wordid = Integer.toString(random_int);
         textcount.setText(wordid);
