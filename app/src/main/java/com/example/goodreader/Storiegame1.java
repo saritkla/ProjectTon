@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -115,6 +116,7 @@ public class Storiegame1 extends AppCompatActivity {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;
                     word = jArray.getJSONObject(Storiegame1.this.random_int).getString("storie");
+                    showtext.setMovementMethod(new ScrollingMovementMethod());
                     showtext.setText(word);
                 } catch (JSONException e) {
                     e.printStackTrace();
