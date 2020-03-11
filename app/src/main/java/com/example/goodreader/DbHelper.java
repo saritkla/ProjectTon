@@ -29,6 +29,15 @@ public class DbHelper extends SQLiteOpenHelper {
             COLUMN_BIRTHDAY + " TEXT, "+
             COLUMN_SCORE1 + " INT, " +
             COLUMN_SCORE2 + " INT " + ");";
+    private static final String tableCreateSQL2 = "CREATE TABLE " + TABLE_NAME +" ("+
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+            COLUMN_USERNAME + " TEXT, " +
+            COLUMN_NAMESUR + " TEXT, " +
+            COLUMN_SCHOOL + " TEXT, " +
+            COLUMN_AGE + " TEXT, " +
+            COLUMN_BIRTHDAY + " TEXT, "+
+            COLUMN_SCORE1 + " INT, " +
+            COLUMN_SCORE2 + " INT " + ");";
 
     public DbHelper(@Nullable Context context) {
         super(context, databaseName, null, databaseVersion);
@@ -39,6 +48,7 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(tableCreateSQL);
+        sqLiteDatabase.execSQL(tableCreateSQL2);
     }
 
     @Override
@@ -46,17 +56,6 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(sqLiteDatabase);
     }
-//    public boolean insertDataUser(String username ,String name ,String school ,String age ,String birthday){
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        ContentValues contentValues= new ContentValues();
-//
-//        contentValues.put(COLUMN_USERNAME,username);
-//        contentValues.put(COLUMN_NAMESUR,name);
-//        contentValues.put(COLUMN_SCHOOL,school);
-//        contentValues.put(COLUMN_AGE,age);
-//        contentValues.put(COLUMN_BIRTHDAY,birthday);
-//        long result = db.insert(TABLE_NAME, null,contentValues);
-//        return  result != -1;
-//    }
+
 
 }
