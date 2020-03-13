@@ -1,5 +1,6 @@
 package com.example.goodreader;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,12 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -27,17 +34,16 @@ public class traingame1 extends AppCompatActivity {
     ImageButton nextpage;
     long pauseoffset;
     Chronometer chronometer;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+    String username;
     boolean running;
-    int count = 1;
-    public  int random_int;
-    public int min = 0;
-    public int max = 724;
-    public String wordid;
+    int countword,countmain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        final String username =bundle.getString("username");
+        username =bundle.getString("username");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -48,37 +54,56 @@ public class traingame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
-        random_int = (int) (Math.random() * (max - min + 1) + min);
-        wordid = Integer.toString(random_int);
-        textcount.setText(wordid);
-        nextword(random_int);
-
-
-        nextpage.setOnClickListener(new View.OnClickListener() {
+        myRef = FirebaseDatabase.getInstance().getReference().child("username");
+        database = FirebaseDatabase.getInstance();
+        countmain = 1;
+        myRef.child(username).child("wordtrain").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                if(count == 11){
-                    resetChrometer();
-                    Intent tosum = new Intent(traingame1.this,sumtraingame.class);
-                    tosum.putExtra("username",username);
-                    startActivity(tosum);
-                }
-                else{
-                    pauseChrometer();
-                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                    Log.d("Time is", String.valueOf((long)elapsedMillis));
-                    resetChrometer();
-                    showtext.setText("");
-                    String co = Integer.toString(count);
-                    random_int = (int) (Math.random() * (max - min + 1) + min);
-                    wordid = Integer.toString(random_int);
-                    textcount.setText(wordid);
-                    nextword(random_int);
-                    pauseChrometer();
-                }
-                count++;
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final int wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));
+                Log.d("wodID", String.valueOf(wordID));
+                textcount.setText(String.valueOf(wordID));
+                if (wordID == 1)countword = 0;
+                else countword = wordID;
+
+                nextword(countword);
+                nextpage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(countmain == 10){
+                            resetChrometer();
+                            Intent tosum = new Intent(traingame1.this,sumtraingame.class);
+                            tosum.putExtra("username",username);
+                            startActivity(tosum);
+                        }
+                        else{
+                            pauseChrometer();
+                            long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                            String co = Integer.toString(countword);
+                            myRef.child(username).child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
+                            Log.d("Time is", String.valueOf((long)elapsedMillis));
+                            resetChrometer();
+                            showtext.setText("");
+                            countword++;
+                            String col = Integer.toString(countword+1);
+                            textcount.setText(col);
+                            nextword(countword);
+                            pauseChrometer();
+                        }
+                        countmain++;
+                        Log.d("countmain is ", String.valueOf(countmain));
+                        Log.d("countword is ", String.valueOf(countmain));
+
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
+
     }
 
     public  void startChrometer(){
@@ -115,7 +140,7 @@ public class traingame1 extends AppCompatActivity {
         }
         return json;
     }
-    public void nextword(final int random_int){
+    public void nextword(final int wordID){
         imagecount.setImageResource(R.drawable.treetwoone2);
         new CountDownTimer(3000,3000){
             @Override
@@ -130,8 +155,10 @@ public class traingame1 extends AppCompatActivity {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     final String word;
                     String brind;
-                    brind = jArray.getJSONObject(random_int).getString("brinds");
-                    word = jArray.getJSONObject(random_int).getString("words");
+                    final String Stringcount;
+                    brind = jArray.getJSONObject(wordID).getString("brinds");
+                    word = jArray.getJSONObject(wordID).getString("words");
+                    Stringcount = jArray.getJSONObject(wordID).getString("StringCount");
                     showtext.setText(brind);
                     new CountDownTimer(3000,3000) {
                         @Override
@@ -142,6 +169,9 @@ public class traingame1 extends AppCompatActivity {
                         @Override
                         public void onFinish() {
                             startChrometer();
+                            String co = Integer.toString(wordID);
+                            myRef.child(username).child("wordtrain").child(co).child("word").setValue(word);
+                            myRef.child(username).child("wordtrain").child(co).child("StringCount").setValue(Stringcount);
                             showtext.setText(word);
                         }
                     }.start();
