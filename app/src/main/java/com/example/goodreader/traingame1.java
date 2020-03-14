@@ -57,52 +57,62 @@ public class traingame1 extends AppCompatActivity {
         myRef = FirebaseDatabase.getInstance().getReference().child("username");
         database = FirebaseDatabase.getInstance();
         countmain = 1;
-        myRef.child(username).child("wordtrain").addListenerForSingleValueEvent(new ValueEventListener() {
+        imagecount.setImageResource(R.drawable.treetwoone2);
+        new CountDownTimer(3000, 3000) {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                final int wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));
-                Log.d("wodID", String.valueOf(wordID));
-                textcount.setText(String.valueOf(wordID));
-                if (wordID == 1)countword = 0;
-                else countword = wordID;
+            public void onTick(long l) {
 
-                nextword(countword);
-                nextpage.setOnClickListener(new View.OnClickListener() {
+            }
+            @Override
+            public void onFinish() {
+                imagecount.setImageResource(android.R.color.transparent);
+                myRef.child(username).child("wordtrain").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
-                    public void onClick(View view) {
-                        if(countmain == 10){
-                            resetChrometer();
-                            Intent tosum = new Intent(traingame1.this,sumtraingame.class);
-                            tosum.putExtra("username",username);
-                            startActivity(tosum);
-                        }
-                        else{
-                            pauseChrometer();
-                            long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                            String co = Integer.toString(countword);
-                            myRef.child(username).child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
-                            Log.d("Time is", String.valueOf((long)elapsedMillis));
-                            resetChrometer();
-                            showtext.setText("");
-                            countword++;
-                            String col = Integer.toString(countword+1);
-                            textcount.setText(col);
-                            nextword(countword);
-                            pauseChrometer();
-                        }
-                        countmain++;
-                        Log.d("countmain is ", String.valueOf(countmain));
-                        Log.d("countword is ", String.valueOf(countmain));
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        final int wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));
+                        Log.d("wodID", String.valueOf(wordID));
+                        textcount.setText(String.valueOf(wordID));
+                        if (wordID == 1) countword = 0;
+                        else countword = wordID;
+                        nextword(countword);
+                        nextpage.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (countmain == 10) {
+                                    resetChrometer();
+                                    Intent tosum = new Intent(traingame1.this, sumtraingame.class);
+                                    tosum.putExtra("username", username);
+                                    startActivity(tosum);
+                                } else {
+                                    pauseChrometer();
+                                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                                    String co = Integer.toString(countword);
+                                    myRef.child(username).child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
+                                    Log.d("Time is", String.valueOf((long) elapsedMillis));
+                                    resetChrometer();
+                                    showtext.setText("");
+                                    countword++;
+                                    String col = Integer.toString(countword + 1);
+                                    textcount.setText(col);
+                                    nextword(countword);
+                                    pauseChrometer();
+                                }
+                                countmain++;
+                                Log.d("countmain is ", String.valueOf(countmain));
+                                Log.d("countword is ", String.valueOf(countmain));
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
 
                     }
                 });
             }
+        }.start();
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
     }
 
@@ -141,48 +151,34 @@ public class traingame1 extends AppCompatActivity {
         return json;
     }
     public void nextword(final int wordID){
-        imagecount.setImageResource(R.drawable.treetwoone2);
-        new CountDownTimer(3000,3000){
-            @Override
-            public void onTick(long l) {
+        try {
+            JSONArray jArray = new JSONArray(readJSONFromAsset());
+            final String word;
+            String brind;
+            final String Stringcount;
+            brind = jArray.getJSONObject(wordID).getString("brinds");
+            word = jArray.getJSONObject(wordID).getString("words");
+            Stringcount = jArray.getJSONObject(wordID).getString("StringCount");
+            showtext.setText(brind);
+            new CountDownTimer(3000,3000) {
+                @Override
+                public void onTick(long l) {
 
-            }
-
-            @Override
-            public void onFinish() {
-                imagecount.setImageResource(android.R.color.transparent);
-                try {
-                    JSONArray jArray = new JSONArray(readJSONFromAsset());
-                    final String word;
-                    String brind;
-                    final String Stringcount;
-                    brind = jArray.getJSONObject(wordID).getString("brinds");
-                    word = jArray.getJSONObject(wordID).getString("words");
-                    Stringcount = jArray.getJSONObject(wordID).getString("StringCount");
-                    showtext.setText(brind);
-                    new CountDownTimer(3000,3000) {
-                        @Override
-                        public void onTick(long l) {
-
-                        }
-
-                        @Override
-                        public void onFinish() {
-                            startChrometer();
-                            String co = Integer.toString(wordID);
-                            myRef.child(username).child("wordtrain").child(co).child("word").setValue(word);
-                            myRef.child(username).child("wordtrain").child(co).child("StringCount").setValue(Stringcount);
-                            showtext.setText(word);
-                        }
-                    }.start();
-                    } catch (JSONException e) {
-                    e.printStackTrace();
                 }
-            }
-
-        }.start();
-
+                @Override
+                public void onFinish() {
+                    startChrometer();
+                    String co = Integer.toString(wordID);
+                    myRef.child(username).child("wordtrain").child(co).child("word").setValue(word);
+                    myRef.child(username).child("wordtrain").child(co).child("StringCount").setValue(Stringcount);
+                    showtext.setText(word);
+                }
+            }.start();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
+    @Override
     public void onBackPressed() {
 
     }
