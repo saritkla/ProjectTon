@@ -73,7 +73,7 @@ public class traingame1 extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         final int wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));
                         Log.d("wodID", String.valueOf(wordID));
-                        textcount.setText(String.valueOf(wordID));
+                        textcount.setText(String.valueOf(wordID+1));
                         if (wordID == 1) countword = 0;
                         else countword = wordID;
                         nextword(countword);
@@ -81,36 +81,39 @@ public class traingame1 extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
                                 countmain++;
-                                if (countmain == 11) {
+                                if (countmain == 11){
+                                    pauseChrometer();
                                     long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                                     String co = Integer.toString(countword);
-                                    myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
-                                    Log.d("Time is", String.valueOf((long) elapsedMillis));
+                                    myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
                                     sumtime = sumtime + elapsedMillis;
                                     resetChrometer();
-                                    Intent tosum = new Intent(traingame1.this, sumtraingame.class);
-                                    tosum.putExtra("username", username);
+                                    Intent tosum = new Intent(traingame1.this,sumwordgame.class);
+                                    tosum.putExtra("username",username);
                                     tosum.putExtra("sumtimepergame",sumtime);
                                     tosum.putExtra("countwordpergame",countmain);
                                     tosum.putExtra("countallwordplay",countword);
                                     startActivity(tosum);
-                                } else {
+                                }
+                                else{
                                     pauseChrometer();
                                     long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                                     String co = Integer.toString(countword);
-                                    myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
-                                    Log.d("Time is", String.valueOf((long) elapsedMillis));
+                                    myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
                                     sumtime = sumtime + elapsedMillis;
+                                    Log.d("Time is", String.valueOf((long)elapsedMillis));
+                                    Log.d("time all =", String.valueOf(sumtime));
                                     resetChrometer();
                                     showtext.setText("");
                                     countword++;
-                                    String col = Integer.toString(countword + 1);
+                                    String col = Integer.toString(countword+1);
                                     textcount.setText(col);
                                     nextword(countword);
                                     pauseChrometer();
                                 }
+
                                 Log.d("countmain is ", String.valueOf(countmain));
-                                Log.d("countword is ", String.valueOf(countmain));
+                                Log.d("countword is ", String.valueOf(countword));
                             }
                         });
                     }

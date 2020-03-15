@@ -83,7 +83,7 @@ public class Wordgame1 extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
                                 countmain++;
-                                if(countmain == 11){
+                                if (countmain == 11){
                                     pauseChrometer();
                                     long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                                     String co = Integer.toString(countword);
