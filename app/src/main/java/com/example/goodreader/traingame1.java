@@ -38,7 +38,7 @@ public class traingame1 extends AppCompatActivity {
     DatabaseReference myRef;
     String username;
     boolean running;
-    int countword,countmain;
+    int countword,countmain,wordID;
     long sumtime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,7 @@ public class traingame1 extends AppCompatActivity {
         setContentView(R.layout.activity_traingame1);
         Bundle bundle = getIntent().getExtras();
         username =bundle.getString("username");
+        wordID = bundle.getInt("wordID");
         imagecount = (pl.droidsonroids.gif.GifImageView ) findViewById(R.id.imagecount);
         showtext = (TextView)findViewById(R.id.textshow);
         textcount = (TextView)findViewById(R.id.textcount);
@@ -60,6 +61,7 @@ public class traingame1 extends AppCompatActivity {
         countmain = 1;
         sumtime = 0;
         imagecount.setImageResource(R.drawable.treetwoone2);
+        textcount.setText(String.valueOf(wordID+1));
         new CountDownTimer(3000, 3000) {
             @Override
             public void onTick(long l) {
@@ -68,56 +70,48 @@ public class traingame1 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 imagecount.setImageResource(android.R.color.transparent);
-                myRef.child("wordtrain").addListenerForSingleValueEvent(new ValueEventListener() {
+                Log.d("wodID", String.valueOf(wordID));
+                textcount.setText(String.valueOf(wordID+1));
+                if (wordID == 1) countword = 0;
+                else countword = wordID;
+                nextword(countword);
+                nextpage.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        final int wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));
-                        Log.d("wodID", String.valueOf(wordID));
-                        textcount.setText(String.valueOf(wordID));
-                        if (wordID == 1) countword = 0;
-                        else countword = wordID;
-                        nextword(countword);
-                        nextpage.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                countmain++;
-                                if (countmain == 11) {
-                                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                                    String co = Integer.toString(countword);
-                                    myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
-                                    Log.d("Time is", String.valueOf((long) elapsedMillis));
-                                    sumtime = sumtime + elapsedMillis;
-                                    resetChrometer();
-                                    Intent tosum = new Intent(traingame1.this, sumtraingame.class);
-                                    tosum.putExtra("username", username);
-                                    tosum.putExtra("sumtimepergame",sumtime);
-                                    tosum.putExtra("countwordpergame",countmain);
-                                    tosum.putExtra("countallwordplay",countword);
-                                    startActivity(tosum);
-                                } else {
-                                    pauseChrometer();
-                                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                                    String co = Integer.toString(countword);
-                                    myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
-                                    Log.d("Time is", String.valueOf((long) elapsedMillis));
-                                    sumtime = sumtime + elapsedMillis;
-                                    resetChrometer();
-                                    showtext.setText("");
-                                    countword++;
-                                    String col = Integer.toString(countword + 1);
-                                    textcount.setText(col);
-                                    nextword(countword);
-                                    pauseChrometer();
-                                }
-                                Log.d("countmain is ", String.valueOf(countmain));
-                                Log.d("countword is ", String.valueOf(countmain));
-                            }
-                        });
-                    }
+                    public void onClick(View view) {
+                        countmain++;
+                        if (countmain == 11){
+                            pauseChrometer();
+                            long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                            String co = Integer.toString(countword);
+                            myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
+                            sumtime = sumtime + elapsedMillis;
+                            resetChrometer();
+                            Intent tosum = new Intent(traingame1.this,sumwordgame.class);
+                            tosum.putExtra("username",username);
+                            tosum.putExtra("sumtimepergame",sumtime);
+                            tosum.putExtra("countwordpergame",countmain);
+                            tosum.putExtra("countallwordplay",countword);
+                            startActivity(tosum);
+                        }
+                        else{
+                            pauseChrometer();
+                            long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                            String co = Integer.toString(countword);
+                            myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
+                            sumtime = sumtime + elapsedMillis;
+                            Log.d("Time is", String.valueOf((long)elapsedMillis));
+                            Log.d("time all =", String.valueOf(sumtime));
+                            resetChrometer();
+                            showtext.setText("");
+                            countword++;
+                            String col = Integer.toString(countword+1);
+                            textcount.setText(col);
+                            nextword(countword);
+                            pauseChrometer();
+                        }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                        Log.d("countmain is ", String.valueOf(countmain));
+                        Log.d("countword is ", String.valueOf(countword));
                     }
                 });
             }

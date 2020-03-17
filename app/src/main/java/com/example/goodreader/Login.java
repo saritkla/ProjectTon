@@ -34,7 +34,7 @@ public class Login extends AppCompatActivity {
     Button loginbt;
     Button regisbt;
     EditText editname;
-    boolean issuccess;
+    boolean issuccess =false;
     String username;
     public HashMap arruser;
     HomeWatcher mHomeWatcher;
@@ -72,34 +72,36 @@ public class Login extends AppCompatActivity {
         loginbt = (Button) findViewById(R.id.loginBt);
         regisbt = (Button) findViewById(R.id.regisBt);
         editname = (EditText) findViewById(R.id.editname);
-        issuccess = false;
         myRef = FirebaseDatabase.getInstance().getReference().child("username");
         database = FirebaseDatabase.getInstance();
         loginbt.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick(View v) {
                 username = editname.getText().toString();
-                myRef.child(username).addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        arruser = (HashMap) dataSnapshot.getValue();
-                        Log.d("arr", String.valueOf(arruser));
-                        if (arruser != null) issuccess = true;
-                        if (issuccess){
-                            Intent goStart = new Intent(Login.this,StartGame.class);
-                            goStart.putExtra("username",username);
-                            startActivity(goStart);
+                Log.d("user: ",username);
+                if (username.isEmpty())Toast.makeText(Login.this, "กรุณาใส่ชื่อผู้ใช้", Toast.LENGTH_SHORT).show();
+                else{
+                    myRef.child(username).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            issuccess = false;
+                            arruser = (HashMap) dataSnapshot.getValue();
+                            if (arruser != null) issuccess = true;
+                            if (issuccess){
+                                Intent goStart = new Intent(Login.this,StartGame.class);
+                                goStart.putExtra("username",username);
+                                startActivity(goStart);
+                            }
+                            else Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
+
                         }
-                        else Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
 
-                    }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-
+                        }
+                    });
+                }
             }
         });
         regisbt.setOnClickListener(new View.OnClickListener() {
