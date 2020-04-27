@@ -101,7 +101,7 @@ public class sumwordgame extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent togame = new Intent(sumwordgame.this,Wordgame1.class);
+                Intent togame = new Intent(sumwordgame.this,Wordgamestart.class);
                 togame.putExtra("username",username);
                 startActivity(togame);
             }
