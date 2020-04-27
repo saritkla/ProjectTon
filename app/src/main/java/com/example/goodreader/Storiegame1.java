@@ -28,14 +28,16 @@ public class Storiegame1 extends AppCompatActivity {
     long pauseoffset;
     Chronometer chronometer;
     boolean running;
-    int count = 1;
+    int storieID;
+    String username;
     public int random_int;
     public  long elapsedMillis;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        final String username =bundle.getString("username");
+        username =bundle.getString("username");
+        storieID = bundle.getInt("storieID");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -46,12 +48,8 @@ public class Storiegame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
-        int min = 0;
-        int max = 29;
-        random_int = (int) (Math.random() * (max - min + 1) + min);
-        String wordid = Integer.toString(random_int);
-        textcount.setText(wordid);
-        nextword(random_int);
+        textcount.setText(String.valueOf(storieID+1));
+        nextword(storieID);
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,7 +58,7 @@ public class Storiegame1 extends AppCompatActivity {
                 resetChrometer();
                 Intent tosum = new Intent(Storiegame1.this,abcd.class);
                 tosum.putExtra("username",username);
-                tosum.putExtra("storieId",random_int);
+                tosum.putExtra("storieID",storieID);
                 tosum.putExtra("time",elapsedMillis);
                 startActivity(tosum);
             }

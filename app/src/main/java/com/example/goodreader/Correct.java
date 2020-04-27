@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.WindowManager;
 
@@ -15,12 +16,17 @@ import org.json.JSONException;
 
 public class Correct extends Activity {
 
+    int StorieID,time;
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        final String username = bundle.getString("username");
+        username = bundle.getString("username");
         final String chose = bundle.getString("aws");
+        StorieID = bundle.getInt("StorieID");
+        Log.d("StorieID   ", String.valueOf(StorieID));
+        time = bundle.getInt("ETime");
         setContentView(R.layout.activity_correct);
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -46,6 +52,8 @@ public class Correct extends Activity {
             public void onFinish() {
                 Intent gosum = new Intent(Correct.this,Sumstoriegame.class);
                 gosum.putExtra("username",username);
+                gosum.putExtra("StorieID",StorieID+1);
+                gosum.putExtra("ETime",time);
                 startActivity(gosum);
             }
 

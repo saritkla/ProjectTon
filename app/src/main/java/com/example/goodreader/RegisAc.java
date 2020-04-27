@@ -80,6 +80,7 @@ public class RegisAc extends AppCompatActivity {
                                 myRef.child(User).child("School").setValue(School);
                                 myRef.child(User).child("wordtrain").child("0").child("Time").setValue(0);
                                 myRef.child(User).child("wordtest").child("0").child("Time").setValue(0);
+                                myRef.child(User).child("storiegame").setValue(0);
                                 Toast.makeText(RegisAc.this, "ลงทะเบียนเสร็จสิ้น", Toast.LENGTH_SHORT).show();
                                 Intent toLogin = new Intent(RegisAc.this, Login.class);
                                 startActivity(toLogin);

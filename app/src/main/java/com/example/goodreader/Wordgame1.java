@@ -84,6 +84,7 @@ public class Wordgame1 extends AppCompatActivity {
                         if (countmain == 11){
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                            if (countword == 200) countword = 0;
                             String co = Integer.toString(countword);
                             myRef.child("wordtest").child(co).child("Time").setValue(elapsedMillis);
                             sumtime = sumtime + elapsedMillis;

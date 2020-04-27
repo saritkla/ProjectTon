@@ -14,14 +14,24 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Sumstoriegame extends AppCompatActivity {
     ImageButton backtomenu,play;
     TextView lasttime,sumavgtime,Countnum;
+    String username,etime;
+    int storieID;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        final String username =bundle.getString("username");
+        username =bundle.getString("username");
+        storieID = bundle.getInt("StorieID");
+        etime =bundle.getString("ETime");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -32,6 +42,13 @@ public class Sumstoriegame extends AppCompatActivity {
         lasttime = (TextView)findViewById(R.id.lasttime);
         sumavgtime = (TextView)findViewById(R.id.sumavgtime);
         Countnum = (TextView)findViewById(R.id.Countnum);
+        Countnum.setText(String.valueOf(storieID));
+        myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
+        database = FirebaseDatabase.getInstance();
+        if (storieID == 29)
+            myRef.child("storiegame").setValue(0);
+        else
+            myRef.child("storiegame").setValue(storieID);
         backtomenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

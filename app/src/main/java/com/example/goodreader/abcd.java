@@ -22,23 +22,22 @@ public class abcd extends AppCompatActivity {
 
     TextView textcount,Textquestion;
     Button choseA,choseB,choseC,choseD;
-    public  String aws,cha,chb,chc,chd;
-    public  int wrongcount = 0;
+    String aws,cha,chb,chc,chd,username;
+    int wrongcount = 0,StorieId,time;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        final String username =bundle.getString("username");
-        final int random_int = bundle.getInt("storieId");
-        final int time = bundle.getInt("time");
+        username =bundle.getString("username");
+        StorieId = bundle.getInt("storieID");
+        time = bundle.getInt("time");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_abcd);
         textcount = (TextView)findViewById(R.id.textcount);
-        String storieid = Integer.toString(random_int);
-        textcount.setText(storieid);
+        textcount.setText(String.valueOf(StorieId+1));
         Textquestion = (TextView)findViewById(R.id.question);
         choseA = (Button)findViewById(R.id.choseA);
         choseB = (Button)findViewById(R.id.choseB);
@@ -47,17 +46,17 @@ public class abcd extends AppCompatActivity {
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             String word;
-            String question = jArray.getJSONObject(random_int).getString("question");
+            String question = jArray.getJSONObject(StorieId).getString("question");
             Textquestion.setText(question);
-            cha = jArray.getJSONObject(random_int).getString("a");
+            cha = jArray.getJSONObject(StorieId).getString("a");
             choseA.setText(cha);
-            chb = jArray.getJSONObject(random_int).getString("b");
+            chb = jArray.getJSONObject(StorieId).getString("b");
             choseB.setText(chb);
-            chc = jArray.getJSONObject(random_int).getString("c");
+            chc = jArray.getJSONObject(StorieId).getString("c");
             choseC.setText(chc);
-            chd = jArray.getJSONObject(random_int).getString("d");
+            chd = jArray.getJSONObject(StorieId).getString("d");
             choseD.setText(chd);
-            aws = jArray.getJSONObject(random_int).getString("aswer");
+            aws = jArray.getJSONObject(StorieId).getString("aswer");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -69,6 +68,8 @@ public class abcd extends AppCompatActivity {
                 if(aws.equals("a")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("StorieID",StorieId);
+                    gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",cha);
                     startActivity(gocorrect);
                 }
@@ -85,6 +86,8 @@ public class abcd extends AppCompatActivity {
                 if(aws.equals("b")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("StorieID",StorieId);
+                    gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chb);
                     startActivity(gocorrect);
                 }
@@ -102,6 +105,8 @@ public class abcd extends AppCompatActivity {
                 if(aws.equals("c")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("StorieID",StorieId);
+                    gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chc);
                     startActivity(gocorrect);
                 }
@@ -118,6 +123,8 @@ public class abcd extends AppCompatActivity {
                 if(aws.equals("d")){
                     Intent gocorrect = new Intent(abcd.this,Correct.class);
                     gocorrect.putExtra("username",username);
+                    gocorrect.putExtra("StorieID",StorieId);
+                    gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chd);
                     startActivity(gocorrect);
                 }

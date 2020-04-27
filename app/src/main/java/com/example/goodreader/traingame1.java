@@ -82,6 +82,7 @@ public class traingame1 extends AppCompatActivity {
                         if (countmain == 11){
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                            if (countword == 200) countword = 0;
                             String co = Integer.toString(countword);
                             myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
                             sumtime = sumtime + elapsedMillis;
