@@ -58,7 +58,7 @@ public class StartGame extends AppCompatActivity {
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent goinfo = new Intent(StartGame.this,settingAc.class);
+                Intent goinfo = new Intent(StartGame.this,infome.class);
                 goinfo.putExtra("username",username);
                 startActivity(goinfo);
             }
