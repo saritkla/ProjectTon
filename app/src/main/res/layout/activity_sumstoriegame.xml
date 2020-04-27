@@ -82,16 +82,17 @@
                         app:autoSizeTextType="uniform"
                         app:autoSizeStepGranularity="5dp"
                         android:textColor="@color/colorblack"/>
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="วินาที/อักษร"
-                        android:gravity="bottom|center_horizontal"
                         android:fontFamily="sans-serif"
-                        app:autoSizeTextType="uniform"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="วินาที/คำ"
+                        android:textColor="@color/colorblack"
                         app:autoSizeStepGranularity="5dp"
-                        android:textColor="@color/colorblack"/>
+                        app:autoSizeTextType="uniform" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -124,7 +125,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="อักษร/นาที"
+                        android:text="คำ/นาที"
                         android:gravity="bottom|center_horizontal"
                         android:fontFamily="sans-serif"
                         app:autoSizeTextType="uniform"
