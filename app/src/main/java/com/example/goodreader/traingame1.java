@@ -41,6 +41,8 @@ public class traingame1 extends AppCompatActivity {
     int countword,countmain,wordID;
     long sumtime;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
