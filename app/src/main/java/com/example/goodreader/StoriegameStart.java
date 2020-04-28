@@ -26,7 +26,6 @@ public class StoriegameStart extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
     int storieID;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

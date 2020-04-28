@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Correct">
+    tools:context=".howtogame1">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/correct"/>
+        android:background="@drawable/trainpop"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
