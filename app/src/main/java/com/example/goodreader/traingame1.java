@@ -40,6 +40,7 @@ public class traingame1 extends AppCompatActivity {
     boolean running;
     int countword,countmain,wordID;
     long sumtime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
