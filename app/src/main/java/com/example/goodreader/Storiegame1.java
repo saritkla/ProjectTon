@@ -15,6 +15,9 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -27,11 +30,14 @@ public class Storiegame1 extends AppCompatActivity {
     ImageButton nextpage;
     long pauseoffset;
     Chronometer chronometer;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
     boolean running;
     int storieID;
     String username;
     public int random_int;
     public  long elapsedMillis;
+    int countword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +55,15 @@ public class Storiegame1 extends AppCompatActivity {
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
         textcount.setText(String.valueOf(storieID+1));
+        myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
         nextword(storieID);
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 pauseChrometer();
                 elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                String co = Integer.toString(countword);
+                myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
                 resetChrometer();
                 Intent tosum = new Intent(Storiegame1.this,abcd.class);
                 tosum.putExtra("username",username);

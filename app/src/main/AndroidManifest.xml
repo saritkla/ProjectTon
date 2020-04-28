@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".infome"></activity>
+        <activity android:name=".howtorooread"></activity>
+        <activity android:name=".howtowordgame" />
+        <activity android:name=".howtogame1" />
+        <activity android:name=".infome" />
 
         <service
             android:name=".MusicService"
@@ -18,7 +21,7 @@
 
         <activity
             android:name=".Wrong"
-            android:theme="@style/AppTheme.popMe"></activity>
+            android:theme="@style/AppTheme.popMe" />
         <activity
             android:name=".Correct"
             android:theme="@style/AppTheme.popMe" />

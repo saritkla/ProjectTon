@@ -17,23 +17,25 @@ import android.widget.TextView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.math.BigDecimal;
+
+import static java.math.RoundingMode.HALF_UP;
+
 public class Sumstoriegame extends AppCompatActivity {
     ImageButton backtomenu,play;
     TextView lasttime,sumavgtime,Countnum;
-    String username,etime;
     int storieID;
+    String username;
     FirebaseDatabase database;
     DatabaseReference myRef;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        username =bundle.getString("username");
-        storieID = bundle.getInt("StorieID");
-        etime =bundle.getString("ETime");
+        final String username =bundle.getString("username");
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
+        storieID = bundle.getInt("storieID");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
         setContentView(R.layout.activity_sumstoriegame);
@@ -42,13 +44,11 @@ public class Sumstoriegame extends AppCompatActivity {
         lasttime = (TextView)findViewById(R.id.lasttime);
         sumavgtime = (TextView)findViewById(R.id.sumavgtime);
         Countnum = (TextView)findViewById(R.id.Countnum);
-        Countnum.setText(String.valueOf(storieID));
         myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
-        database = FirebaseDatabase.getInstance();
-        if (storieID == 29)
-            myRef.child("storiegame").setValue(0);
-        else
-            myRef.child("storiegame").setValue(storieID);
+        Countnum.setText(String.valueOf(storieID+1));
+//        BigDecimal timeword = new BigDecimal(sumtimepergame);
+//        BigDecimal timem = timeword.divide(milisec, 3, HALF_UP);
+//        BigDecimal wordgame =new BigDecimal(wordpergame);
         backtomenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
