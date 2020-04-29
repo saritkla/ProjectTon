@@ -64,10 +64,6 @@ public class traingame1 extends AppCompatActivity {
         countmain = 1;
         sumtime = 0;
         imagecount.setImageResource(R.drawable.treetwoone2);
-        if (wordID==0) {
-            textcount.setText(String.valueOf(wordID));
-        }
-        else textcount.setText(String.valueOf(wordID+1));
         new CountDownTimer(3000, 3000) {
             @Override
             public void onTick(long l) {

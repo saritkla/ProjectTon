@@ -37,7 +37,6 @@ public class Storiegame1 extends AppCompatActivity {
     String username;
     public int random_int;
     public  long elapsedMillis;
-    int countword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,8 +61,8 @@ public class Storiegame1 extends AppCompatActivity {
             public void onClick(View view) {
                 pauseChrometer();
                 elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                String co = Integer.toString(countword);
-                myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
+                if(storieID==29) myRef.child("storiegame").setValue(0);
+                else myRef.child("storiegame").setValue(storieID+1);
                 resetChrometer();
                 Intent tosum = new Intent(Storiegame1.this,abcd.class);
                 tosum.putExtra("username",username);

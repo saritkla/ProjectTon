@@ -43,7 +43,6 @@ public class Wordgamestart extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         ready = (ImageButton)findViewById(R.id.readyicon);
         textcount = (TextView)findViewById(R.id.textcount);
-
         myRef.child("wordtest").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

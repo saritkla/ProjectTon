@@ -157,7 +157,6 @@
                                     android:background="@drawable/textinput2"
                                     android:fontFamily="sans-serif"
                                     android:hint="9"
-                                    app:met_mask= "#"
                                     android:inputType="date"
                                     android:maxLines="1"
                                     app:autoSizeTextType="uniform"
