@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
 
         new CountDownTimer(4000, 4000) {
 
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFinish() {
                 Intent tostart = new Intent(MainActivity.this,Login.class);
                 startActivity(tostart);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 
             }
 

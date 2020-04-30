@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".Wordgamestart">
 
     <RelativeLayout
@@ -44,7 +45,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:textColor="@color/colorblack"
-                        android:fontFamily="sans-serif"/>
+                        android:fontFamily="@font/pridi"/>
                     <TextView
                         android:id="@+id/textcount"
                         android:layout_width="0dp"
@@ -57,7 +58,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:textColor="@color/colorblack"
-                        android:fontFamily="@font/mainfont"
+                        android:fontFamily="@font/pridi"
                         /></LinearLayout>
                 <Space
                     android:layout_width="0dp"
@@ -86,7 +87,7 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"/>
+                        android:layout_weight="1"/>
                     <ImageButton
                         android:id="@+id/readyicon"
                         android:layout_width="match_parent"
@@ -97,7 +98,18 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"/>
+                        android:layout_weight="0.5"/>
+                    <ImageButton
+                        android:id="@+id/backtomenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:background="@drawable/backtomenu"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
                 </LinearLayout>
                 <Space
                     android:layout_width="0dp"

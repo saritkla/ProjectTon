@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".RegisAc">
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +40,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_weight="1.5"
                         android:orientation="horizontal">
                         <Space
                             android:layout_width="0dp"
@@ -84,21 +85,23 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:text="1. ชื่อผู้ใช้ (ภาษาอังกฤษ)"
+                                android:textStyle="bold"
                                 app:autoSizeTextType="uniform"
-                                android:textStyle="bold" />
+                                android:textColor="@color/colorblack"/>
+
                             <EditText
                                 android:id="@+id/Username"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1.5"
                                 android:background="@drawable/textinput"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:hint="Username"
-                                android:paddingLeft="12pt"
                                 android:inputType="text"
                                 android:maxLines="1"
+                                android:paddingLeft="12pt"
                                 app:autoSizeTextType="uniform" />
 
                             <Space
@@ -110,10 +113,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:text="2. ชื่อ - นามสกุล (มีคำนำหน้า)"
                                 android:textStyle="bold"
-                                app:autoSizeTextType="uniform" />
+                                app:autoSizeTextType="uniform"
+                                android:textColor="@color/colorblack"/>
 
                             <EditText
                                 android:id="@+id/nameAnser"
@@ -121,12 +125,13 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1.5"
                                 android:background="@drawable/textinput"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:hint="ด.ช. ชื่อ นามสกุล"
                                 android:inputType="text"
                                 android:maxLines="1"
                                 android:paddingLeft="12pt"
-                                app:autoSizeTextType="uniform" />
+                                app:autoSizeTextType="uniform"
+                                android:textColor="@color/colorblack"/>
 
                             <Space
                                 android:layout_width="match_parent"
@@ -138,10 +143,11 @@
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:text="3.อายุ"
+                                android:textStyle="bold"
                                 app:autoSizeTextType="uniform"
-                                android:textStyle="bold" />
+                                android:textColor="@color/colorblack"/>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -155,20 +161,23 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:background="@drawable/textinput2"
-                                    android:fontFamily="sans-serif"
+                                    android:fontFamily="@font/pridi"
                                     android:hint="9"
+                                    android:textAlignment="center"
                                     android:inputType="date"
                                     android:maxLines="1"
-                                    app:autoSizeTextType="uniform"
-                                    android:paddingLeft="12pt"
-                                     />
+                                    app:autoSizeTextType="uniform" />
+
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+
                                     android:text="ปี"
+                                    android:paddingLeft="10pt"
                                     app:autoSizeTextType="uniform"
-                                    />
+                                    android:fontFamily="@font/pridi"
+                                    android:textColor="@color/colorblack"/>
 
                                 <Space
                                     android:layout_width="0dp"
@@ -180,14 +189,16 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="0.2"/>
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:fontFamily="sans-serif"
+                                android:fontFamily="@font/pridi"
                                 android:text="4. โรงเรียน"
+                                android:textStyle="bold"
                                 app:autoSizeTextType="uniform"
-                                android:textStyle="bold" />
+                                android:textColor="@color/colorblack"/>
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
@@ -201,29 +212,29 @@
                                     android:layout_weight="4"
                                     android:autoSizeTextType="uniform"
                                     android:background="@drawable/textinput"
-                                    android:fontFamily="sans-serif"
+                                    android:fontFamily="@font/pridi"
                                     android:hint="โรงเรียนรักการอ่าน"
+                                    android:textColor="@color/colorblack"
+                                    android:imeOptions="actionNext"
                                     android:inputType="text"
                                     android:maxLines="1"
                                     android:paddingLeft="12pt"
-                                    app:autoSizeTextType="uniform"
                                     android:textAlignment="textStart"
-                                    android:imeOptions="actionNext"
-                                    />
+                                    app:autoSizeTextType="uniform" />
 
                                 <TextView
                                     android:layout_width="0dp"
-                                    android:layout_height="match_parent"
+                                    android:layout_height="30dp"
                                     android:layout_gravity="center_vertical"
-                                    android:gravity="center"
-                                    android:layout_weight="1"
-                                    android:fontFamily="sans-serif"
-                                    android:text="ชั้น"
                                     android:layout_marginTop="10dp"
                                     android:layout_marginBottom="10dp"
-                                    app:autoSizeTextType="uniform"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/pridi"
+                                    android:gravity="center"
+                                    android:text="ชั้น"
                                     android:textStyle="bold"
-                                    />
+                                    app:autoSizeTextType="uniform"
+                                    android:textColor="@color/colorblack"/>
 
                                 <com.santalu.maskedittext.MaskEditText
                                     android:id="@+id/intage"
@@ -231,14 +242,14 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
                                     android:background="@drawable/textinput2"
-                                    android:fontFamily="sans-serif"
+                                    android:fontFamily="@font/pridi"
                                     android:hint="ป.4"
-                                    app:met_mask="ป.#"
                                     android:inputType="number"
                                     android:maxLines="1"
                                     android:textAlignment="center"
                                     app:autoSizeTextType="uniform"
-                                    />
+                                    app:met_mask="ป.#"
+                                    android:textColor="@color/colorblack"/>
                             </LinearLayout>
                             </LinearLayout>
 

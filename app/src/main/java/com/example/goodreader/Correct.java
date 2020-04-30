@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.DisplayMetrics;
@@ -18,6 +19,7 @@ public class Correct extends Activity {
 
     int StorieID,time;
     String username;
+    MediaPlayer correct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,14 +42,15 @@ public class Correct extends Activity {
         params.gravity = Gravity.CENTER;
         params.x = 0;
         params.y = -20;
+        correct = MediaPlayer.create(this, R.raw.correct);
+        correct.start();
 
         getWindow().setAttributes(params);
-        new CountDownTimer(2000,2000){
+        new CountDownTimer(1000,1000){
             @Override
             public void onTick(long l) {
 
             }
-
             @Override
             public void onFinish() {
                 Intent gosum = new Intent(Correct.this,Sumstoriegame.class);
@@ -55,6 +58,7 @@ public class Correct extends Activity {
                 gosum.putExtra("StorieID",StorieID+1);
                 gosum.putExtra("ETime",time);
                 startActivity(gosum);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
 
         }.start();

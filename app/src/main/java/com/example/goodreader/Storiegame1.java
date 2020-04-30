@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
@@ -35,6 +36,7 @@ public class Storiegame1 extends AppCompatActivity {
     boolean running;
     int storieID;
     String username;
+    MediaPlayer countdown,buttonstart,buttontab,buttonnot,buttonnext;
     public int random_int;
     public  long elapsedMillis;
     @Override
@@ -46,7 +48,7 @@ public class Storiegame1 extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_storiegame1);
         imagecount = (pl.droidsonroids.gif.GifImageView ) findViewById(R.id.imagecount);
         showtext = (TextView)findViewById(R.id.textshow);
@@ -54,42 +56,49 @@ public class Storiegame1 extends AppCompatActivity {
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
         textcount.setText(String.valueOf(storieID+1));
+        buttonstart = MediaPlayer.create(this, R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this, R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this, R.raw.buttonnot);
+        buttonnext = MediaPlayer.create(this, R.raw.buttonnext);
+        countdown = MediaPlayer.create(this, R.raw.coutdown);
         myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
         nextword(storieID);
+        countdown.start();
+        nextpage.setVisibility(View.INVISIBLE);
         nextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pauseChrometer();
-                elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+//                pauseChrometer();
+//                elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                 if(storieID==29) myRef.child("storiegame").setValue(0);
                 else myRef.child("storiegame").setValue(storieID+1);
-                resetChrometer();
+//                resetChrometer();
                 Intent tosum = new Intent(Storiegame1.this,abcd.class);
                 tosum.putExtra("username",username);
                 tosum.putExtra("storieID",storieID);
-                tosum.putExtra("time",elapsedMillis);
                 startActivity(tosum);
+                buttonstart.start();
             }
         });
     }
-    public  void startChrometer(){
-        if(!running){
-            chronometer.setBase(SystemClock.elapsedRealtime() - pauseoffset);
-            chronometer.start();
-            running = true;
-        }
-    }
-    public  void pauseChrometer(){
-        if(running){
-            chronometer.stop();
-            pauseoffset = SystemClock.elapsedRealtime() - chronometer.getBase();
-            running = false;
-        }
-    }
-    public void resetChrometer(){
-        chronometer.setBase(SystemClock.elapsedRealtime());
-        pauseoffset = 0;
-    }
+//    public  void startChrometer(){
+//        if(!running){
+//            chronometer.setBase(SystemClock.elapsedRealtime() - pauseoffset);
+//            chronometer.start();
+//            running = true;
+//        }
+//    }
+//    public  void pauseChrometer(){
+//        if(running){
+//            chronometer.stop();
+//            pauseoffset = SystemClock.elapsedRealtime() - chronometer.getBase();
+//            running = false;
+//        }
+//    }
+//    public void resetChrometer(){
+//        chronometer.setBase(SystemClock.elapsedRealtime());
+//        pauseoffset = 0;
+//    }
 
     public String readJSONFromAsset() {
         String json = null;
@@ -117,13 +126,14 @@ public class Storiegame1 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 imagecount.setImageResource(android.R.color.transparent);
-                startChrometer();
+//                startChrometer();
                 try {
                     JSONArray jArray = new JSONArray(readJSONFromAsset());
                     String word;
-                    word = jArray.getJSONObject(Storiegame1.this.random_int).getString("storie");
+                    word = jArray.getJSONObject(Storiegame1.this.storieID).getString("storie");
                     showtext.setMovementMethod(new ScrollingMovementMethod());
                     showtext.setText(word);
+                    nextpage.setVisibility(View.VISIBLE);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

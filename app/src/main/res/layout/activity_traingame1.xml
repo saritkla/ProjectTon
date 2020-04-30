@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".traingame1">
     <ImageButton
         android:id="@+id/nextpagebt"
@@ -43,7 +44,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"/>
+                    android:fontFamily="@font/pridi"/>
                 <TextView
                     android:id="@+id/textcount"
                     android:layout_width="0dp"
@@ -57,14 +58,17 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="@font/pridi"
                     />
             </LinearLayout>
             <Chronometer
                 android:id="@+id/chrometer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"/>/>
 
         </LinearLayout>
         <Space
@@ -92,7 +96,7 @@
                     app:autoSizeMinTextSize="50dp"
                     app:autoSizeMaxTextSize="200dp"
                     app:autoSizeStepGranularity="10dp"
-                    android:fontFamily="@font/mainfont"
+                    android:fontFamily="@font/pridi"
                     android:gravity="center"
                     android:textAlignment="center"
                     android:textColor="@color/colorblack"/>

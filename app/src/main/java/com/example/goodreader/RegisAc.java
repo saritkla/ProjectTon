@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -30,6 +31,7 @@ public class RegisAc extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
     boolean insert = false;
+    MediaPlayer music1,buttontab,buttonstart,buttonnot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,7 @@ public class RegisAc extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_regispage);
         myRef = FirebaseDatabase.getInstance().getReference().child("username");
         database = FirebaseDatabase.getInstance();
@@ -49,12 +51,22 @@ public class RegisAc extends AppCompatActivity {
         submit = (ImageButton) findViewById(R.id.submit);
         cancel = (ImageButton) findViewById(R.id.cancel);
 
+        buttonstart = MediaPlayer.create(this,R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this,R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this,R.raw.buttonnot);
+        music1 = MediaPlayer.create(this,R.raw.greenery);
+        music1.setLooping(true);
+        music1.start();
+
 //        db = new DbHelper(this);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent toLogin = new Intent(RegisAc.this,Login.class);
                 startActivity(toLogin);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                music1.stop();
+                buttontab.start();
             }
         });
         submit.setOnClickListener(new View.OnClickListener() {
@@ -62,17 +74,20 @@ public class RegisAc extends AppCompatActivity {
             public void onClick(View view) {
                 User = username.getText().toString();
                 Name = name.getText().toString();
-                School = name.getText().toString();
+                School = school.getText().toString();
                 Intage = intage.getText().toString();
                 Age = age.getText().toString();
-                if (User.isEmpty()) Toast.makeText(RegisAc.this, "กรุณาใส่ข้อมูลให้ครบ", Toast.LENGTH_SHORT).show();
+                if (User.isEmpty()) {
+                    Toast.makeText(RegisAc.this, "กรุณาใส่ข้อมูลให้ครบ", Toast.LENGTH_SHORT).show();
+                    buttonnot.start();
+                }
                 else {
                     myRef.child(User).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                             arruser = (HashMap) dataSnapshot.getValue();
                             if (arruser == null) insert = true;
-                            else Toast.makeText(RegisAc.this, "กรุณาใช้ชื่อผู้ใช้อื่น", Toast.LENGTH_SHORT).show();
+                            else Toast.makeText(RegisAc.this, "ชื่อผู้ใช้ซ้ำ กรุณาใช้ชื่อผู้ใช้อื่น", Toast.LENGTH_SHORT).show();
                             if (insert && !User.equals("") && !Name.equals("") && !School.equals("") && !Intage.equals("") && !Age.equals("")) {
                                 myRef.child(User).child("Name").setValue(Name);
                                 myRef.child(User).child("Intage").setValue(Intage);
@@ -84,8 +99,14 @@ public class RegisAc extends AppCompatActivity {
                                 Toast.makeText(RegisAc.this, "ลงทะเบียนเสร็จสิ้น", Toast.LENGTH_SHORT).show();
                                 Intent toLogin = new Intent(RegisAc.this, Login.class);
                                 startActivity(toLogin);
+                                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                                buttonstart.start();
+                                music1.stop();
                             }
-                            else Toast.makeText(RegisAc.this, "กรุณาใส่ข้อมูล", Toast.LENGTH_SHORT).show();
+                            else {
+                                Toast.makeText(RegisAc.this, "กรุณาใส่ข้อมูลให้ครบ", Toast.LENGTH_SHORT).show();
+                                buttonnot.start();
+                            }
                         }
 
                         @Override

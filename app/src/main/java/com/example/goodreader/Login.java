@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcelable;
@@ -40,18 +41,23 @@ public class Login extends AppCompatActivity {
     HomeWatcher mHomeWatcher;
     FirebaseDatabase database;
     DatabaseReference myRef;
+    MediaPlayer music1,buttontab,buttonstart,buttonnot;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_login);
         doBindService();
-        Intent music = new Intent();
-        music.setClass(this, MusicService.class);
-        startService(music);
+        buttonstart = MediaPlayer.create(this,R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this,R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this,R.raw.buttonnot);
+        music1 = MediaPlayer.create(this,R.raw.greenery);
+        music1.setLooping(true);
+        music1.start();
+
         mHomeWatcher = new HomeWatcher(this);
         mHomeWatcher.setOnHomePressedListener(new HomeWatcher.OnHomePressedListener() {
             @Override
@@ -71,7 +77,7 @@ public class Login extends AppCompatActivity {
 
         loginbt = (Button) findViewById(R.id.loginBt);
         regisbt = (Button) findViewById(R.id.regisBt);
-        editname = (EditText) findViewById(R.id.editname);
+        editname = (EditText) findViewById(R.id.usernamelogin);
         myRef = FirebaseDatabase.getInstance().getReference().child("username");
         database = FirebaseDatabase.getInstance();
         loginbt.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +85,10 @@ public class Login extends AppCompatActivity {
                 public void onClick(View v) {
                 username = editname.getText().toString();
                 Log.d("user: ",username);
-                if (username.isEmpty())Toast.makeText(Login.this, "กรุณาใส่ชื่อผู้ใช้", Toast.LENGTH_SHORT).show();
+                if (username.isEmpty()) {
+                    Toast.makeText(Login.this, "กรุณาใส่ชื่อผู้ใช้", Toast.LENGTH_SHORT).show();
+                    buttonnot.start();
+                }
                 else{
                     myRef.child(username).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
@@ -90,9 +99,26 @@ public class Login extends AppCompatActivity {
                             if (issuccess){
                                 Intent goStart = new Intent(Login.this,StartGame.class);
                                 goStart.putExtra("username",username);
+                                music1.stop();
+                                buttonstart.start();
                                 startActivity(goStart);
+                                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                                //BIND Music Service
+                                doBindService();
+                                Intent music = new Intent();
+                                music.setClass(Login.this, MusicService.class);
+                                startService(music);
+                                mHomeWatcher.startWatch();
+                                if (mServ != null) {
+                                    mServ.startMusic();
+                                }
+
+
                             }
-                            else Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
+                            else {
+                                buttonnot.start();
+                                Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
+                            }
 
                         }
 
@@ -108,32 +134,34 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent goregis = new Intent(Login.this, RegisAc.class);
+                buttontab.start();
+                music1.stop();
                 startActivity(goregis);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
             }
         });
-    }
-    @Override
-    public void onBackPressed() {
+
+
+        //Start HomeWatcher
+        mHomeWatcher = new HomeWatcher(this);
+        mHomeWatcher.setOnHomePressedListener(new HomeWatcher.OnHomePressedListener() {
+            @Override
+            public void onHomePressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+            @Override
+            public void onHomeLongPressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+        });
+
 
     }
-
-//    public boolean getuser(String user) {
-////        Log.d("User is",(String)user);
-//        boolean resule = false;
-//        TodoListDAO todoListDAO = new TodoListDAO(getApplicationContext());
-//        todoListDAO.open();
-//        ArrayList<String> mylist = todoListDAO.getAllTodoList();
-//        Object[] mStringArray = mylist.toArray();
-//        for(int i = 0; i < mStringArray.length ; i++){
-//            Log.d("string is",(String)mStringArray[i]);
-//            if (mStringArray[i].equals(user)) {
-//                resule = true;
-//            }
-//        }
-//        todoListDAO.close();
-//        return resule;
-//    }
-
+    //Bind/Unbind music service
     private boolean mIsBound = false;
     private MusicService mServ;
     private ServiceConnection Scon =new ServiceConnection(){
@@ -150,10 +178,9 @@ public class Login extends AppCompatActivity {
 
     void doBindService(){
         bindService(new Intent(this,MusicService.class),
-                Scon, Context.BIND_AUTO_CREATE);
+                Scon,Context.BIND_AUTO_CREATE);
         mIsBound = true;
     }
-
 
     void doUnbindService()
     {
@@ -171,22 +198,13 @@ public class Login extends AppCompatActivity {
         if (mServ != null) {
             mServ.resumeMusic();
         }
-
     }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
 
-        doUnbindService();
-        Intent music = new Intent();
-        music.setClass(this,MusicService.class);
-        stopService(music);
-
-    }
     @Override
     protected void onPause() {
         super.onPause();
 
+        //Detect idle screen
         PowerManager pm = (PowerManager)
                 getSystemService(Context.POWER_SERVICE);
         boolean isScreenOn = false;
@@ -199,6 +217,23 @@ public class Login extends AppCompatActivity {
                 mServ.pauseMusic();
             }
         }
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        //UNBIND music service
+        doUnbindService();
+        Intent music = new Intent();
+        music.setClass(this,MusicService.class);
+        mHomeWatcher.stopWatch();
+        stopService(music);
+
+    }
+    @Override
+    public void onBackPressed() {
 
     }
 }

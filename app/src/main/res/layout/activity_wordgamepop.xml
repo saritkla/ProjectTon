@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgmodesl"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".wordgamepop">
     <LinearLayout
         android:layout_width="match_parent"

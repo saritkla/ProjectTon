@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
@@ -37,6 +38,7 @@ public class traingame1 extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
     String username;
+    MediaPlayer countdown,buttonstart,buttontab,buttonnot,buttonnext;
     boolean running;
     int countword,countmain,wordID;
     long sumtime;
@@ -49,7 +51,7 @@ public class traingame1 extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_traingame1);
         Bundle bundle = getIntent().getExtras();
         username =bundle.getString("username");
@@ -59,10 +61,19 @@ public class traingame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
+
+        buttonstart = MediaPlayer.create(this, R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this, R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this, R.raw.buttonnot);
+        buttonnext = MediaPlayer.create(this, R.raw.buttonnext);
+        countdown = MediaPlayer.create(this, R.raw.coutdown);
+        countdown.start();
+
         myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
         database = FirebaseDatabase.getInstance();
         countmain = 1;
         sumtime = 0;
+        textcount.setText(String.valueOf(wordID+1));
         imagecount.setImageResource(R.drawable.treetwoone2);
         new CountDownTimer(3000, 3000) {
             @Override
@@ -80,16 +91,17 @@ public class traingame1 extends AppCompatActivity {
                 nextpage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        buttonnext.start();
                         countmain++;
-                        if (countmain == 11){
+                        if (countmain == 21){
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                            if (countword == 200) countword = 0;
+                            if (countword == 1200) countword = 0;
                             String co = Integer.toString(countword);
                             myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
                             sumtime = sumtime + elapsedMillis;
                             resetChrometer();
-                            Intent tosum = new Intent(traingame1.this,sumwordgame.class);
+                            Intent tosum = new Intent(traingame1.this,sumtraingame.class);
                             tosum.putExtra("username",username);
                             tosum.putExtra("sumtimepergame",sumtime);
                             tosum.putExtra("countwordpergame",countmain);
@@ -167,7 +179,7 @@ public class traingame1 extends AppCompatActivity {
             word = jArray.getJSONObject(wordID).getString("words");
             Stringcount = jArray.getJSONObject(wordID).getString("StringCount");
             showtext.setText(brind);
-            new CountDownTimer(3000,3000) {
+            new CountDownTimer(1500,1500) {
                 @Override
                 public void onTick(long l) {
 

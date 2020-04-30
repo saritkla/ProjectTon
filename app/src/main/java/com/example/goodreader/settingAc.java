@@ -20,7 +20,7 @@ public class settingAc extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_settingac);
         logout = (ImageButton) findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {

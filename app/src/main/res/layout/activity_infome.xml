@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".infome">
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,8 +48,8 @@
                     android:text=""
                     android:gravity="center|left"
                     app:autoSizeTextType="uniform"
-                    android:padding="15dp"
-                    android:textSize="24dp"
+                    android:paddingLeft="15dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
             </LinearLayout>
             <Space
@@ -69,6 +70,7 @@
                     android:text="ชื่อ-สกุล ::"
                     android:textSize="24dp"
                     app:autoSizeTextType="uniform"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
 
@@ -81,6 +83,7 @@
                     app:autoSizeTextType="uniform"
                     android:gravity="center|left"
                     android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
             </LinearLayout>
@@ -101,6 +104,7 @@
                     app:autoSizeTextType="uniform"
                     android:gravity="center"
                     android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
 
                 <TextView
@@ -112,6 +116,7 @@
                     android:text=""
                     app:autoSizeTextType="uniform"
                     android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
 
                 <TextView
@@ -120,8 +125,10 @@
                     android:layout_weight="1"
                     android:text="ปี"
                     app:autoSizeTextType="uniform"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:textSize="24dp"
+                    android:paddingLeft="15dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
                 <Space
                     android:layout_width="0dp"
@@ -136,6 +143,7 @@
                     app:autoSizeTextType="uniform"
                     app:autoSizeStepGranularity="5dp"
                     android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
                 <TextView
                     android:id="@+id/IntageV"
@@ -145,7 +153,9 @@
                     android:text=""
                     app:autoSizeTextType="uniform"
                     android:gravity="center"
-                    android:textSize="24dp"/>
+                    android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
+                    android:textColor="@color/colorblack"/>
             </LinearLayout>
             <Space
                 android:layout_width="match_parent"
@@ -164,6 +174,7 @@
                     android:gravity="center"
                     app:autoSizeTextType="uniform"
                     android:textSize="24dp"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
                 <TextView
@@ -172,9 +183,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:text=""
-                    android:gravity="center"
+                    android:gravity="left"
                     android:textSize="24dp"
+                    android:paddingLeft="15dp"
                     app:autoSizeTextType="uniform"
+                    android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
             </LinearLayout>
@@ -192,6 +205,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"/>
                 <ImageButton
+                    android:id="@+id/backinfo"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -199,7 +213,13 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"/>
+                    android:layout_weight="0.5"/>
+                <ImageButton
+                    android:id="@+id/manual"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/manual"/>
             </LinearLayout>
         </LinearLayout>
         <Space

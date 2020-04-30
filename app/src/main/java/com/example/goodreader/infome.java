@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,9 +26,11 @@ public class infome extends AppCompatActivity {
     TextView AgeV;
     TextView SchoolV;
     TextView NameV;
+    ImageButton manual,back;
     String username,Intage,Name,Age,School;
     FirebaseDatabase database;
     DatabaseReference myRef;
+    MediaPlayer buttontab,buttonstart,buttonnot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +40,7 @@ public class infome extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_infome);
 
         User= (TextView)findViewById(R.id.User);
@@ -44,8 +48,34 @@ public class infome extends AppCompatActivity {
         AgeV= (TextView)findViewById(R.id.AgeV);
         SchoolV= (TextView)findViewById(R.id.SchoolV);
         NameV= (TextView)findViewById(R.id.NameV);
+        manual = (ImageButton)findViewById(R.id.manual);
+        back = (ImageButton)findViewById(R.id.backinfo);
 
-        User.setText(username);
+        buttonstart = MediaPlayer.create(this,R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this,R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this,R.raw.buttonnot);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tomenu = new Intent(infome.this,StartGame.class);
+                tomenu.putExtra("username",username);
+                buttonnot.start();
+                startActivity(tomenu);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+            }
+        });
+        manual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tomenu = new Intent(infome.this,manual.class);
+                tomenu.putExtra("username",username);
+                buttonnot.start();
+                startActivity(tomenu);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+            }
+        });
+                                User.setText(username);
         myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
         database = FirebaseDatabase.getInstance();
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {

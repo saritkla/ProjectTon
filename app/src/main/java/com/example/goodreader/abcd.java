@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +25,7 @@ public class abcd extends AppCompatActivity {
     Button choseA,choseB,choseC,choseD;
     String aws,cha,chb,chc,chd,username;
     int wrongcount = 0,StorieId,time;
+    MediaPlayer musicbg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,7 @@ public class abcd extends AppCompatActivity {
         requestWindowFeature(
                 Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_abcd);
         textcount = (TextView)findViewById(R.id.textcount);
         textcount.setText(String.valueOf(StorieId+1));
@@ -43,6 +45,10 @@ public class abcd extends AppCompatActivity {
         choseB = (Button)findViewById(R.id.choseB);
         choseC = (Button)findViewById(R.id.choseC);
         choseD = (Button)findViewById(R.id.choseD);
+
+        musicbg = MediaPlayer.create(this,R.raw.question);
+        musicbg.setLooping(true);
+        musicbg.start();
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             String word;
@@ -71,12 +77,15 @@ public class abcd extends AppCompatActivity {
                     gocorrect.putExtra("StorieID",StorieId);
                     gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",cha);
+                    musicbg.stop();
                     startActivity(gocorrect);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
                 else {
                     wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
             }
         });
@@ -89,12 +98,15 @@ public class abcd extends AppCompatActivity {
                     gocorrect.putExtra("StorieID",StorieId);
                     gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chb);
+                    musicbg.stop();
                     startActivity(gocorrect);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
                 else {
                     wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
 
             }
@@ -108,12 +120,15 @@ public class abcd extends AppCompatActivity {
                     gocorrect.putExtra("StorieID",StorieId);
                     gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chc);
+                    musicbg.stop();
                     startActivity(gocorrect);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
                 else {
                     wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
             }
         });
@@ -126,12 +141,15 @@ public class abcd extends AppCompatActivity {
                     gocorrect.putExtra("StorieID",StorieId);
                     gocorrect.putExtra("ETime",time);
                     gocorrect.putExtra("aws",chd);
+                    musicbg.stop();
                     startActivity(gocorrect);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
                 else {
                     wrongcount +=1;
                     Intent gowrong = new Intent(abcd.this,Wrong.class);
                     startActivity(gowrong);
+                    overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                 }
             }
         });

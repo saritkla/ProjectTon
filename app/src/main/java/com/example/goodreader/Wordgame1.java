@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
@@ -43,12 +44,13 @@ public class Wordgame1 extends AppCompatActivity {
     boolean running;
     int countword,countmain,wordID;
     long sumtime;
+    MediaPlayer countdown,buttonstart,buttontab,buttonnot,buttonnext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         setContentView(R.layout.activity_wordgame1);
         Bundle bundle = getIntent().getExtras();
         username = bundle.getString("username");
@@ -58,12 +60,19 @@ public class Wordgame1 extends AppCompatActivity {
         textcount = (TextView)findViewById(R.id.textcount);
         nextpage = (ImageButton)findViewById(R.id.nextpagebt);
         chronometer = (Chronometer)findViewById(R.id.chrometer);
+        buttonstart = MediaPlayer.create(this, R.raw.buttonstart);
+        buttontab = MediaPlayer.create(this, R.raw.buttontap);
+        buttonnot = MediaPlayer.create(this, R.raw.buttonnot);
+        buttonnext = MediaPlayer.create(this, R.raw.buttonnext);
+        countdown = MediaPlayer.create(this, R.raw.coutdown);
         myRef = FirebaseDatabase.getInstance().getReference().child("username").child(username);
         database = FirebaseDatabase.getInstance();
         countmain = 1;
         sumtime = 0;
         imagecount.setImageResource(R.drawable.treetwoone2);
-        textcount.setText(String.valueOf(wordID+1));
+        if (wordID==1) textcount.setText("1");
+        else textcount.setText(String.valueOf(wordID+1));
+        countdown.start();
         new CountDownTimer(3000, 3000) {
             @Override
             public void onTick(long l) {
@@ -73,15 +82,17 @@ public class Wordgame1 extends AppCompatActivity {
             public void onFinish() {
                 imagecount.setImageResource(android.R.color.transparent);
                 Log.d("wodID", String.valueOf(wordID));
-                textcount.setText(String.valueOf(wordID+1));
-                if (wordID == 1)countword = 0;
+                if (wordID == 1) textcount.setText("1");
+                else textcount.setText(String.valueOf(wordID+1));
+                if (wordID == 1) countword = 0;
                 else countword = wordID;
                 nextword(countword);
                 nextpage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        buttonnext.start();
                         countmain++;
-                        if (countmain == 11){
+                        if (countmain == 21){
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                             if (countword == 200) countword = 0;
@@ -145,7 +156,7 @@ public class Wordgame1 extends AppCompatActivity {
         String json = null;
         startChrometer();
         try {
-            InputStream is = getAssets().open("word.json");
+            InputStream is = getAssets().open("testword.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);

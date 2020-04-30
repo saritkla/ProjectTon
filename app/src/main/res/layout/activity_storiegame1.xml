@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
     android:background="@color/colorWhite"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".Storiegame1">
 
     <LinearLayout

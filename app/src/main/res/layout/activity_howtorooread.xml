@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".howtorooread">
+    tools:context=".howtorooread"
+    android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    >
+    <ImageButton
+        android:id="@+id/howtoroo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/rooreadpop_1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

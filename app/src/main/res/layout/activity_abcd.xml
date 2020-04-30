@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".abcd">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,8 +41,8 @@
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
-                        android:textColor="@color/colorblack"
-                        android:fontFamily="sans-serif"/>
+                        android:fontFamily="@font/pridi"
+                        android:textColor="@color/colorblack"/>
                     <TextView
                         android:id="@+id/textcount"
                         android:layout_width="0dp"
@@ -55,7 +56,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="20dp"
                         android:textColor="@color/colorblack"
-                        android:fontFamily="sans-serif"
+                        android:fontFamily="@font/pridi"
                         /></LinearLayout>
                 <Space
                     android:layout_width="0dp"
@@ -90,6 +91,8 @@
                         app:autoSizeMinTextSize="30dp"
                         app:autoSizeStepGranularity="10dp"
                         android:textAlignment="textStart"
+                        android:fontFamily="@font/pridi"
+                        android:textColor="@color/colorblack"
                         android:layout_weight="1"/>
                     <Space
                         android:layout_width="match_parent"
@@ -111,6 +114,8 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:text="ก.กกกก"
+                                android:fontFamily="@font/pridi"
+                                android:textColor="@color/colorblack"
                                 app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
                                 android:background="@drawable/bginput" />
@@ -126,6 +131,8 @@
                                 android:text="ก.กกกก"
                                 app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
+                                android:fontFamily="@font/pridi"
+                                android:textColor="@color/colorblack"
                                 android:background="@drawable/bginput" />
                         </LinearLayout>
                         <Space
@@ -143,6 +150,8 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:text="ก.กกกก"
+                                android:fontFamily="@font/pridi"
+                                android:textColor="@color/colorblack"
                                 app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
                                 android:background="@drawable/bginput" />
@@ -158,6 +167,8 @@
                                 android:text="ก.กกกก"
                                 app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
+                                android:fontFamily="@font/pridi"
+                                android:textColor="@color/colorblack"
                                 android:background="@drawable/bginput" />
                         </LinearLayout>
                     </LinearLayout>

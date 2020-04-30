@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".howtogame1">
-    <ImageView
+
+    <ImageButton
+        android:id="@+id/howtotest"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/trainpop"/>
+        android:background="@drawable/trainpop_1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".Login">
 
     <LinearLayout
@@ -64,19 +65,19 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"/>
                 <EditText
-                    android:id="@+id/editname"
+                    android:id="@+id/usernamelogin"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"
                     android:background="@drawable/textinput"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="@font/pridi"
                     android:maxLines="1"
                     android:textAlignment="center"
                     android:inputType="text"
                     android:hint="Username"
                     app:autoSizeTextType="uniform"
                     app:autoSizeStepGranularity="10dp"
-                    android:imeOptions="actionSend"/>
+                    />
 
                     <Space
                         android:layout_width="match_parent"

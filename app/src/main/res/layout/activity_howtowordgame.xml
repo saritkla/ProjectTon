@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    android:configChanges="keyboardHidden|orientation|screenSize"
     tools:context=".howtowordgame">
-    <ImageView
+
+    <ImageButton
+        android:id="@+id/howtotrain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fastreadpop"/>
+        android:background="@drawable/fastreadpop_1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
