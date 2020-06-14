@@ -29,20 +29,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
+                android:padding="10dp"
                 android:background="@drawable/greenbox">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="1"
                     android:text="เรื่องที่"
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"/>
+                  android:fontFamily="@font/pridi"/>
                 <TextView
                     android:id="@+id/textcount"
                     android:layout_width="0dp"
@@ -52,11 +50,8 @@
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"
+                  android:fontFamily="@font/pridi"
                     />
             </LinearLayout>
             <Space
@@ -88,13 +83,11 @@
                     android:id="@+id/textshow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="@font/pridi"
                     android:textAlignment="textStart"
                     android:scrollbars="vertical"
                     android:textColor="@color/colorblack"
-                    app:autoSizeTextType="uniform"
-                    app:autoSizeMinTextSize="30dp"
-                    app:autoSizeStepGranularity="10dp"
+                    android:textSize="24dp"
                     android:lineSpacingExtra="10dp"/>
 
                 <pl.droidsonroids.gif.GifImageView

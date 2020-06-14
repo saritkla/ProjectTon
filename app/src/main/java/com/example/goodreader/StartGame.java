@@ -9,6 +9,7 @@ import android.content.ServiceConnection;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.util.Log;
@@ -53,6 +54,16 @@ public class StartGame extends AppCompatActivity {
                 popup.putExtra("username",username);
                 buttontab.start();
                 startActivity(popup);
+                new CountDownTimer(4000, 4000) {
+
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    public void onFinish() {
+                        buttontab.stop();
+                    }
+
+                }.start();
             }
         });
         rooread.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +74,17 @@ public class StartGame extends AppCompatActivity {
                 mServ.stopMusic();
                 buttontab.start();
                 startActivity(gorooreads);
+                new CountDownTimer(4000, 4000) {
+
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    public void onFinish() {
+                        buttontab.stop();
+                    }
+
+                }.start();
+
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +95,16 @@ public class StartGame extends AppCompatActivity {
                 mServ.stopMusic();
                 buttonnot.start();
                 startActivity(gologout);
+                new CountDownTimer(4000, 4000) {
+
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    public void onFinish() {
+                        buttonnot.stop();
+                    }
+
+                }.start();
             }
         });
         info.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +114,16 @@ public class StartGame extends AppCompatActivity {
                 goinfo.putExtra("username",username);
                 buttontab.start();
                 startActivity(goinfo);
+                new CountDownTimer(4000, 4000) {
+
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    public void onFinish() {
+                        buttontab.stop();
+                    }
+
+                }.start();
             }
         });
         //BIND Music Service

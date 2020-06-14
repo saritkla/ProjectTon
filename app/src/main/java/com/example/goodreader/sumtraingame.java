@@ -39,7 +39,7 @@ public class sumtraingame extends AppCompatActivity {
     DatabaseReference myRef;
     BigDecimal milisec = new BigDecimal(1000);
     BigDecimal sec = new BigDecimal(60);
-    MediaPlayer music1,buttontab,buttonstart;
+    MediaPlayer buttontab,buttonstart;
     HomeWatcher mHomeWatcher;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +65,7 @@ public class sumtraingame extends AppCompatActivity {
 
         buttonstart = MediaPlayer.create(this,R.raw.buttonstart);
         buttontab = MediaPlayer.create(this,R.raw.buttontap);
-        music1 = MediaPlayer.create(this,R.raw.win);
-        music1.start();
+
 
 //        timem = sumtimepergame/1000;
 //        lastgame = timem/wordpergame;

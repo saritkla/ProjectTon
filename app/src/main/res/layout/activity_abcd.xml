@@ -29,19 +29,17 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal"
+                    android:padding="10dp"
                     android:background="@drawable/greenbox">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="3"
+                        android:layout_weight="1"
                         android:text="เรื่องที่"
                         app:autoSizeTextType="uniform"
                         android:textAlignment="center"
                         android:gravity="center"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:fontFamily="@font/pridi"
+                      android:fontFamily="@font/pridi"
                         android:textColor="@color/colorblack"/>
                     <TextView
                         android:id="@+id/textcount"
@@ -52,11 +50,8 @@
                         app:autoSizeTextType="uniform"
                         android:textAlignment="center"
                         android:gravity="center"
-                        android:layout_marginRight="50dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
                         android:textColor="@color/colorblack"
-                        android:fontFamily="@font/pridi"
+                      android:fontFamily="@font/pridi"
                         /></LinearLayout>
                 <Space
                     android:layout_width="0dp"
@@ -86,12 +81,11 @@
                         android:id="@+id/question"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:text="คำถาม บลาลาลาลาลาลาลาลาลาลากกกกกกกกกกกกกกกกกกกกกกกกกกกกล"
+                        android:text="คําถาม บลาลาลาลาลาลาลาลาลาลากกกกกกกกกกกกกกกกกกกกกกกกกกกกล"
                         app:autoSizeTextType="uniform"
-                        app:autoSizeMinTextSize="30dp"
-                        app:autoSizeStepGranularity="10dp"
+                        android:padding="10dp"
                         android:textAlignment="textStart"
-                        android:fontFamily="@font/pridi"
+                      android:fontFamily="@font/pridi"
                         android:textColor="@color/colorblack"
                         android:layout_weight="1"/>
                     <Space
@@ -114,11 +108,12 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:text="ก.กกกก"
-                                android:fontFamily="@font/pridi"
+                              android:fontFamily="@font/pridi"
                                 android:textColor="@color/colorblack"
                                 app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
-                                android:background="@drawable/bginput" />
+                                android:padding="5dp"
+                                android:background="#FF9999" />
                             <Space
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
@@ -130,10 +125,11 @@
                                 android:layout_weight="1"
                                 android:text="ก.กกกก"
                                 app:autoSizeTextType="uniform"
+                                android:padding="5dp"
                                 app:autoSizeStepGranularity="10dp"
-                                android:fontFamily="@font/pridi"
+                              android:fontFamily="@font/pridi"
                                 android:textColor="@color/colorblack"
-                                android:background="@drawable/bginput" />
+                                android:background="#99CCFF" />
                         </LinearLayout>
                         <Space
                             android:layout_width="0dp"
@@ -144,17 +140,20 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
+
                             <Button
                                 android:id="@+id/choseB"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
-                                android:text="ก.กกกก"
+                                android:background="#FFCC66"
                                 android:fontFamily="@font/pridi"
+                                android:padding="5dp"
+                                android:text="ก.กกกก"
                                 android:textColor="@color/colorblack"
-                                app:autoSizeTextType="uniform"
                                 app:autoSizeStepGranularity="10dp"
-                                android:background="@drawable/bginput" />
+                                app:autoSizeTextType="uniform" />
+
                             <Space
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
@@ -169,7 +168,8 @@
                                 app:autoSizeStepGranularity="10dp"
                                 android:fontFamily="@font/pridi"
                                 android:textColor="@color/colorblack"
-                                android:background="@drawable/bginput" />
+                                android:padding="5dp"
+                                android:background="#98FB98"/>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -178,11 +178,28 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"/>
             </LinearLayout>
-            <Space
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                />
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"/>
+                <Button
+                    android:id="@+id/backtoread"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/backbutton"
+                    android:layout_weight="1" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"/>
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

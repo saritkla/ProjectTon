@@ -10,11 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".manual"></activity>
-        <activity android:name=".howtorooread" />
-        <activity android:name=".howtowordgame" />
-        <activity android:name=".howtogame1" />
-        <activity android:name=".infome" />
+        <activity android:name=".manual"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".howtorooread"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".howtowordgame"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".howtogame1"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".infome"
+                  android:screenOrientation="landscape"/>
 
         <service
             android:name=".MusicService"
@@ -28,11 +33,13 @@
             android:theme="@style/AppTheme.popMe" />
         <activity
             android:name=".sumtraingame"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".traingame1"
-            android:screenOrientation="fullSensor" />
-        <activity android:name=".traingamestart" />
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".traingamestart"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".wordgamepop"
             android:theme="@style/AppTheme.popMe" />

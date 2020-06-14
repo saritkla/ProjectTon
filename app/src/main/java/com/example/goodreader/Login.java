@@ -10,6 +10,7 @@ import android.content.ServiceConnection;
 import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.os.Parcelable;
 import android.os.PowerManager;
@@ -88,6 +89,16 @@ public class Login extends AppCompatActivity {
                 if (username.isEmpty()) {
                     Toast.makeText(Login.this, "กรุณาใส่ชื่อผู้ใช้", Toast.LENGTH_SHORT).show();
                     buttonnot.start();
+                    new CountDownTimer(1500, 1500) {
+
+                        public void onTick(long millisUntilFinished) {
+                        }
+
+                        public void onFinish() {
+                            buttonnot.stop();
+                        }
+
+                    }.start();
                 }
                 else{
                     myRef.child(username).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -117,6 +128,16 @@ public class Login extends AppCompatActivity {
                             }
                             else {
                                 buttonnot.start();
+                                new CountDownTimer(1500, 1500) {
+
+                                    public void onTick(long millisUntilFinished) {
+                                    }
+
+                                    public void onFinish() {
+                                        buttonnot.stop();
+                                    }
+
+                                }.start();
                                 Toast.makeText(Login.this, "ชื่อผู้ใช้ไม่ถูกต้อง กรุณาลงทะเบียน", Toast.LENGTH_SHORT).show();
                             }
 
@@ -135,6 +156,16 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goregis = new Intent(Login.this, RegisAc.class);
                 buttontab.start();
+                new CountDownTimer(1500, 1500) {
+
+                    public void onTick(long millisUntilFinished) {
+                    }
+
+                    public void onFinish() {
+                        buttontab.stop();
+                    }
+
+                }.start();
                 music1.stop();
                 startActivity(goregis);
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);

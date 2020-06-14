@@ -70,6 +70,7 @@ public class StoriegameStart extends AppCompatActivity {
                         Intent tostart = new Intent(StoriegameStart.this, Storiegame1.class);
                         tostart.putExtra("username",username);
                         tostart.putExtra("storieID", storieID);
+                        overridePendingTransition(android.R.anim.cycle_interpolator,android.R.anim.cycle_interpolator);
                         startActivity(tostart);
                         mplay.stop();
 

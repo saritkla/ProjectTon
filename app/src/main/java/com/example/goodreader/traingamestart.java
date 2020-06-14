@@ -58,7 +58,7 @@ public class traingamestart extends AppCompatActivity {
         mplay.setLooping(true);
         mplay.start();
 
-        myRef.child("wordtain").addListenerForSingleValueEvent(new ValueEventListener() {
+        myRef.child("wordtrain").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 wordID = Integer.valueOf(String.valueOf(dataSnapshot.getChildrenCount()));

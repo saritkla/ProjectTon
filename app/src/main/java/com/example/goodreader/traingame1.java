@@ -35,8 +35,10 @@ public class traingame1 extends AppCompatActivity {
     ImageButton nextpage;
     long pauseoffset;
     Chronometer chronometer;
+
     FirebaseDatabase database;
     DatabaseReference myRef;
+
     String username;
     MediaPlayer countdown,buttonstart,buttontab,buttonnot,buttonnext;
     boolean running;
@@ -93,12 +95,12 @@ public class traingame1 extends AppCompatActivity {
                     public void onClick(View view) {
                         buttonnext.start();
                         countmain++;
-                        if (countmain == 21){
+                        if (countmain == 11){
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                             if (countword == 1200) countword = 0;
                             String co = Integer.toString(countword);
-                            myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
+                            myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
                             sumtime = sumtime + elapsedMillis;
                             resetChrometer();
                             Intent tosum = new Intent(traingame1.this,sumtraingame.class);
@@ -112,7 +114,7 @@ public class traingame1 extends AppCompatActivity {
                             pauseChrometer();
                             long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
                             String co = Integer.toString(countword);
-                            myRef.child("wordtain").child(co).child("Time").setValue(elapsedMillis);
+                            myRef.child("wordtrain").child(co).child("Time").setValue(elapsedMillis);
                             sumtime = sumtime + elapsedMillis;
                             Log.d("Time is", String.valueOf((long)elapsedMillis));
                             Log.d("time all =", String.valueOf(sumtime));

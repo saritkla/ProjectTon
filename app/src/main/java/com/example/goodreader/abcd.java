@@ -22,7 +22,7 @@ import java.io.InputStream;
 public class abcd extends AppCompatActivity {
 
     TextView textcount,Textquestion;
-    Button choseA,choseB,choseC,choseD;
+    Button choseA,choseB,choseC,choseD,backtoread;
     String aws,cha,chb,chc,chd,username;
     int wrongcount = 0,StorieId,time;
     MediaPlayer musicbg;
@@ -45,10 +45,12 @@ public class abcd extends AppCompatActivity {
         choseB = (Button)findViewById(R.id.choseB);
         choseC = (Button)findViewById(R.id.choseC);
         choseD = (Button)findViewById(R.id.choseD);
+        backtoread = (Button)findViewById(R.id.backtoread);
 
         musicbg = MediaPlayer.create(this,R.raw.question);
         musicbg.setLooping(true);
         musicbg.start();
+
         try {
             JSONArray jArray = new JSONArray(readJSONFromAsset());
             String word;
@@ -66,7 +68,21 @@ public class abcd extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        backtoread.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goreadagain = new Intent(abcd.this,Storiegame1.class);
+                musicbg.stop();
 
+                goreadagain.putExtra("username",username);
+                goreadagain.putExtra("storieID",StorieId);
+                Log.d("ID", String.valueOf(StorieId));
+                goreadagain.putExtra("ETime",time);
+                goreadagain.putExtra("aws",cha);
+                overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+                startActivity(goreadagain);
+            }
+        });
         choseA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -153,6 +169,7 @@ public class abcd extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 

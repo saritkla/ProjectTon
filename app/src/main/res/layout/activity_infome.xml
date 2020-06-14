@@ -68,9 +68,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="ชื่อ-สกุล ::"
-                    android:textSize="24dp"
                     app:autoSizeTextType="uniform"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
 
@@ -82,8 +81,7 @@
                     android:text=""
                     app:autoSizeTextType="uniform"
                     android:gravity="center|left"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
             </LinearLayout>
@@ -103,8 +101,7 @@
                     android:text="อายุ ::"
                     app:autoSizeTextType="uniform"
                     android:gravity="center"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
 
                 <TextView
@@ -115,21 +112,20 @@
                     android:gravity="center"
                     android:text=""
                     app:autoSizeTextType="uniform"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="ปี"
-                    app:autoSizeTextType="uniform"
+                  android:fontFamily="@font/pridi"
                     android:gravity="left"
-                    android:textSize="24dp"
                     android:paddingLeft="15dp"
-                    android:fontFamily="@font/pridi"
-                    android:textColor="@color/colorblack"/>
+                    android:text="ปี"
+                    android:textColor="@color/colorblack"
+                    app:autoSizeTextType="uniform" />
+
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -142,8 +138,7 @@
                     android:gravity="center"
                     app:autoSizeTextType="uniform"
                     app:autoSizeStepGranularity="5dp"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
                 <TextView
                     android:id="@+id/IntageV"
@@ -153,8 +148,7 @@
                     android:text=""
                     app:autoSizeTextType="uniform"
                     android:gravity="center"
-                    android:textSize="24dp"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"/>
             </LinearLayout>
             <Space
@@ -173,7 +167,6 @@
                     android:text="โรงเรียน ::"
                     android:gravity="center"
                     app:autoSizeTextType="uniform"
-                    android:textSize="24dp"
                     android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
@@ -184,10 +177,9 @@
                     android:layout_weight="4"
                     android:text=""
                     android:gravity="left"
-                    android:textSize="24dp"
                     android:paddingLeft="15dp"
                     app:autoSizeTextType="uniform"
-                    android:fontFamily="@font/pridi"
+                  android:fontFamily="@font/pridi"
                     android:textColor="@color/colorblack"
                     android:background="@color/colorGreen"/>
             </LinearLayout>

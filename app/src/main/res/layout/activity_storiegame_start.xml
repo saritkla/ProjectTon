@@ -30,20 +30,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal"
+                android:padding="10dp"
                 android:background="@drawable/greenbox">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="1"
                     android:text="เรื่องที่"
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"/>
+                  android:fontFamily="@font/pridi"/>
                 <TextView
                     android:id="@+id/textcount"
                     android:layout_width="0dp"
@@ -53,11 +51,8 @@
                     app:autoSizeTextType="uniform"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="sans-serif"
+                  android:fontFamily="@font/pridi"
                     /></LinearLayout>
             <Space
                 android:layout_width="0dp"

@@ -87,7 +87,7 @@ public class RegisAc extends AppCompatActivity {
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                             arruser = (HashMap) dataSnapshot.getValue();
                             if (arruser == null) insert = true;
-                            else Toast.makeText(RegisAc.this, "ชื่อผู้ใช้ซ้ำ กรุณาใช้ชื่อผู้ใช้อื่น", Toast.LENGTH_SHORT).show();
+                            else Toast.makeText(RegisAc.this, "ชื่อผู้ใช้ซ้ํา กรุณาใช้ชื่อผู้ใช้อื่น", Toast.LENGTH_SHORT).show();
                             if (insert && !User.equals("") && !Name.equals("") && !School.equals("") && !Intage.equals("") && !Age.equals("")) {
                                 myRef.child(User).child("Name").setValue(Name);
                                 myRef.child(User).child("Intage").setValue(Intage);

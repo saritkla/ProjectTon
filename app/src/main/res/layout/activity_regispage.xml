@@ -114,7 +114,7 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/pridi"
-                                android:text="2. ชื่อ - นามสกุล (มีคำนำหน้า)"
+                                android:text="2. ชื่อ - นามสกุล (มีคํานําหน้า)"
                                 android:textStyle="bold"
                                 app:autoSizeTextType="uniform"
                                 android:textColor="@color/colorblack"/>
